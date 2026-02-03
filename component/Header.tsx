@@ -1,5 +1,5 @@
 "use client";
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -19,7 +19,7 @@ const Header = () => {
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300
           ${
             scrolled
-              ? "bg-white "
+              ? "bg-white shadow-md"
               : "bg-transparent"
           }
         `}
@@ -37,28 +37,32 @@ const Header = () => {
 
             {/* NAV LINKS */}
             <div className="flex gap-8 text-sm font-semibold">
-              <a href="https://www.bluehorse.in/work.html" className="hover:text-blue-600">
-                Work
-              </a>
-              <a href="https://www.bluehorse.in/about-us.html" className="hover:text-blue-600">
-                About Us
-              </a>
-              <a href="https://www.bluehorse.in/careers.html" className="hover:text-blue-600">
-                Careers
-              </a>
-              <a href="https://www.bluehorse.in/contact.html" className="hover:text-blue-600">
-                Contact
-              </a>
-              <a href="https://www.bluehorse.in/blog.html" className="hover:text-blue-600">
-                Blog
-              </a>
+              {[
+                { name: "Work", link: "/work.html" },
+                { name: "About Us", link: "/about-us.html" },
+                { name: "Careers", link: "/careers.html" },
+                { name: "Contact", link: "/contact.html" },
+                { name: "Blog", link: "/blog.html" },
+              ].map((item) => (
+                <a
+                  key={item.name}
+                  href={item.link}
+                  className={`transition-colors duration-300
+                    ${
+                      scrolled
+                        ? "text-blue-600 hover:text-blue-800"
+                        : "text-white hover:text-blue-300"
+                    }
+                  `}
+                >
+                  {item.name}
+                </a>
+              ))}
             </div>
           </nav>
         </div>
       </header>
 
-      {/* Spacer for fixed header */}
-      <div className="h-20"></div>
     </>
   );
 };
