@@ -1,4 +1,5 @@
 import BannerSlider from "@/component/Home/BannerSlider";
+import CuratedProducts from "@/component/Home/CuratedProducts";
 import EcommerceServiceSection from "@/component/Home/EcommerceServiceSection";
 import HomeService from "@/component/Home/HomeService";
 import IntroSection from "@/component/Home/IntroSection";
@@ -17,6 +18,7 @@ export default function Home() {
       <HomeService />
       <EcommerceServiceSection />
       <TestimonialsSection />
+      <CuratedProducts />
     </>
   );
 }
