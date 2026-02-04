@@ -31,7 +31,7 @@ const Header = () => {
               <img
                 src="https://www.bluehorse.in/assets/image/Common/Logo.png"
                 alt="BlueHorse Softwares logo"
-                className="h-10"
+                className="h-auto w-[110px]"
               />
             </a>
 

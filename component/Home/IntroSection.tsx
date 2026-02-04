@@ -7,7 +7,7 @@ const IntroSection: React.FC = () => {
     <section className="Intro-Wrapper">
       {/* Desktop Video */}
       <video
-        className="Intro-BG"
+        className="Intro-BG w-full"
         autoPlay
         muted
         loop
