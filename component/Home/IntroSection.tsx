@@ -12,9 +12,9 @@ const IntroSection: React.FC = () => {
         muted
         loop
         preload="auto"
-        poster="https://www.bluehorse.in/assets/video/Default_image.jpg">
+        poster="/assest/images/Default_image.jpg">
         <source
-          src="https://www.bluehorse.in/assets/video/HomapgebannervideoFaded.mp4"
+          src="/assest/video/HomapgebannervideoFaded.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.
