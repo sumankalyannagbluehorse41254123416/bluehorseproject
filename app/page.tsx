@@ -1,3 +1,4 @@
+import BannerSlider from "@/component/Home/BannerSlider";
 import IntroSection from "@/component/Home/IntroSection";
 import LogoSwiper from "@/component/Home/logoSliderdesktop";
 import Image from "next/image";
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <IntroSection />
       <LogoSwiper />
+      <BannerSlider />
     </>
   );
 }
