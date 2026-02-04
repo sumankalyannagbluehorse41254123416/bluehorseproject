@@ -12,7 +12,7 @@ const WorkSection = () => {
           written in the solutions we build — not in what we say.
         </p>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-25">
           {/* Wow Eats */}
           <div className="image_wrap">
             <div className="work_name">
@@ -20,7 +20,7 @@ const WorkSection = () => {
                 target="_blank"
                 href="https://www.bluehorse.in/work/woweats"
                 className="">
-                <h3 className="text-4xl">Wow Eats</h3>
+                <h3 className="text-4xl mb-5">Wow Eats</h3>
               </a>
             </div>
 
@@ -69,13 +69,13 @@ const WorkSection = () => {
           </div>
 
           {/* Manyavar */}
-          <div className="image_wrap">
+          <div className="mt-25">
             <div className="work_name">
               <a
                 target="_blank"
                 href="https://www.bluehorse.in/work/manyavar-brand-for-ethnic-wear-collection"
                 className="text">
-                <h3 className="text-4xl">Manyavar</h3>
+                <h3 className="text-4xl mb-5">Manyavar</h3>
               </a>
             </div>
 
@@ -129,7 +129,7 @@ const WorkSection = () => {
                 href="https://www.bluehorse.in/work/eazydiner-tech-solution-for-food-industry"
                 target="_blank"
                 className="text">
-                <h3 className="text-4xl">EazyDiner</h3>
+                <h3 className="text-4xl mb-5">EazyDiner</h3>
               </a>
             </div>
 
@@ -187,7 +187,7 @@ const WorkSection = () => {
                 href="https://www.bluehorse.in/work/creoo"
                 target="_blank"
                 className="text">
-                <h3 className="text-4xl">Creoo</h3>
+                <h3 className="text-4xl mb-5">Creoo</h3>
               </a>
             </div>
 
