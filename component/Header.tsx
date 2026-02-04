@@ -1,7 +1,5 @@
 "use client";
-import Link from "next/link";
 import { useEffect, useState } from "react";
-
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -29,16 +27,16 @@ const Header = () => {
         <div className="mx-20">
           <nav className="flex items-center justify-between h-20">
             {/* LOGO */}
-            <Link href="https://www.bluehorse.in">
+            <a href="https://www.bluehorse.in">
               <img
                 src="https://www.bluehorse.in/assets/image/Common/Logo.png"
                 alt="BlueHorse Softwares logo"
-                className="w-28 h-auto"
+                className="h-10"
               />
-            </Link>
+            </a>
 
             {/* NAV LINKS */}
-            <div className="flex gap-8 text-sm font-semibold big-noddle">
+            <div className="flex gap-8 text-sm font-semibold">
               {[
                 { name: "Work", link: "/work.html" },
                 { name: "About Us", link: "/about-us.html" },
