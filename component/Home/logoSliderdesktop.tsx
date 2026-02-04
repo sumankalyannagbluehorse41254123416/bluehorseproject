@@ -10,10 +10,6 @@ const logos = [
     img: "https://www.bluehorse.in/images/kora_logo.png",
   },
   {
-    href: "https://www.thesouledstore.com",
-    img: "https://www.bluehorse.in/images/tss_logo 1.png",
-  },
-  {
     href: "https://www.royalcanin.com",
     img: "https://www.bluehorse.in/images/royalchain_logo.png",
   },
@@ -50,31 +46,22 @@ const logos = [
     img: "https://www.bluehorse.in/images/woweats_logo1.png",
   },
 ];
-export default function LogoSwiper() {
+
+export default function LogoMarquee() {
   return (
-    <Swiper
-      modules={[Autoplay]}
-      loop={true}
-      slidesPerView="auto"
-      spaceBetween={40}
-      speed={6000}
-      autoplay={{
-        delay: 0,
-        disableOnInteraction: false,
-      }}
-      allowTouchMove={false}
-      className="logoSwiper">
-      {logos.map((logo, index) => (
-        <SwiperSlide key={index} style={{ width: "auto" }}>
+    <div className="logoMarquee mt-10 p-7">
+      <div className="logoTrack">
+        {[...logos, ...logos].map((logo, index) => (
           <a
+            key={index}
             href={logo.href}
             target="_blank"
             rel="noreferrer"
             className="slide_logo">
             <img src={logo.img} alt="brand-logo" />
           </a>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+        ))}
+      </div>
+    </div>
   );
 }

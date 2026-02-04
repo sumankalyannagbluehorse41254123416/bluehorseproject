@@ -36,6 +36,14 @@ body {
 
 /* custom container  */
 
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -69,6 +77,38 @@ body {
 }
 
 
-.swiper-wrapper {
-  margin-top: 40px;
+.logoMarquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+.logoTrack {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: marqueeMove 25s linear infinite;
+}
+
+.logoMarquee:hover .logoTrack {
+  animation-play-state: paused;
+}
+
+.slide_logo img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+@keyframes marqueeMove {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.banner_slider {
+  margin: auto;
 }

@@ -3,71 +3,44 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/effect-fade";
+
 const BannerSlider = () => {
   return (
     <section id="banner_slider">
-      <div className="container">
+      <div className="container pt-10 ml-auto mr-auto">
         <Swiper
-          className="banner_slider"
           modules={[Autoplay, Pagination, EffectFade]}
           slidesPerView={1}
           loop={true}
           effect="fade"
-          speed={3000}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
-          pagination={{ clickable: true }}>
-          {/* Slide 1 */}
+          fadeEffect={{ crossFade: true }}
+          speed={1200}
+          // autoplay={{
+          //   delay: 4000,
+          //   disableOnInteraction: false,
+          // }}
+          pagination={{ clickable: true }}
+          className="banner_slider"
+        >
           <SwiperSlide>
-            <div className="slide_img">
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.bluehorse.in/services/organic-marketing">
-                <figure>
-                  <img
-                    src="https://www.bluehorse.in/assets/image/slider3.jpg"
-                    alt="slider_img"
-                  />
-                </figure>
-              </a>
-            </div>
+            <a href="#" className="slide_img">
+              <img src="https://www.bluehorse.in/assets/image/slider3.jpg" />
+            </a>
           </SwiperSlide>
 
-          {/* Slide 2 */}
           <SwiperSlide>
-            <div className="slide_img">
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.bluehorse.in/website-audit">
-                <figure>
-                  <img
-                    src="https://www.bluehorse.in/assets/image/slide2.jpg"
-                    alt="slider_img"
-                  />
-                </figure>
-              </a>
-            </div>
+            <a href="#" className="slide_img">
+              <img src="https://www.bluehorse.in/assets/image/slide2.jpg" />
+            </a>
           </SwiperSlide>
 
-          {/* Slide 3 */}
           <SwiperSlide>
-            <div className="slide_img">
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.bluehorse.in/d2c-ecommerce-solutions-launch-in-7-days">
-                <figure>
-                  <img
-                    src="https://www.bluehorse.in/assets/image/slide1.jpg"
-                    alt="slider_img"
-                  />
-                </figure>
-              </a>
-            </div>
+            <a href="#" className="slide_img">
+              <img src="https://www.bluehorse.in/assets/image/slide1.jpg" />
+            </a>
           </SwiperSlide>
         </Swiper>
       </div>
@@ -76,3 +49,6 @@ const BannerSlider = () => {
 };
 
 export default BannerSlider;
+
+
+

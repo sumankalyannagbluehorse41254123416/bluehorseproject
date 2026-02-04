@@ -5,31 +5,32 @@ import React from "react";
 const WorkSection = () => {
   return (
     <section className="bh_work_details custom_home">
-      <div className="container">
-        <h2 className="Section-Title">Our Work Defines Our Success</h2>
-        <p className="Section-Details">
+      <div className="pt-10 container">
+        <h2 className="text-[40px] text-center ">Our Work Defines Our Success</h2>
+        <p className="text-center text-[16px] max-w-3xl mx-auto mt-4 mb-10 font-medium">
           As a top web and mobile app development company, our success is
           written in the solutions we build — not in what we say.
         </p>
 
-        <div className="image_gird">
+        <div className="grid grid-cols-2 gap-4">
           {/* Wow Eats */}
           <div className="image_wrap">
             <div className="work_name">
               <a
                 target="_blank"
                 href="https://www.bluehorse.in/work/woweats"
-                className="text">
-                <h3>Wow Eats</h3>
+                className="">
+                <h3 className="text-4xl">Wow Eats</h3>
               </a>
             </div>
 
             <div
-              className="bh_work_img animate"
+              className="bh_work_img animate bg-no-repeat"
               style={{
-                backgroundImage:
-                  "url('BH WORK PAGE/assets/images/wow_momo.jpeg')",
-              }}>
+                backgroundImage: "url('/assest/images/wow_momo.jpeg')",
+              }}
+            >
+
               <div className="work_logo visible">
                 <a target="_blank" href="https://www.bluehorse.in/work/woweats">
                   <img src="https://www.bluehorse.in/BH WORK PAGE/assets/images/wowmomo_logo.png" />
@@ -74,7 +75,7 @@ const WorkSection = () => {
                 target="_blank"
                 href="https://www.bluehorse.in/work/manyavar-brand-for-ethnic-wear-collection"
                 className="text">
-                <h3>Manyavar</h3>
+                <h3 className="text-4xl">Manyavar</h3>
               </a>
             </div>
 
@@ -82,7 +83,7 @@ const WorkSection = () => {
               className="bh_work_img animate"
               style={{
                 backgroundImage:
-                  "url('BH WORK PAGE/assets/images/manyavar.jpeg')",
+                  "url('/assest/images/manyavar.jpeg')",
               }}>
               <div className="work_logo visible">
                 <a
@@ -128,7 +129,7 @@ const WorkSection = () => {
                 href="https://www.bluehorse.in/work/eazydiner-tech-solution-for-food-industry"
                 target="_blank"
                 className="text">
-                <h3>EazyDiner</h3>
+                <h3 className="text-4xl">EazyDiner</h3>
               </a>
             </div>
 
@@ -136,7 +137,7 @@ const WorkSection = () => {
               className="bh_work_img"
               style={{
                 backgroundImage:
-                  "url('BH WORK PAGE/assets/images/eazydinner.jpeg')",
+                  "url('/assest/images/eazydinner.jpeg')",
               }}>
               <div className="work_logo visible">
                 <a
@@ -186,7 +187,7 @@ const WorkSection = () => {
                 href="https://www.bluehorse.in/work/creoo"
                 target="_blank"
                 className="text">
-                <h3>Creoo</h3>
+                <h3 className="text-4xl">Creoo</h3>
               </a>
             </div>
 
@@ -194,7 +195,7 @@ const WorkSection = () => {
               className="bh_work_img"
               style={{
                 backgroundImage:
-                  "url('BH WORK PAGE/assets/images/creoo_banner.jpeg')",
+                  "url('/assest/images/creoo_banner.jpeg')",
               }}>
               <div className="work_logo visible">
                 <a
