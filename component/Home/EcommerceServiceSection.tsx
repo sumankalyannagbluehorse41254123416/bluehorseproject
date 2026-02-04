@@ -172,7 +172,7 @@ import Image from "next/image";
 
 export default function EcommerceServiceSection() {
   return (
-    <main className="font-poppins">
+    <main className="font-poppins bg-blue-400">
       {/* Header */}
       <section className="py-10">
         <div className="container mx-auto px-4">
@@ -188,7 +188,7 @@ export default function EcommerceServiceSection() {
       </section>
 
       {/* eCommerce Section */}
-      <section className="bg-blueDark py-12 text-white ">
+      <section className="">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-semibold border-b-2 inline-block pb-2">
             eCommerce Development
