@@ -103,11 +103,12 @@ body {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
 }
 
-.banner_slider{
+.banner_slider {
   margin: auto;
 }
