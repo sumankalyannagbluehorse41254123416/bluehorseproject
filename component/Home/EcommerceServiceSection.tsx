@@ -1,11 +1,8 @@
-
 import Image from "next/image";
 
 export default function EcommerceServiceSection() {
   return (
     <main className="font-poppins bg-sky-300 text-white">
-      
-
       {/* eCommerce Section */}
       <section>
         <div className="container mx-auto px-4">
