@@ -14,59 +14,51 @@ const WorkSection = () => {
 
         <div className="grid grid-cols-2 gap-25">
           {/* Wow Eats */}
-          <div className="image_wrap">
-            <div className="work_name">
-              <a
-                target="_blank"
-                href="https://www.bluehorse.in/work/woweats"
-                className="">
-                <h3 className="text-4xl mb-5">Wow Eats</h3>
-              </a>
-            </div>
+          <div
+  className="bh_work_img animate bg-no-repeat bg-cover bg-center relative group h-[600px]"
+  style={{
+    backgroundImage: "url('/assest/images/wow_momo.jpeg')",
+  }}
+>
 
-            <div
-              className="bh_work_img animate bg-no-repeat"
-              style={{
-                backgroundImage: "url('/assest/images/wow_momo.jpeg')",
-              }}
-            >
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-center items-center p-8 text-center">
 
-              <div className="work_logo visible">
-                <a target="_blank" href="https://www.bluehorse.in/work/woweats">
-                  <img src="https://www.bluehorse.in/BH WORK PAGE/assets/images/wowmomo_logo.png" />
-                </a>
-              </div>
+    {/* Logo (SHOW ON HOVER) */}
+    <div className="mb-6">
+      <img
+        src="https://www.bluehorse.in/BH WORK PAGE/assets/images/wowmomo_logo.png"
+        className="w-[150px] mx-auto"
+      />
+    </div>
 
-              <div className="work_tagline visible">
-                <a
-                  target="_blank"
-                  href="https://www.bluehorse.in/work/woweats"
-                  className="text">
-                  <p>
-                    Wow! Momo Foods, known for Wow! Momo, Wow! China, and Wow!
-                    Chicken, is one of India’s fastest-growing QSR brands,
-                    boasting over 800 stores across eight unique offerings.
-                  </p>
-                </a>
-              </div>
+    {/* Text */}
+    <a
+      target="_blank"
+      href="https://www.bluehorse.in/work/woweats"
+      className="text-white text-lg leading-relaxed"
+    >
+      Wow! Momo Foods, known for Wow! Momo, Wow! China, and Wow! Chicken,
+      is one of India’s fastest-growing QSR brands, boasting over 800 stores
+      across eight unique offerings.
+    </a>
+  </div>
 
-              <div className="link_tag">
-                <a href="https://www.bluehorse.in/works/tag-%20top%20QSR%20brand">
-                  Top QSR Brand
-                </a>
-                <a href="https://www.bluehorse.in/works/dine-in%20app">
-                  Dine-in-app
-                </a>
-                <a href="https://www.bluehorse.in/works/flutter">Flutter</a>
-              </div>
-            </div>
+  {/* Always Visible Buttons */}
+  <div className="absolute bottom-4 left-4 flex gap-2 flex-wrap z-10">
+    <span className="bg-white/20 backdrop-blur-md text-white text-sm px-3 py-1 rounded-md">
+      Top QSR Brand
+    </span>
+    <span className="bg-white/20 backdrop-blur-md text-white text-sm px-3 py-1 rounded-md">
+      Dine-in-app
+    </span>
+    <span className="bg-white/20 backdrop-blur-md text-white text-sm px-3 py-1 rounded-md">
+      Flutter
+    </span>
+  </div>
 
-            <div className="read-btn">
-              <a target="_blank" href="https://www.bluehorse.in/work/woweats">
-                View case study<i className="fa fa-arrow-right"></i>
-              </a>
-            </div>
-          </div>
+</div>
+
 
           {/* Manyavar */}
           <div className="mt-25">
