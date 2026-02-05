@@ -80,6 +80,7 @@ export default function BlueHorseFAQ() {
         <div className="border-t border-gray-300">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
+            // const isOpen = openIndex === index;
 
             return (
               <div key={index} className="border-b border-gray-300">
