@@ -101,7 +101,7 @@ const WorkSection = () => {
             {/* CARD */}
             <div
               ref={cardRef}
-              className="bh_work_img relative group h-[700px] overflow-hidden bg-cover bg-center rounded-md"
+              className="bh_work_img relative group h-175 overflow-hidden bg-cover bg-center rounded-md"
               style={{
                 backgroundImage: "url('/assest/images/wow_momo.jpeg')",
               }}>
