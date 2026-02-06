@@ -115,10 +115,12 @@ const WorkSection = () => {
               {/* HOVER OVERLAY */}
               <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-center items-center p-8 text-center z-30">
                 <div className="mb-6">
-                  <img
+                  <Image
                     src="https://www.bluehorse.in/BH WORK PAGE/assets/images/wowmomo_logo.png"
                     className="w-[150px] mx-auto"
                     alt="logo"
+                    width={100}
+                    height={100}
                   />
                 </div>
 
