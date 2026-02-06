@@ -5,6 +5,7 @@ import EcommerceServiceSection from "@/component/Home/EcommerceServiceSection";
 import HomeService from "@/component/Home/HomeService";
 import IntroSection from "@/component/Home/IntroSection";
 import LogoSwiper from "@/component/Home/logoSliderdesktop";
+import OtherService from "@/component/Home/OtherService";
 import TestimonialsSection from "@/component/Home/TestimonialsSection";
 import TezcommerceBanner from "@/component/Home/TezcommerceBanner";
 import WorkSection from "@/component/Home/WorkSection";
@@ -19,6 +20,7 @@ export default function Home() {
       <WorkSection />
       <HomeService />
       <EcommerceServiceSection />
+      <OtherService />
       <TestimonialsSection />
       <CuratedProducts />
       <TezcommerceBanner />
