@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 
 const JoinTeam: React.FC = () => {
@@ -7,7 +8,6 @@ const JoinTeam: React.FC = () => {
     <section className="join_wrap common_padding look">
       <div className="container">
         <div className="row">
-          {/* Left Content */}
           <div className="col-lg-6 col-md-6 col-sm-12 col-12">
             <div className="join_con">
               <h4>
@@ -15,9 +15,9 @@ const JoinTeam: React.FC = () => {
               </h4>
 
               <p>
-                If you're passionate about Design and Technology, drop in for a
+                If you re passionate about Design and Technology, drop in for a
                 cup of Coffee at our office. PS: Dump those fancy degrees when
-                you meet us. Our founders aren't big fans of it.
+                you meet us. Our founders aren t big fans of it.
               </p>
 
               <a
@@ -33,9 +33,11 @@ const JoinTeam: React.FC = () => {
           {/* Right Image */}
           <div className="col-lg-6 col-md-6 col-sm-12 col-12">
             <figure>
-              <img
+              <Image
                 src="https://www.bluehorse.in/assets/image/abt-career.jpg"
                 alt="Careers at BlueHorse Software"
+                width={100}
+                height={100}
               />
             </figure>
           </div>
