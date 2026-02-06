@@ -73,9 +73,9 @@ const BrandLogos: React.FC = () => {
               rel="noopener noreferrer"
               className="
                 flex items-center justify-center
-                p-8 bg-slate-200
+                p-8
                 border-gray-400
-                hover:bg-white transition
+               
               "
               style={{
                 borderRight: (index + 1) % 5 !== 0 ? "1px solid #9ca3af" : "",
@@ -86,8 +86,8 @@ const BrandLogos: React.FC = () => {
                 src={brand.logo}
                 alt={brand.name}
                 className="max-h-12 object-contain grayscale hover:grayscale-0 transition"
-                width={100}
-                height={100}
+                width={200}
+                height={200}
               />
             </a>
           ))}
