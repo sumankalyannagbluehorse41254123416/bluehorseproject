@@ -40,6 +40,9 @@ const WorkSection = () => {
 
           {/* WORK CARD */}
           <div className="flex flex-col">
+            <h3 className="text-3xl font-semibold mb-4">
+              Wow Eats
+            </h3>
 
             {/* CARD */}
             <div
@@ -103,7 +106,9 @@ const WorkSection = () => {
 
           {/* WORK CARD */}
           <div className="flex flex-col">
-
+            <h3 className="text-3xl font-semibold mb-4">
+              Wow Eats
+            </h3>
             {/* CARD */}
             <div
               ref={cardRef}
@@ -115,7 +120,7 @@ const WorkSection = () => {
 
               {/* BLUE SLIDE LAYER */}
               <div
-                className={`absolute inset-0 bg-cyan-600 z-20 transform ${inView ? "translate-x-full" : "translate-x-0"
+                className={`absolute inset-0 bg-blue-300 z-20 transform ${inView ? "translate-x-full" : "translate-x-0"
                   } transition-transform duration-[1200ms] ease-in-out`}
               />
 
