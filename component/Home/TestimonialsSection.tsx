@@ -12,17 +12,21 @@ const TestimonialsSection = () => {
   return (
     <section className="bh_testimonials">
       <div className="container">
-        <h2 className="Section-Title">Trusted by the experts globally</h2>
+        
+    
+    <h2 className="text-[40px] font-semibold uppercase text-gray-700 mb-6">
+      Trusted by the experts globally
+    </h2>
 
-        <div className="testimonials_content">
-          <p className="Section-Details">
-            We have a healthy mix of clients who rely on us for their web and
-            mobile app development needs. Our Clients have loved our
-            one-point-contact systems for addressing their concerns.
-          </p>
-        </div>
+    <p className="text-lg text-gray-500  max-w-2xl">
+      We have a healthy mix of clients who rely on us for their web and mobile
+      app development needs. Our Clients have loved our one-point-contact
+      systems for addressing their concerns.
+    </p>
 
-        <div className="experts_portfolio">
+  
+
+        <div className="flex gap-10">
           {/* LEFT SECTION */}
           <div className="left_expert_portfolio">
             <div className="expert_box red_gradient">
