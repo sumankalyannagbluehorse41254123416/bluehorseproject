@@ -1,154 +1,143 @@
-
 import Image from "next/image";
 
 export default function EcommerceServiceSection() {
+  const services = [
+    {
+      title: "Shopify",
+      img: "/assest/images/sliderlogo/shopify.png",
+      points: [
+        {
+          head: "Affordable & High-Quality:",
+          text: "Professional stores at the best price.",
+        },
+        {
+          head: "Effortless Growth:",
+          text: "Scales seamlessly with your business.",
+        },
+        {
+          head: "Fast & Secure Transactions:",
+          text: "Optimized checkout & payment security.",
+        },
+      ],
+    },
+    {
+      title: "Magento",
+      img: "/assest/images/sliderlogo/mezento.png",
+      points: [
+        {
+          head: "Open-Source Freedom:",
+          text: "Fully customizable eCommerce platform.",
+        },
+        {
+          head: "Feature-Rich & Scalable:",
+          text: "High performance with advanced features",
+        },
+        {
+          head: "Full Control & Cost Efficiency:",
+          text: "Scales affordably with your needs.",
+        },
+      ],
+    },
+    {
+      title: "TezCommerce",
+      img: "/assest/images/sliderlogo/tezcommerce.png",
+      points: [
+        {
+          head: "Open-Source Freedom:",
+          text: "Fully customizable eCommerce platform.",
+        },
+        {
+          head: "Feature-Rich & Scalable:",
+          text: "High performance with advanced features",
+        },
+        {
+          head: "Full Control & Cost Efficiency:",
+          text: "Scales affordably with your needs.",
+        },
+      ],
+    },
+  ];
+
   return (
-    <main className="font-poppins bg-sky-300 text-white">
-      
+    <section className="bg-[#1e93b3] text-white py-20">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Heading */}
+        <h2 className="text-4xl font-semibold border-b-2 border-white inline-block pb-3">
+          eCommerce Development
+        </h2>
 
-      {/* eCommerce Section */}
-      <section>
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-semibold border-b-2 inline-block pb-2">
-            eCommerce Development
-          </h2>
+        <p className="mt-6 max-w-5xl text-lg leading-8 text-white/90">
+          Trusted by 200+ brands, we specialize in eCommerce solutions that
+          deliver real results and measurable growth.
+          <a
+            href="#"
+            className="ml-3 underline font-semibold inline-flex items-center gap-2">
+            View More ↗
+          </a>
+        </p>
 
-          <p className="mt-6 max-w-4xl leading-7">
-            Trusted by 200+ brands, we specialize in eCommerce solutions that
-            deliver measurable growth.
-            <a
-              href="https://www.bluehorse.in/services/ecommerce-development-services"
-              className="ml-2 font-bold underline inline-flex items-center gap-1">
-              View More →
-            </a>
-          </p>
-
-          {/* Commerce Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-14">
-            {[
-              {
-                title: "Shopify",
-                img: "/assest/images/sliderlogo/shopify.png",
-                points: [
-                  "Affordable & High-Quality",
-                  "Effortless Growth",
-                  "Fast & Secure Transactions",
-                ],
-              },
-              {
-                title: "Magento",
-                img: "/assest/images/sliderlogo/mezento.png",
-                points: [
-                  "Open-Source Freedom",
-                  "Feature-Rich & Scalable",
-                  "Full Control & Cost Efficiency",
-                ],
-              },
-              {
-                title: "TezCommerce",
-                img: "/assest/images/sliderlogo/tezcommerce.png",
-                points: [
-                  "Open-Source Freedom",
-                  "Feature-Rich & Scalable",
-                  "Full Control & Cost Efficiency",
-                ],
-              },
-            ].map((item) => (
-              <div
-                key={item.title}
-                className="border border-white/40 rounded-lg p-6">
-                <div className="flex items-center gap-4">
-                  <Image
-                    src={item.img}
-                    alt={item.title}
-                    width={60}
-                    height={60}
-                    priority
-                  />
-                  <h3 className="text-xl font-bold border-b pb-1">
-                    {item.title}
-                  </h3>
-                </div>
-
-                <ul className="mt-8 space-y-6">
-                  {item.points.map((p) => (
-                    <li
-                      key={p}
-                      className="pl-4 border-l border-white/60 leading-7">
-                      {p}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-
-          {/* Brand Logos */}
-          <div className="logo-box flex flex-wrap gap-8 mt-16">
-            {[
-              {
-                href: "https://www.bluehorse.in/work/the-souled-store",
-                img: "tss-white.png",
-                alt: "The Souled Store",
-              },
-              {
-                href: "https://www.bluehorse.in/work/mufti-jeans",
-                img: "mufti-white.png",
-                alt: "Mufti",
-              },
-              {
-                href: "https://www.bluehorse.in/work/manyavar-brand-for-ethnic-wear-collection",
-                img: "many-white.png",
-                alt: "Manyavar",
-              },
-              {
-                href: "https://www.bluehorse.in/work/eureka-fobes",
-                img: "eureka-white.png",
-                alt: "Eureka Forbes",
-              },
-              {
-                href: "https://www.bluehorse.in/work/madoverdonuts",
-                img: "mod-white.png",
-                alt: "Mad Over Donuts",
-              },
-              {
-                href: "https://www.royalcanin.com",
-                img: "royal-white.png",
-                alt: "Royal Canin",
-              },
-              {
-                href: "https://www.bluehorse.in/work/kora-ecommerce-solutions-for-ethnic-brand",
-                img: "kora-white.png",
-                alt: "Kora",
-              },
-              {
-                href: "https://celloworld.com",
-                img: "cello-white.png",
-                alt: "Cello",
-              },
-              {
-                href: "https://www.bluehorse.in/work/theformart",
-                img: "form-whitee.png",
-                alt: "The Formart",
-              },
-            ].map((brand) => (
-              <a
-                key={brand.alt}
-                href={brand.href}
-                target="_blank"
-                rel="noopener noreferrer">
+        {/* Services Grid */}
+        <div className="grid lg:grid-cols-3 mt-16">
+          {services.map((item, i) => (
+            <div
+              key={item.title}
+              className={`px-8 ${
+                i !== services.length - 1
+                  ? "lg:border-r border-white/40"
+                  : ""
+              }`}>
+              {/* Header */}
+              <div className="flex items-center gap-4 mb-12">
                 <Image
-                  src={`https://www.bluehorse.in/servicess-page/assets/images-2/${brand.img}`}
-                  alt={brand.alt}
-                  width={120}
-                  height={40}
-                  className="object-contain"
+                  src={item.img}
+                  alt={item.title}
+                  width={60}
+                  height={60}
                 />
-              </a>
-            ))}
-          </div>
+                <h3 className="text-3xl font-semibold">{item.title}</h3>
+              </div>
+
+              {/* Points */}
+              <div className="space-y-10">
+                {item.points.map((p) => (
+                  <div
+                    key={p.head}
+                    className="pl-6 border-l border-white/40">
+                    <h4 className="font-semibold text-lg mb-2">
+                      {p.head}
+                    </h4>
+                    <p className="text-white/90">{p.text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
-      </section>
-    </main>
+
+        {/* Logo Row */}
+        <div className="flex flex-no-wrap items-center justify-between gap-5 mt-20 opacity-90">
+          {[
+            "tss-white.png",
+            "mufti-white.png",
+            "many-white.png",
+            "eureka-white.png",
+            "mod-white.png",
+            "royal-white.png",
+            "kora-white.png",
+            "cello-white.png",
+            "form-whitee.png",
+          ].map((logo) => (
+            <Image
+              key={logo}
+              src={`https://www.bluehorse.in/servicess-page/assets/images-2/${logo}`}
+              alt="brand"
+              width={130}
+              height={90}
+              className="object-contain"
+            />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
