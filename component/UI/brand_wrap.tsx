@@ -75,7 +75,6 @@ const BrandLogos: React.FC = () => {
                 flex items-center justify-center
                 p-8
                 border-gray-400
-               
               "
               style={{
                 borderRight: (index + 1) % 5 !== 0 ? "1px solid #9ca3af" : "",
