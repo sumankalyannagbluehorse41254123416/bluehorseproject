@@ -1,4 +1,3 @@
-
 // export default Footer;
 import Image from "next/image";
 import React from "react";
@@ -12,10 +11,12 @@ const Footer: React.FC = () => {
           {/* Left */}
           <div>
             <div className="flex items-center gap-5 mb-5">
-              <img
+              <Image
                 src="https://www.bluehorse.in/imagesnew/bh_logo.png"
                 alt="Bluehorse Logo"
                 className="w-auto h-17 border-r-[3px] border-sky-500 pr-5"
+                width={100}
+                height={100}
               />
               <h3 className="text-sky-600 font-semibold tracking-wide text-[20px]">
                 EMPOWERING <br /> BUSINESS ONLINE
