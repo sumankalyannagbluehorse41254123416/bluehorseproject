@@ -9,7 +9,7 @@ const WinSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
-            <h2 className="text-5xl font-bold text-[#1e73be] uppercase tracking-wide">
+            <h2 className="text-[63px] font-bold text-[#1e73be] uppercase tracking-wide">
               Win Win Win
             </h2>
             <div className="mx-auto lg:mx-0 my-8 max-w-md w-full item">
@@ -33,68 +33,66 @@ const WinSection: React.FC = () => {
 
           {/* RIGHT CONTENT */}
           <div>
-            <div className="grid sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
+
               {/* BOX 1 */}
-              <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition">
+              <div className="bg-white border border-gray-200 rounded-lg p-6">
                 <Image
                   src="https://www.bluehorse.in/assets/image/about1.webp"
                   alt="The Expectations"
-                  width={50}
-                  height={50}
+                  width={60}
+                  height={60}
                   className="mb-4"
                 />
-
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                <h3 className="text-xl font-semibold text-gray-700 mb-2">
                   The Expectations
                 </h3>
-
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Clients: Return on investment. <br />
-                  Team: Career growth and work-life balance <br />
+                <p className="text-gray-600 leading-relaxed">
+                  Clients: Return on investment.<br />
+                  Team: Career growth and work-life balance<br />
                   Founders: Business growth
                 </p>
               </div>
 
               {/* BOX 2 */}
-              <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition">
+              <div className="bg-white border border-gray-200 rounded-lg p-6">
                 <Image
                   src="https://www.bluehorse.in/assets/image/about2.webp"
                   alt="The Framework"
-                  width={50}
-                  height={50}
+                  width={60}
+                  height={60}
                   className="mb-4"
                 />
-
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                <h3 className="text-xl font-semibold text-gray-700 mb-2">
                   The Framework
                 </h3>
-
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  A joint responsibility where one wins only by enabling the
-                  success of others.
+                <p className="text-gray-600 leading-relaxed">
+                  A joint responsibility where one wins only by enabling the success of others.
                 </p>
               </div>
 
-              {/* BOX 3 */}
-              <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition sm:col-span-2 lg:col-span-1">
-                <Image
-                  src="https://www.bluehorse.in/assets/image/about3.webp"
-                  alt="The Results"
-                  width={50}
-                  height={50}
-                  className="mb-4"
-                />
-
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">
-                  The Results
-                </h3>
-
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  All stakeholders – Clients, Team, and Founders accomplish
-                  their desired outcomes as they engage with BlueHorse.
-                </p>
+              {/* BOX 3 CENTER */}
+              <div className="sm:col-span-2 flex justify-center">
+                <div className="bg-white border border-gray-200 rounded-lg p-6 w-full sm:w-[48%]">
+                  <Image
+                    src="https://www.bluehorse.in/assets/image/about3.webp"
+                    alt="The Results"
+                    width={60}
+                    height={60}
+                    className="mb-4"
+                  />
+                  <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                    The Results
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    All stakeholders – Clients, Team, and Founders accomplish their desired outcomes as they engage with BlueHorse.
+                  </p>
+                </div>
               </div>
+
             </div>
+
+
           </div>
         </div>
       </div>

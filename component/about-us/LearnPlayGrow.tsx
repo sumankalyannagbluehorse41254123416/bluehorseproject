@@ -8,7 +8,7 @@ const LearnPlayGrow: React.FC = () => {
     <section className="w-full py-20">
       <div className="max-w-7xl mx-auto px-4">
         {/* Intro Text */}
-        <h4 className="text-center text-gray-600 max-w-4xl mx-auto leading-relaxed text-lg mb-16">
+        <h4 className="text-center text-gray-600 max-w-[942px] mx-auto leading-relaxed text-lg mb-16">
           As an organisation, we aim to create a Google-like fun culture which
           we call ‘Learn-Play-Grow’. Our purpose is to offer a work-life balance
           by creating an environment where our people thrive by having the best
@@ -16,7 +16,7 @@ const LearnPlayGrow: React.FC = () => {
         </h4>
 
         {/* LEARN */}
-        <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
+        <div className="grid grid-cols-2 items-center">
           {/* Image */}
           <div>
             <Image
@@ -29,7 +29,7 @@ const LearnPlayGrow: React.FC = () => {
           </div>
 
           {/* Content */}
-          <div className="text-center lg:text-left">
+          <div className="text-center p-12.5">
             <h3 className="text-3xl font-semibold text-gray-700 uppercase tracking-wide mb-4 text-center">
               Learn
             </h3>
@@ -42,9 +42,9 @@ const LearnPlayGrow: React.FC = () => {
         </div>
 
         {/* PLAY */}
-        <div className="grid lg:grid-cols-2 gap-10 items-center mb-20">
+        <div className="grid grid-cols-2 items-center">
           {/* Content */}
-          <div className="text-center lg:text-left order-2 lg:order-1">
+          <div className="text-center p-12.5">
             <h3 className="text-3xl font-semibold text-gray-700 uppercase tracking-wide mb-4 text-center">
               Play
             </h3>
@@ -56,7 +56,7 @@ const LearnPlayGrow: React.FC = () => {
           </div>
 
           {/* Image */}
-          <div className="order-1 lg:order-2">
+          <div className="order-1 order-2">
             <Image
               src="https://www.bluehorse.in/assets/image/About/Play.webp"
               alt="Play"
@@ -68,7 +68,7 @@ const LearnPlayGrow: React.FC = () => {
         </div>
 
         {/* GROW */}
-        <div className="grid lg:grid-cols-2 gap-10 items-center">
+        <div className="grid grid-cols-2 items-center">
           {/* Image */}
           <div>
             <Image
@@ -81,7 +81,7 @@ const LearnPlayGrow: React.FC = () => {
           </div>
 
           {/* Content */}
-          <div className="text-center lg:text-left">
+          <div className="text-center p-12.5">
             <h3 className="text-3xl font-semibold text-gray-700 uppercase tracking-wide mb-4 text-center">
               Grow
             </h3>
@@ -92,7 +92,9 @@ const LearnPlayGrow: React.FC = () => {
             </p>
           </div>
         </div>
+
       </div>
+
     </section>
   );
 };
