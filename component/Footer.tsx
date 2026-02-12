@@ -7,9 +7,9 @@ import { RiTwitterXLine } from "react-icons/ri";
 
 const Footer: React.FC = () => {
   return (
-    <footer className=" container">
+    <footer className=" container ">
       {/* Top Section */}
-      <div className="flex justify-between gap-10 flex-wrap">
+      <div className="flex justify-between gap-10 flex-wrap pt-10">
         {/* Left */}
         <div className="max-w-[400px]">
           <div className="flex items-center gap-5 mb-5">

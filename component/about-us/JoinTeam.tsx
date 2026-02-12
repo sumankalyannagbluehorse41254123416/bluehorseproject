@@ -17,9 +17,7 @@ const JoinTeam: React.FC = () => {
 
             <p className="text-gray-600">
               If you re passionate about Design and Technology, drop in for a
-              cup of Coffee at our office.
-              <br />
-              PS: Dump those fancy degrees when you meet us. Our founders aren’t
+              cup of Coffee at our office. PS: Dump those fancy degrees when you meet us. Our founders aren’t
               big fans of it.
             </p>
 
@@ -28,13 +26,13 @@ const JoinTeam: React.FC = () => {
               href="https://www.bluehorse.in/careers.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block border border-[#1e73be] text-[#1e73be] px-6 py-3 rounded-md font-medium hover:bg-[#1e73be] hover:text-white transition">
+              className=" mt-5 inline-block border border-[#0c83d1] text-[#0c83d1] px-4 py-2 rounded-md font-medium hover:bg-[#1e73be] hover:text-white transition">
               AVAILABLE POSITIONS
             </a>
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center">
             <div className="max-w-md w-full">
               <Image
                 src="https://www.bluehorse.in/assets/image/abt-career.jpg"

@@ -7,24 +7,27 @@ const IntroSection: React.FC = () => {
     <section className="Intro-Wrapper">
       {/* Desktop Video */}
       <video
-        className="Intro-BG w-full"
-        autoPlay
-        muted
-        loop
-        preload="auto"
-        poster="/assest/images/Default_image.jpg">
-        <source
-          src="/assest/video/HomapgebannervideoFaded.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
+  className="w-full h-screen object-cover"
+  autoPlay
+  muted
+  loop
+  playsInline
+  preload="auto"
+  poster="/assest/images/Default_image.jpg"
+>
+  <source
+    src="/assest/video/HomapgebannervideoFaded.mp4"
+    type="video/mp4"
+  />
+  Your browser does not support the video tag.
+</video>
+
 
 
 
       <div className="absolute inset-0 z-10 flex items-center">
   <div className="container mx-auto px-4 flex justify-end">
-    <div className="container text-white text-right mt-60">
+    <div className="container text-white text-right mt-57">
 
       {/* Heading */}
       <h1

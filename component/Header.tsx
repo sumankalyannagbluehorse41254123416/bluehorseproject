@@ -20,7 +20,7 @@ const Header = () => {
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300
           ${scrolled ? "bg-white" : "bg-transparent"}
         `}>
-        <div className="mx-20">
+        <div className="container">
           <nav className="flex items-center justify-between h-20">
             {/* LOGO */}
             <Link href="/">
@@ -36,6 +36,7 @@ const Header = () => {
               {/* djjhsdhkds */}
               {[
                 { name: "Work", link: "/work" },
+                { name: "Services", link: "/services" },
                 { name: "About Us", link: "/about-us" },
                 { name: "Careers", link: "/careers" },
                 { name: "Contact", link: "/contact" },
@@ -47,8 +48,8 @@ const Header = () => {
                   className={`transition-colors duration-300
                     ${
                       scrolled ?
-                        "text-blue-600 hover:text-blue-800"
-                      : "text-white hover:text-blue-300"
+                        "text-blue-600"
+                      : "text-[#515253]"
                     }
                   `}>
                   {item.name}

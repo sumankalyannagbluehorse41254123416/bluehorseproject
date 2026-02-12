@@ -11,7 +11,7 @@ const AboutVideo: React.FC = () => {
   return (
     <>
       <section className="w-full py-16">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="container pt-20">
           <div className="mb-10">
             <h1 className="text-4xl md:text-5xl font-semibold tracking-wide text-gray-700 uppercase">
               About BlueHorse Software
@@ -22,10 +22,10 @@ const AboutVideo: React.FC = () => {
               engineers working together to breathe life into your ideas.
             </p>
           </div>
-          <div className="w-full h-full overflow-hidden shadow-lg ">
-            <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+          <div className="w-full h-full overflow-hidden">
+            <div className="relative w-full" style={{ paddingTop: "41.25%" }}>
               <iframe
-                className="absolute top-0 left-0 w-full h-full"
+                className="absolute top-0 left-0 w-full h-110"
                 src="https://www.youtube.com/embed/LCHfQ4eavQ0?rel=0"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -35,13 +35,13 @@ const AboutVideo: React.FC = () => {
           </div>
 
           {/* Bottom Content */}
-          <div className="text-center mt-10">
-            <h3 className="text-xl md:text-2xl font-semibold text-gray-700 uppercase tracking-wide">
-              Choose a job you love and you’ll never have to work a day in your
-              life
+          <div className="text-center py-12">
+
+            <h3 className="font-bignoodle text-[32px] uppercase text-gray-700">
+              CHOOSE A JOB YOU LOVE AND YOU’LL NEVER HAVE TO WORK A DAY IN YOUR LIFE
             </h3>
 
-            <p className="mt-4 text-gray-500 max-w-4xl mx-auto leading-relaxed">
+            <p className=" mt-5 text-gray-500 max-w-5xl mx-auto leading-relaxed text-base ">
               We at{" "}
               <span className="text-gray-700 font-medium">
                 BlueHorse Software
@@ -51,7 +51,10 @@ const AboutVideo: React.FC = () => {
               emphasis on process quality and customer satisfaction. We are here
               to empower your business online.
             </p>
+
           </div>
+
+
         </div>
       </section>
       <WinSection />

@@ -7,12 +7,18 @@ const MeetTeam: React.FC = () => {
   return (
     <section className="meet_team common_padding pb-0">
       <div className="container items-center">
-        <h3 className="sectionTitle text-center">Meet Our Team</h3>
-        <p className="sectionDetails text-center">
-          Meet Our Team Our team inspires continuous excellence, driving our
-          values and leading our <span className="inherit_text">company</span>{" "}
-          to the next level.
-        </p>
+        <div className="text-center max-w-3xl mx-auto">
+          <h3 className="text-[40px] font-normal text-gray-700">
+            MEET OUR TEAM
+          </h3>
+
+          <p className="mt-4 text-gray-500 text-base md:text-lg leading-relaxed">
+            Meet Our Team Our team inspires continuous excellence, driving our values
+            and leading our <span className="text-gray-700">company</span> to the next
+            level.
+          </p>
+        </div>
+
         <figure>
           <Image
             src="https://www.bluehorse.in/assets/image/About/about_team.webp"
