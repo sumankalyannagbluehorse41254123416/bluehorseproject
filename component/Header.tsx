@@ -32,7 +32,7 @@ const Header = () => {
     >
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between h-20">
-          
+
           {/* LOGO */}
           <Link href="/">
             <img
@@ -44,32 +44,35 @@ const Header = () => {
 
           {/* NAV LINKS */}
           <div className="flex gap-8 text-[20px] big-noodle font-normal items-center leading-6 tracking-[1px]">
-  {navItems.map((item) => (
-    <Link
-      key={item.name}
-      href={item.link}
-      className={`relative flex items-center gap-2 transition-all duration-300
-        ${
-          scrolled
-            ? "text-[#0c83d1]"
-            : "text-[#515253]"
-        }
-        hover:-translate-y-1
-        after:absolute after:left-0 after:-bottom-1
-        after:h-[2px] after:w-0
-        after:bg-[#0c83d1]
-        after:transition-all after:duration-300
-        hover:after:w-full
-      `}
-    >
-      {item.name}
+            {navItems.map((item) => (
 
-      {item.hasArrow && (
-        <FaChevronDown className="text-xs transition-transform duration-300" />
-      )}
-    </Link>
-  ))}
-</div>
+              <Link
+                key={item.name}
+                href={item.link}
+                className={`relative flex items-center gap-2 transition-all duration-300 group
+        ${scrolled ? "text-[#0c83d1]" : "text-[#515253]"}
+      `}
+              >
+
+                {/* TEXT WRAPPER (underline only here) */}
+                <span className="relative">
+                  {item.name}
+
+                  {/* Underline */}
+                  <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#0c83d1] transition-all duration-300 group-hover:w-full"></span>
+                </span>
+
+                {/* Arrow only for Services */}
+                {item.hasArrow && (
+                  <FaChevronDown className="text-xs transition-transform duration-300 group-hover:rotate-180" />
+                )}
+
+              </Link>
+
+            ))}
+          </div>
+
+
 
         </nav>
       </div>
