@@ -2,28 +2,21 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import {
-  FaLinkedinIn,
-  FaFacebookF,
-  FaInstagram,
-  FaTwitter,
-  FaYoutube,
-} from "react-icons/fa";
 
 export default function BlogIntroSection() {
   const socialLinks = [
-    { name: "LinkedIn", icon: <FaLinkedinIn />, color: "text-[#0A66C2]", bg: "bg-[#0A66C2]"  },
-    { name: "Facebook", icon: <FaFacebookF />, color: "text-[#1877F2]" },
-    { name: "Instagram", icon: <FaInstagram />, color: "text-[#E4405F]" },
-    { name: "Twitter", icon: <FaTwitter />, color: "text-[#1DA1F2]" },
-    { name: "Youtube", icon: <FaYoutube />, color: "text-[#FF0000]" },
+    { name: "LinkedIn", img: "/assest/images/sliderlogo/linkedin.png" },
+    { name: "Facebook", img: "/assest/images/sliderlogo/facebook.png" },
+    { name: "Instagram", img: "/assest/images/sliderlogo/instagram.png" },
+    { name: "Twitter", img: "/assest/images/sliderlogo/twitter.png" },
+    { name: "Youtube", img: "/assest/images/sliderlogo/youtube.png" },
   ];
 
   return (
     <section
       className="w-full py-37.5 pb-12.5 bg-cover bg-top bg-no-repeat"
       style={{
-        backgroundImage: "url('/assest/images/Blog/into-bg.jpg')",
+        backgroundImage: "url('/assest/images/sliderlogo/into-bg.jpg')",
       }}
     >
       <div className="container">
@@ -39,7 +32,7 @@ export default function BlogIntroSection() {
         <div className="flex flex-wrap gap-10">
 
           {/* LEFT BLOG */}
-          <div className="flex-1 min-w-[650px]">
+          <div className="flex-1 min-w-162.5">
             <article>
 
               <Link href="#">
@@ -63,16 +56,16 @@ export default function BlogIntroSection() {
               </p>
 
               <div className="flex items-center justify-between flex-wrap gap-4">
-                <span className="px-4 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">
+                <span className="px-5 py-3 bg-[#f5f3fe] text-black text-sm">
                   MSME
                 </span>
 
                 <div className="flex items-center gap-3">
                   <Image
-                    src="/assest/images/sliderlogo/author.jpg"
+                    src="/assest/images/sliderlogo/sir.jpg"
                     alt="author"
-                    width={40}
-                    height={40}
+                    width={50}
+                    height={50}
                     className="rounded-full"
                   />
                   <p className="text-gray-700">Vineet Agarwala</p>
@@ -95,9 +88,12 @@ export default function BlogIntroSection() {
                   placeholder="Email Address"
                   className="flex-1 px-4 py-3 outline-none"
                 />
-                <button className="bg-gray-200 px-6 font-semibold">
+                <button className="bg-[#f0f0f0] px-6 font-semibold text-black 
+                   hover:bg-[#0c83d1] hover:text-white 
+                   transition-all duration-300">
                   JOIN
                 </button>
+
               </div>
             </div>
 
@@ -109,13 +105,19 @@ export default function BlogIntroSection() {
                 {socialLinks.map((item, i) => (
                   <div
                     key={i}
-                    className="flex items-center gap-4 bg-gray-100 px-5 py-4 rounded-md"
+                    className="flex items-center gap-4 bg-gray-100 px-5 py-4 rounded-md
+             border-2 border-transparent
+             hover:border-[#0c83d1]
+             transition-all duration-300 cursor-pointer"
                   >
-                    <div
-                      className={`w-8 h-8 flex items-center justify-center rounded-full bg-white ${item.color}`}
-                    >
-                      {item.icon}
-                    </div>
+
+                    <Image
+                      src={item.img}
+                      alt={item.name}
+                      width={32}
+                      height={32}
+                      className="object-contain"
+                    />
 
                     <p className="text-gray-700">{item.name}</p>
                   </div>
