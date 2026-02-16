@@ -26,11 +26,14 @@ body {
 @font-face {
   font-family: "BigNoodleTitling";
   src: url("/font/big_noodle_titling.ttf") format("truetype");
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
+  font-display: swap;
+
 }
 
-.big-noddle {
+
+.big-noodle {
   font-family: "BigNoodleTitling", sans-serif;
 }
 
@@ -112,4 +115,3 @@ body {
 .banner_slider {
   margin: auto;
 }
-
