@@ -25,12 +25,12 @@ export default function BlogCategories() {
   return (
     <section className=" py-10">
       <div className="container mx-auto px-4">
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap gap-2">
           {categories.map((cat, index) => (
             <Link
               key={index}
               href={`/blog_category/${cat.slug}`}
-              className="px-6 py-3 bg-[#f8f7fc] text-gray-700 rounded-md
+              className="px-5 py-3 bg-[#f8f7fc] text-gray-700 rounded-md
                          text-sm font-medium
                          hover:bg-[#0c83d1] hover:text-white
                          transition-all duration-300"

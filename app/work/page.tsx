@@ -1,7 +1,9 @@
-import React from "react";
 
-const page = () => {
-  return <div>Work Page</div>;
-};
-
-export default page;
+import Workowo from "@/component/work/Workowo";
+export default function Work() {
+  return (
+    <>
+      <Workowo />
+    </>
+  );
+}
