@@ -42,7 +42,7 @@ const WorkSection = () => {
             {/* CARD */}
             <div
               ref={cardRef}
-              className="bh_work_img relative group h-[700px] overflow-hidden bg-cover bg-center rounded-md"
+              className="bh_work_img relative group h-175 overflow-hidden bg-cover bg-center rounded-md"
               style={{
                 backgroundImage: "url('/assest/images/wow_momo.jpeg')",
               }}>
@@ -50,7 +50,7 @@ const WorkSection = () => {
               <div
                 className={`absolute inset-0 bg-cyan-600 z-20 transform ${
                   inView ? "translate-x-full" : "translate-x-0"
-                } transition-transform duration-[1200ms] ease-in-out`}
+                } transition-transform duration-1200 ease-in-out`}
               />
 
               {/* HOVER OVERLAY */}
@@ -58,7 +58,7 @@ const WorkSection = () => {
                 <div className="mb-6">
                   <Image
                     src="https://www.bluehorse.in/BH WORK PAGE/assets/images/wowmomo_logo.png"
-                    className="w-[150px] mx-auto"
+                    className="w-37.5 mx-auto"
                     alt="logo"
                     width={100}
                     height={100}
@@ -109,7 +109,7 @@ const WorkSection = () => {
               <div
                 className={`absolute inset-0 bg-cyan-600 z-20 transform ${
                   inView ? "translate-x-full" : "translate-x-0"
-                } transition-transform duration-[1200ms] ease-in-out`}
+                } transition-transform duration-1200 ease-in-out`}
               />
 
               {/* HOVER OVERLAY */}
@@ -117,7 +117,7 @@ const WorkSection = () => {
                 <div className="mb-6">
                   <Image
                     src="https://www.bluehorse.in/BH WORK PAGE/assets/images/wowmomo_logo.png"
-                    className="w-[150px] mx-auto"
+                    className="w-37.5 mx-auto"
                     alt="logo"
                     width={100}
                     height={100}
