@@ -115,3 +115,7 @@ body {
 .banner_slider {
   margin: auto;
 }
+.swiper-pagination-bullet {
+  width: 15px !important;
+  height: 15px !important;
+}

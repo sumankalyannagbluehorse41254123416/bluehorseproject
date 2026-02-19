@@ -22,27 +22,13 @@ const IntroSection: React.FC = () => {
   Your browser does not support the video tag.
 </video>
 
-
-
-
       <div className="absolute inset-0 z-10 flex items-center">
-  <div className="container mx-auto px-4 flex justify-end">
+  <div className="container mx-auto flex justify-end">
     <div className="container text-white text-right mt-57">
 
       {/* Heading */}
       <h1
-        className="
-          font-shoulders
-          uppercase
-          font-extrabold
-          tracking-widest
-          text-3xl
-          sm:text-4xl
-          md:text-5xl
-          lg:text-6xl
-          leading-tight
-        "
-      >
+        className="uppercase big-noodle text-[95px] ">
         Trusted Web and Mobile App <br />
         Development Company
       </h1>
@@ -98,29 +84,6 @@ const IntroSection: React.FC = () => {
     </div>
   </div>
 </div>
-
-      {/* <div className="Intro-Content">
-        <h1 className="Highlight">
-          Trusted Web and Mobile App Development company
-        </h1>
-
-        <div className="Details">
-          At BlueHorse, we specialize in crafting scalable, high-performing
-          digital solutions. As a top-tier web and mobile app development
-          company, we bring our clients’ visions to life through clear
-          communication and expert guidance at every stage of the development
-          process.
-        </div>
-
-        <a
-          href="https://www.bluehorse.in/work.html"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="Button">
-          Case Studies
-        </a>
-
-      </div> */}
     </section>
   );
 };

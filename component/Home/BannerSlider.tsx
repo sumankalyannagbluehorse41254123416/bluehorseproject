@@ -27,19 +27,29 @@ const BannerSlider = () => {
         >
           <SwiperSlide>
             <a href="#" className="slide_img">
-              <img src="https://www.bluehorse.in/assets/image/slider3.jpg" />
+              <img
+               src="https://www.bluehorse.in/assets/image/slider3.jpg" 
+               alt="Slider 3"
+               className="py-10"
+               />
             </a>
           </SwiperSlide>
 
           <SwiperSlide>
             <a href="#" className="slide_img">
-              <img src="https://www.bluehorse.in/assets/image/slide2.jpg" />
+              <img src="https://www.bluehorse.in/assets/image/slide2.jpg"
+               alt="Slider 2"
+               className="py-10"
+               />
             </a>
           </SwiperSlide>
 
           <SwiperSlide>
             <a href="#" className="slide_img">
-              <img src="https://www.bluehorse.in/assets/image/slide1.jpg" />
+              <img src="https://www.bluehorse.in/assets/image/slide1.jpg" 
+               alt="Slider 1"
+               className="py-10"
+               />
             </a>
           </SwiperSlide>
         </Swiper>
