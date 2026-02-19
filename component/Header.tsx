@@ -1,10 +1,13 @@
 "use client";
+
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
+import ServicesSection from "@/component/work/woweats/ServicesSection";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [showServices, setShowServices] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,7 +30,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300
-        ${scrolled ? "bg-white shadow-md" : "bg-transparent"}
+        ${scrolled ? "bg-white shadow-md" : "bg-white"}
       `}
     >
       <div className="container mx-auto px-4">
@@ -37,43 +40,64 @@ const Header = () => {
           <Link href="/">
             <img
               src="https://www.bluehorse.in/assets/image/Common/Logo.png"
-              alt="BlueHorse Softwares logo"
-              className="h-auto w-27.5"
+              alt="Logo"
+              className="h-auto w-28"
             />
           </Link>
 
           {/* NAV LINKS */}
-          <div className="flex gap-8 text-[20px] big-noodle font-normal items-center leading-6 tracking-[1px]">
-            {navItems.map((item) => (
+          <div className="flex gap-14 text-[18px] items-center">
 
-              <Link
-                key={item.name}
-                href={item.link}
-                className={`relative flex items-center gap-2 transition-all duration-300 group
-        ${scrolled ? "text-[#0c83d1]" : "text-[#515253]"}
-      `}
-              >
+            {navItems.map((item) => {
 
-                {/* TEXT WRAPPER (underline only here) */}
-                <span className="relative">
+              // SERVICES ITEM
+              if (item.name === "Services") {
+                return (
+                  <div
+                    key={item.name}
+                    className="relative"
+                    onMouseEnter={() => setShowServices(true)}
+                    onMouseLeave={() => setShowServices(false)}
+                  >
+                    <Link
+                      href={item.link}
+                      className={`flex items-center gap-2 transition-all duration-300
+                        ${scrolled ? "text-[#0c83d1]" : "text-[#515253]"}
+                      `}
+                    >
+                      {item.name}
+                      <FaChevronDown
+                        className={`text-xs transition-transform duration-300 ${
+                          showServices ? "rotate-180" : ""
+                        }`}
+                      />
+                    </Link>
+
+                    {/* DROPDOWN */}
+                    {showServices && (
+                      <div className="absolute left-1/2 -translate-x-1/2 top-full pt-6 w-screen">
+                        <ServicesSection />
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
+              // OTHER ITEMS
+              return (
+                <Link
+                  key={item.name}
+                  href={item.link}
+                  className={`transition-all duration-300
+                    ${scrolled ? "text-[#0c83d1]" : "text-[#515253]"}
+                  `}
+                >
                   {item.name}
+                </Link>
+              );
+            })}
 
-                  {/* Underline */}
-                  <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#0c83d1] transition-all duration-300 group-hover:w-full"></span>
-                </span>
-
-                {/* Arrow only for Services */}
-                {item.hasArrow && (
-                  <FaChevronDown className="text-xs transition-transform duration-300 group-hover:rotate-180" />
-                )}
-
-              </Link>
-
-            ))}
           </div>
-
-
-
         </nav>
       </div>
     </header>
@@ -81,4 +105,3 @@ const Header = () => {
 };
 
 export default Header;
-
