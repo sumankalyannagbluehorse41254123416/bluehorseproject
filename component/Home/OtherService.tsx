@@ -36,28 +36,33 @@ export default function OtherService() {
               <Image
                 src="https://www.bluehorse.in/servicess-page/assets/images-2/eazy.png"
                 alt=""
-                width={100}
-                height={40}
+                width={200}
+                height={42}
+                className="h-10.5 w-auto object-contain"
               />
               <Image
                 src="https://www.bluehorse.in/servicess-page/assets/images-2/wow.png"
                 alt=""
-                width={100}
-                height={40}
+                width={200}
+                height={42}
+                className="h-10.5 w-auto object-contain"
               />
               <Image
                 src="https://www.bluehorse.in/servicess-page/assets/images-2/creoo.png"
                 alt=""
-                width={100}
-                height={40}
+                width={200}
+                height={42}
+                className="h-10.5 w-auto object-contain"
               />
               <Image
                 src="https://www.bluehorse.in/servicess-page/assets/images-2/e.png"
                 alt=""
-                width={100}
-                height={40}
+                width={200}
+                height={42}
+                className="h-10.5 w-auto object-contain"
               />
             </div>
+
           </div>
 
           {/* RIGHT SIDE */}
@@ -80,16 +85,20 @@ export default function OtherService() {
                 <Image
                   src="https://www.bluehorse.in/servicess-page/assets/images-2/creoo.png"
                   alt=""
-                  width={100}
-                  height={40}
+                  width={200}
+                  height={42}
+                  className="h-10.5 w-auto object-contain"
                 />
+
                 <Image
                   src="https://www.bluehorse.in/servicess-page/assets/images-2/tez.ai.png"
                   alt=""
-                  width={100}
-                  height={40}
+                  width={200}
+                  height={42}
+                  className="h-10.5 w-auto object-contain"
                 />
               </div>
+
             </div>
 
             {/* MARKETING CARD */}
@@ -112,16 +121,20 @@ export default function OtherService() {
                 <Image
                   src="https://www.bluehorse.in/servicess-page/assets/images-2/ekart.png"
                   alt=""
-                  width={100}
-                  height={40}
+                  width={200}
+                  height={42}
+                  className="h-10.5 w-auto object-contain"
                 />
+
                 <Image
                   src="https://www.bluehorse.in/servicess-page/assets/images-2/tss_logo%201.png"
                   alt=""
-                  width={100}
-                  height={40}
+                  width={200}
+                  height={42}
+                  className="h-10.5 w-auto object-contain"
                 />
               </div>
+
             </div>
           </div>
         </div>

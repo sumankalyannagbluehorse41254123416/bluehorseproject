@@ -75,7 +75,7 @@ const WorkSection = () => {
               </div>
 
               {/* TAGS */}
-              <div className="absolute bottom-4 left-4 flex gap-2 flex-wrap z-40">
+              <div className="absolute bottom-10 left-10 flex gap-2 flex-wrap z-40">
                 <span className="bg-white/20 backdrop-blur-md text-white text-sm px-3 py-1 rounded-md">
                   Top QSR Brand
                 </span>
@@ -91,7 +91,7 @@ const WorkSection = () => {
             {/* LINK BELOW CARD */}
             <Link
               href="#"
-              className="mt-4 text-gray-700 text-lg font-medium hover:text-black transition">
+              className="mt-12.5 text-gray-700 text-lg font-medium hover:text-black transition">
               View case study →
             </Link>
           </div>
@@ -134,7 +134,7 @@ const WorkSection = () => {
               </div>
 
               {/* TAGS */}
-              <div className="absolute bottom-4 left-4 flex gap-2 flex-wrap z-40">
+              <div className="absolute bottom-10 left-10 flex gap-2 flex-wrap z-40">
                 <span className="bg-white/20 backdrop-blur-md text-white text-sm px-3 py-1 rounded-md">
                   Top QSR Brand
                 </span>
@@ -150,7 +150,7 @@ const WorkSection = () => {
             {/* LINK BELOW CARD */}
             <Link
               href="#"
-              className="mt-4 text-gray-700 text-lg font-medium hover:text-black transition">
+              className="mt-12.5 text-gray-700 text-lg font-medium hover:text-black transition">
               View case study →
             </Link>
           </div>
