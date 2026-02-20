@@ -120,12 +120,12 @@ export default function HiringSection() {
           {jobs.map((job, index) => (
             <div
               key={index}
-              className="relative bg-[#eae8f5] p-6 pb-16 rounded-xl overflow-hidden"
+              className="relative bg-[#f5f3fe] p-6 pb-16 rounded-xl overflow-hidden"
             >
               {/* circles */}
-              <span className="absolute bottom-[-80px] right-[-80px] w-[200px] h-[200px] bg-blue-400 rounded-full opacity-20"></span>
-              <span className="absolute bottom-[-120px] right-[-120px] w-[300px] h-[300px] bg-blue-500 rounded-full opacity-15"></span>
-              <span className="absolute bottom-[-180px] right-[-180px] w-[450px] h-[450px] bg-blue-600 rounded-full opacity-10"></span>
+              <span className="circleone absolute bottom-[-80px] right-[-80px] w-[200px] h-[200px]  rounded-full opacity-20"></span>
+              <span className="circletwo absolute bottom-[-120px] right-[-120px] w-[300px] h-[300px]  rounded-full opacity-15"></span>
+              <span className="circletheree absolute bottom-[-180px] right-[-180px] w-[450px] h-[450px]  rounded-full opacity-10"></span>
 
               <h3 className="text-xl font-bold relative z-10">
                 {job.title}

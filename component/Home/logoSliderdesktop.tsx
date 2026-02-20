@@ -1,9 +1,5 @@
 "use client";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
-
 const logos = [
   {
     href: "https://koranm.com",
@@ -57,7 +53,8 @@ export default function LogoMarquee() {
             href={logo.href}
             target="_blank"
             rel="noreferrer"
-            className="slide_logo">
+            className="slide_logo"
+          >
             <img src={logo.img} alt="brand-logo" />
           </a>
         ))}

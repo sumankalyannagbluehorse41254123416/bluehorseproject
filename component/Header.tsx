@@ -29,9 +29,9 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300
-        ${scrolled ? "bg-white shadow-md" : "bg-white"}
-      `}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        scrolled ? "bg-white shadow-md" : "bg-white"
+      }`}
     >
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between h-20">
@@ -50,7 +50,7 @@ const Header = () => {
 
             {navItems.map((item) => {
 
-              // SERVICES ITEM
+              // ================= SERVICES MENU =================
               if (item.name === "Services") {
                 return (
                   <div
@@ -61,11 +61,25 @@ const Header = () => {
                   >
                     <Link
                       href={item.link}
-                      className={`flex items-center gap-2 transition-all duration-300
-                        ${scrolled ? "text-[#0c83d1]" : "text-[#515253]"}
-                      `}
+                      className={`relative group flex items-center gap-2 transition-all duration-300 ${
+                        scrolled ? "text-[#0c83d1]" : "text-[#515253]"
+                      }`}
                     >
-                      {item.name}
+                      {/* TEXT */}
+                      <span className="relative">
+                        {item.name}
+
+                        {/* Underline */}
+                        <span
+                          className={`absolute left-0 -bottom-1 h-[2px] w-0 transition-all duration-300 group-hover:w-full ${
+                            scrolled
+                              ? "bg-[#0c83d1]"
+                              : "bg-[#515253]"
+                          }`}
+                        ></span>
+                      </span>
+
+                      {/* Arrow */}
                       <FaChevronDown
                         className={`text-xs transition-transform duration-300 ${
                           showServices ? "rotate-180" : ""
@@ -83,16 +97,27 @@ const Header = () => {
                 );
               }
 
-              // OTHER ITEMS
+              // ================= OTHER NAV ITEMS =================
               return (
                 <Link
                   key={item.name}
                   href={item.link}
-                  className={`transition-all duration-300
-                    ${scrolled ? "text-[#0c83d1]" : "text-[#515253]"}
-                  `}
+                  className={`relative group transition-all duration-300 ${
+                    scrolled ? "text-[#0c83d1]" : "text-[#515253]"
+                  }`}
                 >
-                  {item.name}
+                  <span className="relative">
+                    {item.name}
+
+                    {/* Underline */}
+                    <span
+                      className={`absolute left-0 -bottom-1 h-[2px] w-0 transition-all duration-300 group-hover:w-full ${
+                        scrolled
+                          ? "bg-[#0c83d1]"
+                          : "bg-[#515253]"
+                      }`}
+                    ></span>
+                  </span>
                 </Link>
               );
             })}

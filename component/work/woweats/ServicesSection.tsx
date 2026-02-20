@@ -17,7 +17,7 @@ const ServicesSection = () => {
 
           {/* Column 1 */}
           <div>
-            <h2 className="text-2xl font-semibold border-b border-gray-300 pb-3 mb-6">
+            <h2 className="text-[20px] font-semibold border-b border-gray-300 pb-3 mb-6">
               eCommerce Development Services
             </h2>
 
@@ -35,7 +35,7 @@ const ServicesSection = () => {
 
           {/* Column 2 */}
           <div>
-            <h2 className="text-2xl font-semibold border-b border-gray-300 pb-3 mb-6">
+            <h2 className="text-[20px] font-semibold pb-3 mb-6">
               Other Services
             </h2>
 
@@ -60,25 +60,30 @@ const ServicesSection = () => {
         {/* RIGHT SIDE SLIDER */}
         <div>
           <Swiper
-            modules={[Autoplay, Pagination]}
+            modules={[Pagination]}
             slidesPerView={1}
             loop={true}
-            autoplay={{
-              delay: 4000,
-              disableOnInteraction: false,
+            
+            pagination={{
+              clickable: true,
             }}
-            pagination={{ clickable: true }}
-            className="rounded-2xl overflow-hidden"
+            className="nav custom-swiper rounded-2xl overflow-hidden"
           >
             {/* Slide 1 */}
             <SwiperSlide>
               <div className="bg-blue-600 text-white p-8 rounded-2xl min-h-[320px] flex flex-col justify-between">
+
                 <div>
-                  <h3 className="text-xl font-semibold mb-4">
+                  <h3 className="text-xl font-semibold">
                     7-Day Go Live
                   </h3>
 
-                  <p className="text-lg leading-relaxed">
+                  {/* Pagination will appear here */}
+                  <div className="mt-3">
+                    <div className="swiper-pagination"></div>
+                  </div>
+
+                  <p className="text-lg leading-relaxed mt-6">
                     Register your brand on our platform and launch a fully
                     optimized Shopify store in 1 week.
                   </p>
@@ -97,15 +102,21 @@ const ServicesSection = () => {
 
             {/* Slide 2 */}
             <SwiperSlide>
-              <div className="bg-blue-700 text-white p-8 rounded-2xl min-h-[320px] flex flex-col justify-between">
+              <div className="bg-blue-600 text-white p-8 rounded-2xl min-h-[320px] flex flex-col justify-between">
+
                 <div>
-                  <h3 className="text-xl font-semibold mb-4">
-                    Custom Shopify Setup
+                  <h3 className="text-xl font-semibold">
+                    7-Day Go Live
                   </h3>
 
-                  <p className="text-lg leading-relaxed">
-                    Get a fully customized Shopify experience designed
-                    for performance and high conversions.
+                  {/* Pagination will appear here */}
+                  <div className="mt-3">
+                    <div className="swiper-pagination"></div>
+                  </div>
+
+                  <p className="text-lg leading-relaxed mt-6">
+                    Register your brand on our platform and launch a fully
+                    optimized Shopify store in 1 week.
                   </p>
                 </div>
 
@@ -114,7 +125,7 @@ const ServicesSection = () => {
                     href="#"
                     className="inline-flex items-center gap-2 hover:underline"
                   >
-                    Start your store →
+                    Go digital in 7 days →
                   </Link>
                 </div>
               </div>
