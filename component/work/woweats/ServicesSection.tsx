@@ -17,7 +17,7 @@ const ServicesSection = () => {
 
           {/* Column 1 */}
           <div>
-            <h2 className="text-[20px] font-semibold border-b border-gray-300 pb-3 mb-6">
+            <h2 className="inline-block text-[20px] font-semibold border-b border-black pb-3 mb-6 hover:border-[#0c83d1] transition-colors duration-300">
               eCommerce Development Services
             </h2>
 
@@ -25,17 +25,22 @@ const ServicesSection = () => {
               <Link
                 key={index}
                 href="#"
-                className="flex justify-between items-center py-5 border-b border-gray-200 text-gray-700 hover:text-blue-600 transition duration-300"
+                className="flex justify-between items-center py-5 border-b border-gray-200 text-gray-700 
+                 hover:text-[#0c83d1] hover:border-[#0c83d1] 
+                 transition-all duration-300 hover:translate-x-[10px]"
               >
                 <span>{item}</span>
-                <span className="text-lg">›</span>
+                <span className="text-lg transition-transform duration-300 group-hover:translate-x-1">
+                  ›
+                </span>
               </Link>
             ))}
           </div>
 
           {/* Column 2 */}
           <div>
-            <h2 className="text-[20px] font-semibold pb-3 mb-6">
+            <h2 className="text-[20px] font-semibold pb-3 mb-6 
+                  transition-colors duration-300">
               Other Services
             </h2>
 
@@ -48,10 +53,17 @@ const ServicesSection = () => {
               <Link
                 key={index}
                 href="#"
-                className="flex justify-between items-center py-5 border-b border-gray-200 text-gray-700 hover:text-blue-600 transition duration-300"
+                className="group flex justify-between items-center py-5 border-b border-gray-200 
+                 text-gray-700 transition-all duration-300
+                 hover:text-[#0c83d1] hover:border-[#0c83d1] hover:translate-x-[10px]"
               >
-                <span>{item}</span>
-                <span className="text-lg">›</span>
+                <span className="transition-all duration-300">
+                  {item}
+                </span>
+
+                <span className="text-lg transition-transform duration-300 group-hover:translate-x-1">
+                  ›
+                </span>
               </Link>
             ))}
           </div>
@@ -60,10 +72,13 @@ const ServicesSection = () => {
         {/* RIGHT SIDE SLIDER */}
         <div>
           <Swiper
-            modules={[Pagination]}
+            modules={[Pagination, Autoplay]}
             slidesPerView={1}
             loop={true}
-            
+            autoplay={{
+              delay: 3000, 
+              disableOnInteraction: false, 
+            }}
             pagination={{
               clickable: true,
             }}
@@ -71,7 +86,7 @@ const ServicesSection = () => {
           >
             {/* Slide 1 */}
             <SwiperSlide>
-              <div className="bg-blue-600 text-white p-8 rounded-2xl min-h-[320px] flex flex-col justify-between">
+              <div className="bg-[#0c83d1] text-white p-8 rounded-2xl min-h-[320px] flex flex-col justify-between">
 
                 <div>
                   <h3 className="text-xl font-semibold">
@@ -102,7 +117,7 @@ const ServicesSection = () => {
 
             {/* Slide 2 */}
             <SwiperSlide>
-              <div className="bg-blue-600 text-white p-8 rounded-2xl min-h-[320px] flex flex-col justify-between">
+              <div className="bg-[#0c83d1] text-white p-8 rounded-2xl min-h-[320px] flex flex-col justify-between">
 
                 <div>
                   <h3 className="text-xl font-semibold">
