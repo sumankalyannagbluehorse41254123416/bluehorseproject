@@ -36,13 +36,15 @@ const WorkSection = () => {
           written in the solutions we build — not in what we say.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-25">
           {/* WORK CARD */}
+          
           <div className="flex flex-col">
+            <h3 className="text-[30px] font-semibold mb-5">Wow Eats</h3>
             {/* CARD */}
             <div
               ref={cardRef}
-              className="bh_work_img relative group h-175 overflow-hidden bg-cover bg-center rounded-md"
+              className="bh_work_img relative group h-150 overflow-hidden bg-cover bg-center rounded-md"
               style={{
                 backgroundImage: "url('/assest/images/wow_momo.jpeg')",
               }}>
@@ -55,7 +57,7 @@ const WorkSection = () => {
 
               {/* HOVER OVERLAY */}
               <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-center items-center p-8 text-center z-30">
-                <div className="mb-6">
+                <div className="mb-6 relative -top-26">
                   <Image
                     src="https://www.bluehorse.in/BH WORK PAGE/assets/images/wowmomo_logo.png"
                     className="w-37.5 mx-auto"
@@ -68,7 +70,7 @@ const WorkSection = () => {
                 <a
                   target="_blank"
                   href="https://www.bluehorse.in/work/woweats"
-                  className="text-white text-lg leading-relaxed">
+                  className="text-white text-lg leading-relaxed relative">
                   Wow! Momo Foods, known for Wow! Momo, Wow! China, and Wow!
                   Chicken, is one of India’s fastest-growing QSR brands.
                 </a>
@@ -97,11 +99,12 @@ const WorkSection = () => {
           </div>
 
           {/* WORK CARD */}
-          <div className="flex flex-col">
+          <div className="flex flex-col mt-25">
+            <h3 className="text-[30px] font-semibold mb-5">Wow Eats</h3>
             {/* CARD */}
             <div
               ref={cardRef}
-              className="bh_work_img relative group h-175 overflow-hidden bg-cover bg-center rounded-md"
+              className="bh_work_img relative group h-150 overflow-hidden bg-cover bg-center rounded-md"
               style={{
                 backgroundImage: "url('/assest/images/wow_momo.jpeg')",
               }}>
@@ -114,7 +117,7 @@ const WorkSection = () => {
 
               {/* HOVER OVERLAY */}
               <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-center items-center p-8 text-center z-30">
-                <div className="mb-6">
+                <div className="mb-6 relative -top-26">
                   <Image
                     src="https://www.bluehorse.in/BH WORK PAGE/assets/images/wowmomo_logo.png"
                     className="w-37.5 mx-auto"
@@ -127,7 +130,7 @@ const WorkSection = () => {
                 <a
                   target="_blank"
                   href="https://www.bluehorse.in/work/woweats"
-                  className="text-white text-lg leading-relaxed">
+                  className="text-white text-lg leading-relaxed relative">
                   Wow! Momo Foods, known for Wow! Momo, Wow! China, and Wow!
                   Chicken, is one of India’s fastest-growing QSR brands.
                 </a>

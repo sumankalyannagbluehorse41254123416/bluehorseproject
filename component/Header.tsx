@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 import ServicesSection from "@/component/work/woweats/ServicesSection";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [showServices, setShowServices] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,104 +29,119 @@ const Header = () => {
   ];
 
   return (
-    <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md" : "bg-white"
-      }`}
-    >
-      <div className="container mx-auto px-4">
-        <nav className="flex items-center justify-between h-20">
+    <>
+      <header
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+          scrolled ? "bg-white shadow-md" : "bg-white"
+        }`}
+      >
+        <div
+          className="container mx-auto px-4 relative"
+          onMouseLeave={() => setShowServices(false)}
+        >
+          <nav className="flex items-center justify-between h-20">
 
-          {/* LOGO */}
-          <Link href="/">
-            <img
-              src="https://www.bluehorse.in/assets/image/Common/Logo.png"
-              alt="Logo"
-              className="h-auto w-28"
-            />
-          </Link>
+            {/* LOGO */}
+            <Link href="/">
+              <img
+                src="https://www.bluehorse.in/assets/image/Common/Logo.png"
+                alt="Logo"
+                className="w-28"
+              />
+            </Link>
 
-          {/* NAV LINKS */}
-          <div className="flex gap-14 text-[18px] items-center">
+            {/* DESKTOP MENU */}
+            <div className="hidden lg:flex gap-14 text-[18px] items-center">
+              {navItems.map((item) => {
 
-            {navItems.map((item) => {
-
-              // ================= SERVICES MENU =================
-              if (item.name === "Services") {
-                return (
-                  <div
-                    key={item.name}
-                    className="relative"
-                    onMouseEnter={() => setShowServices(true)}
-                    onMouseLeave={() => setShowServices(false)}
-                  >
-                    <Link
-                      href={item.link}
-                      className={`relative group flex items-center gap-2 transition-all duration-300 ${
-                        scrolled ? "text-[#0c83d1]" : "text-[#515253]"
-                      }`}
+                if (item.name === "Services") {
+                  return (
+                    <div
+                      key={item.name}
+                      onMouseEnter={() => setShowServices(true)}
                     >
-                      {/* TEXT */}
-                      <span className="relative">
+                      <Link
+                        href={item.link}
+                        className="flex items-center gap-2 text-[#515253]"
+                      >
                         {item.name}
+                        <FaChevronDown className="text-xs" />
+                      </Link>
+                    </div>
+                  );
+                }
 
-                        {/* Underline */}
-                        <span
-                          className={`absolute left-0 -bottom-1 h-[2px] w-0 transition-all duration-300 group-hover:w-full ${
-                            scrolled
-                              ? "bg-[#0c83d1]"
-                              : "bg-[#515253]"
-                          }`}
-                        ></span>
-                      </span>
-
-                      {/* Arrow */}
-                      <FaChevronDown
-                        className={`text-xs transition-transform duration-300 ${
-                          showServices ? "rotate-180" : ""
-                        }`}
-                      />
-                    </Link>
-
-                    {/* DROPDOWN */}
-                    {showServices && (
-                      <div className="absolute left-1/2 -translate-x-1/2 top-full pt-6 w-screen">
-                        <ServicesSection />
-                      </div>
-                    )}
-                  </div>
-                );
-              }
-
-              // ================= OTHER NAV ITEMS =================
-              return (
-                <Link
-                  key={item.name}
-                  href={item.link}
-                  className={`relative group transition-all duration-300 ${
-                    scrolled ? "text-[#0c83d1]" : "text-[#515253]"
-                  }`}
-                >
-                  <span className="relative">
+                return (
+                  <Link
+                    key={item.name}
+                    href={item.link}
+                    className="text-[#515253]"
+                  >
                     {item.name}
+                  </Link>
+                );
+              })}
+            </div>
 
-                    {/* Underline */}
-                    <span
-                      className={`absolute left-0 -bottom-1 h-[2px] w-0 transition-all duration-300 group-hover:w-full ${
-                        scrolled
-                          ? "bg-[#0c83d1]"
-                          : "bg-[#515253]"
-                      }`}
-                    ></span>
-                  </span>
-                </Link>
-              );
-            })}
+            {/* MOBILE MENU BUTTON */}
+            <button
+              onClick={() => setMobileMenu(true)}
+              className="lg:hidden text-2xl"
+            >
+              <FaBars />
+            </button>
 
-          </div>
-        </nav>
+          </nav>
+
+          {/* SERVICES POPUP */}
+          {showServices && (
+            <div className="absolute left-0 right-0 top-full">
+              <div className="bg-white p-8">
+                <ServicesSection />
+              </div>
+            </div>
+          )}
+        </div>
+      </header>
+
+      {/* MOBILE SIDEBAR */}
+      <div
+        className={`fixed top-0 right-0 h-full w-[280px] bg-white z-50 shadow-lg transform transition-transform duration-300 ${
+          mobileMenu ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+
+        {/* CLOSE BUTTON */}
+        <div className="flex justify-end p-5">
+          <button onClick={() => setMobileMenu(false)}>
+            <FaTimes className="text-2xl" />
+          </button>
+        </div>
+
+        {/* MOBILE NAV LINKS */}
+        <div className="flex flex-col gap-6 px-6 text-lg">
+          {navItems.map((item) => (
+            <Link
+              key={item.name}
+              href={item.link}
+              onClick={() => setMobileMenu(false)}
+              className="border-b pb-3"
+            >
+              {item.name}
+            </Link>
+          ))}
+        </div>
+
       </div>
-    </header>
+
+      {/* BACKDROP */}
+      {mobileMenu && (
+        <div
+          className="fixed inset-0 bg-black/40 z-40"
+          onClick={() => setMobileMenu(false)}
+        />
+      )}
+    </>
   );
 };
 

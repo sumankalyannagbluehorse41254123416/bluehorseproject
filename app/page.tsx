@@ -9,6 +9,7 @@ import OtherService from "@/component/Home/OtherService";
 import TestimonialsSection from "@/component/Home/TestimonialsSection";
 import TezcommerceBanner from "@/component/Home/TezcommerceBanner";
 import WorkSection from "@/component/Home/WorkSection";
+import ServicesSection from "@/component/work/woweats/ServicesSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -21,10 +22,11 @@ export default function Home() {
       <HomeService />
       <EcommerceServiceSection />
       <OtherService />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <CuratedProducts />
       <TezcommerceBanner />
       <BlueHorseFAQ />
+      <ServicesSection />
     </>
   );
 }

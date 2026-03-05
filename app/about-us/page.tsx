@@ -1,5 +1,6 @@
 "use client";
 
+import HeroSection from "@/component/about-us/HeroSection";
 import JoinTeam from "@/component/about-us/JoinTeam";
 import LearnPlayGrow from "@/component/about-us/LearnPlayGrow";
 import MeetTeam from "@/component/about-us/MeetTeam";
@@ -62,6 +63,7 @@ const AboutVideo: React.FC = () => {
       <LearnPlayGrow />
       <JoinTeam />
       <BrandLogos />
+      <HeroSection />
     </>
   );
 };
