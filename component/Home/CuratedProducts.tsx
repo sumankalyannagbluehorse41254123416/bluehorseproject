@@ -65,7 +65,7 @@ const CuratedProducts: React.FC = () => {
           {products.map((product, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-sm hover:shadow-md transition p-8 flex flex-col">
+              className=" transition p-8 flex flex-col tezbox">
               {/* Logo */}
               <div className="mb-6">
                 <img
@@ -76,7 +76,7 @@ const CuratedProducts: React.FC = () => {
               </div>
 
               {/* Title */}
-              <h3 className="text-lg font-semibold text-gray-800 leading-snug mb-4">
+              <h3 className="text-[24px] font-semibold text-gray-800 leading-snug mb-5">
                 {product.title}
               </h3>
 
@@ -84,7 +84,7 @@ const CuratedProducts: React.FC = () => {
               <ul className="space-y-3 text-sm text-gray-600 flex-1">
                 {product.points.map((point, i) => (
                   <li key={i} className="flex gap-2">
-                    <span className="mt-1 text-gray-400">•</span>
+                    <span className="mt-1 text-gray-400 text-[16px]">•</span>
                     <span>{point}</span>
                   </li>
                 ))}
@@ -95,8 +95,10 @@ const CuratedProducts: React.FC = () => {
                 <a
                   href={product.link}
                   target="_blank"
-                  className={`font-medium text-sm ${product.color} hover:underline`}>
-                  {product.link.replace("https://", "")} →
+                  className={`visit ${product.color} `}
+                >
+                  {product.link.replace("https://", "")}
+                  <span className="text-xs ml-1">→</span>
                 </a>
               </div>
             </div>
