@@ -6,6 +6,7 @@ import ShopifyDevelopmentServices from '@/component/service/ShopifyDevelopmentSe
 import ShopifyExpertiseSection from '@/component/service/ShopifyExpertiseSection'
 import ShopifyFAQ from '@/component/service/ShopifyFAQ'
 import WhyChooseBlueHorse from '@/component/service/WhyChooseBlueHorse'
+import BrandLogos from '@/component/UI/brand_wrap'
 import React from 'react'
 
 const page = () => {
@@ -18,7 +19,7 @@ const page = () => {
       <ShopifyCaseStudy />
       <ShopifyFAQ />
       <BlogsSection />
-
+      <BrandLogos />
     </>
   )
 }

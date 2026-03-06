@@ -6,7 +6,7 @@ import React from 'react';
 
 const ShopifyCaseStudy = () => {
   return (
-    <section className="py-12 sm:py-16 lg:py-24 bg-white relative overflow-hidden">
+    <section className="py-41 sm:py-8 lg:py-10 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         {/* Section Title */}
         <div className="text-center mb-10 sm:mb-12">
@@ -46,7 +46,7 @@ const ShopifyCaseStudy = () => {
               <Link
                 href="https://www.bluehorse.in/work/kisah"
                 target="_blank"
-                className="inline-block w-full sm:w-auto bg-blue-600 hover:bg-blue-700 transition-all text-white font-medium text-lg px-10 py-4 rounded-2xl text-center"
+                className="inline-block w-full sm:w-auto bg-[#079bcb] transition-all text-white font-medium text-base px-7.5 py-2.5 rounded-[5px] text-center"
               >
                 View Full Case Study
               </Link>
@@ -56,13 +56,13 @@ const ShopifyCaseStudy = () => {
           {/* Right Side – Laptop Mockup (fully responsive circles & image) */}
           <div className="relative flex justify-center lg:justify-end pt-6 lg:pt-0">
             {/* Blue Circle Background - Responsive size */}
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] sm:w-[380px] sm:h-[380px] lg:w-[520px] lg:h-[520px] bg-blue-600 rounded-full z-0" />
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-[#079bcb] rounded-full z-0" />
             
             {/* Decorative Ring - Responsive size */}
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] sm:w-[440px] sm:h-[440px] lg:w-[580px] lg:h-[580px] border-2 border-blue-300/40 rounded-full z-0" />
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[456px] h-[456px] border-2 border-blue-300/40 rounded-full z-0" />
 
             {/* Laptop Image - Responsive width + perfect aspect ratio */}
-            <div className="relative z-10 w-full max-w-[340px] sm:max-w-[420px] lg:max-w-[650px]">
+            <div className="relative z-10 w-[450px] -left-15.5">
               <Image
                 src="/assest/images/sliderlogo/kisha_banner.png"
                 alt="Kisah Shopify Store on Laptop"

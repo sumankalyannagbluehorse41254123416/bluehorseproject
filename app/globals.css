@@ -37,8 +37,6 @@ body {
   font-family: "BigNoodleTitling", sans-serif;
 }
 
-
-
 /* custom container  */
 
 .container {
@@ -197,4 +195,9 @@ body {
 .blogSwiper .swiper-pagination-bullet-active {
   width: 34px !important;   
   background: #1e73be;
+}
+
+::selection {
+  background: #079bcb;
+  color: #ffffff;
 }
