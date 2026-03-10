@@ -56,7 +56,7 @@ const brands = [
 
 const BrandLogos: React.FC = () => {
   return (
-    <section className="bg-[#d8e4f2] py-16 mt-17.5">
+    <section className="bg-[#d8e4f2] py-16 md:py-5 mt-17.5">
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
         <h2 className="text-center text-2xl md:text-3xl font-semibold tracking-widest text-gray-700 mb-12 uppercase">

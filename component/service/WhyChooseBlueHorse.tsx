@@ -42,10 +42,10 @@ const WhyChooseBlueHorse = () => {
 
     return (
         <section className="py-20 bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="container">
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900">
+                    <h2 className="text-[40px] md:text-5xl font-normal tracking-0.5 text-gray-900">
                         WHY CHOOSE BLUEHORSE FOR SHOPIFY DEVELOPMENT?
                     </h2>
                     <p className="mt-6 text-xl text-gray-600 max-w-4xl mx-auto">
@@ -55,13 +55,13 @@ const WhyChooseBlueHorse = () => {
                 </div>
 
                 {/* Stats Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mb-20 max-w-230 mx-auto">
                     {stats.map((stat, index) => (
                         <div
                             key={index}
-                            className={`rounded-3xl p-10 text-center ${stat.isBlue
+                            className={` py-7.5 px-6.25 text-center ${stat.isBlue
                                     ? 'bg-[#0C83D1] text-white'
-                                    : 'bg-white border border-gray-200'
+                                    : ''
                                 }`}
                         >
                             {stat.isSpecial ? (
@@ -88,11 +88,11 @@ const WhyChooseBlueHorse = () => {
                 </div>
 
                 {/* Features Grid - Now with YOUR custom images */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-10">
                     {features.map((feature, index) => (
                         <div
                             key={index}
-                            className="group bg-white border border-gray-100 rounded-[5px] p-5 m-2.5 hover:border-blue-200"
+                            className="group bg-white border border-gray-100  p-5 m-2.5 hover:border-blue-200"
                         >
                             <div className="mb-8 flex justify-center">
                                 <Image

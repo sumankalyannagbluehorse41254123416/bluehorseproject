@@ -42,7 +42,7 @@ export default function ShopifyBanner() {
             Shopify powers over 4.4 million websites worldwide and accounts for 32% of all online stores globally. BlueHorse Software’s end-to-end Shopify development services from custom store setup to app development will bring your vision to life and help you shine in the crowd.
           </p>
 
-          <button className="bg-blue-600 hover:bg-blue-700 transition text-white px-8 py-3 rounded-lg text-lg font-medium shadow-lg">
+          <button className="bg-[#0C83D1] text-white px-8 py-3 rounded-lg text-lg font-medium shadow-lg">
             Request Free Consultation
           </button>
         </header>

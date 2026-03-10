@@ -26,7 +26,6 @@ export default function Home() {
       <CuratedProducts />
       <TezcommerceBanner />
       <BlueHorseFAQ />
-      <ServicesSection />
     </>
   );
 }

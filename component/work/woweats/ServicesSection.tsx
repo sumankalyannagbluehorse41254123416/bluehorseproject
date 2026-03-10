@@ -169,7 +169,7 @@ import "swiper/css/pagination";
 // Static link data
 const ecommerceServices = [
   { name: "Shopify", href: "/service/shopify-development-services" },
-  { name: "Magento", href: "/services/magento" },
+  { name: "Magento", href: "/service/magento-development-services" },
   { name: "TezCommerce", href: "https://tezcommerce.com/" },
 ];
 

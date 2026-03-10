@@ -45,7 +45,7 @@ export default function BlogList() {
 
     return (
         <section className="py-16 ">
-            <div className="max-w-7xl mx-auto px-4">
+            <div className="container">
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {blogs.map((blog, index) => (
@@ -60,15 +60,15 @@ export default function BlogList() {
                                         src={blog.image}
                                         alt={blog.title}
                                         fill
-                                        className="object-cover"
+                                        className="object-cover "
                                     />
                                 </div>
                             </Link>
 
-                            <div className="p-6">
+                            <div className="">
 
                                 {/* Category + Date */}
-                                <div className="flex items-center justify-between mb-4">
+                                <div className="flex items-center justify-between mb-4 mt-3">
                                     <span className="px-4 py-1 bg-gray-200 rounded-md text-sm font-medium">
                                         {blog.category}
                                     </span>

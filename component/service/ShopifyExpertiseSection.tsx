@@ -4,7 +4,7 @@ import React from 'react';
 
 const ShopifyExpertiseSection: React.FC = () => {
   return (
-    <section id="Why_BlueHorse" className="py-24 bg-white relative">
+    <section id="Why_BlueHorse" className="py-10 bg-white relative">
       <div className=" px-6 lg:px-8">
         <div className=" text-center">
           {/* Heading - exactly matches screenshot size & style */}
