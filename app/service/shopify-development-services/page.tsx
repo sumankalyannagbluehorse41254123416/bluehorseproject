@@ -20,6 +20,7 @@ const page = () => {
       <ShopifyFAQ />
       <BlogsSection />
       <BrandLogos />
+      
     </>
   )
 }

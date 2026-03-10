@@ -1,6 +1,7 @@
 import FeaturesSection from "@/component/careers/FeaturesSection";
 import HiringSection from "@/component/careers/HiringSection";
 import JoinExpertiseSection from "@/component/careers/JoinExpertiseSection";
+import MobileMenu from "@/component/service/MobileMenu";
 import BrandLogos from "@/component/UI/brand_wrap";
 
 
@@ -11,6 +12,7 @@ export default function CareersPage() {
     <HiringSection/>
     <JoinExpertiseSection/>
     <BrandLogos />
+    
   </>
     
   );
