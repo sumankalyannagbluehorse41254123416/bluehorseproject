@@ -22,7 +22,7 @@ export default function Home() {
       <HomeService />
       <EcommerceServiceSection />
       <OtherService />
-      {/* <TestimonialsSection /> */}
+      <TestimonialsSection />
       <CuratedProducts />
       <TezcommerceBanner />
       <BlueHorseFAQ />
