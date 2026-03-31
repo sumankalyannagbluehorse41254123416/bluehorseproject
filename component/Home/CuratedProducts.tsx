@@ -51,10 +51,10 @@ const CuratedProducts: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl font-semibold tracking-wide text-gray-800">
+          <h2 className="Section-Title">
             OUR CURATED PRODUCTS
           </h2>
-          <p className="text-gray-600 mt-4 text-sm leading-relaxed">
+          <p className="Section-Details">
             We create digital solutions such as secure quick commerce platform,
             military career transition platform, and D2C brand storytelling
             platform to empower D2C brands.
