@@ -41,7 +41,7 @@ export default function Workowo() {
           rel=""
           className=""
         >
-          <h3 className="text-[30px] font-bold mb-7.5">Wow Eats</h3>
+          <h3 className="text-30 font-bold mb-7.5">Wow Eats</h3>
         </Link>
 
         <div
@@ -115,7 +115,7 @@ export default function Workowo() {
           rel=""
           className=""
         >
-          <h3 className="text-[30px] font-bold mb-7.5">Wow Eats</h3>
+          <h3 className="text-30 font-bold mb-7.5">Wow Eats</h3>
         </Link>
         <div
           ref={cardRef}
@@ -184,7 +184,7 @@ export default function Workowo() {
           rel=""
           className=""
         >
-          <h3 className="text-[30px] font-bold mb-7.5">Wow Eats</h3>
+          <h3 className="text-30 font-bold mb-7.5">Wow Eats</h3>
         </Link>
 
         <div
@@ -257,7 +257,7 @@ export default function Workowo() {
           rel=""
           className=""
         >
-          <h3 className="text-[30px] font-bold mb-7.5">Wow Eats</h3>
+          <h3 className="text-30 font-bold mb-7.5">Wow Eats</h3>
         </Link>
         <div
           ref={cardRef}

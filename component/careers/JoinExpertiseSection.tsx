@@ -36,7 +36,7 @@ export default function JoinExpertiseSection() {
 
             <button
               onClick={() => setOpen(true)}
-              className="relative z-10 bg-white text-blue-600 px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition"
+              className="relative z-10 bg-white text-deepblue px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition"
             >
               Apply Here →
             </button>

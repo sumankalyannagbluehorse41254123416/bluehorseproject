@@ -56,7 +56,7 @@ export default function ShopifyFAQ() {
 
       {/* Heading */}
       <div className="text-center mb-12">
-        <h2 className="text-[40px] md:text-5xl font-normal tracking-tight text-[#515253] big-noodle">
+        <h2 className="text-40 md:text-5xl font-normal tracking-tight text-[#515253] big-noodle">
           Frequently Asked Questions
         </h2>
         <p className="text-gray-500 mt-2">Exploring Common Inquiries</p>

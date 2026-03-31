@@ -27,11 +27,11 @@ const WorkSection = () => {
     <section className="bh_work_details custom_home py-16">
       <div className="container mx-auto px-4">
         {/* Heading */}
-        <h2 className="text-[40px] text-center font-semibold">
+        <h2 className="text-40 text-center font-semibold">
           Our Work Defines Our Success
         </h2>
 
-        <p className="text-center text-[16px] max-w-3xl mx-auto mt-4 mb-10 font-medium">
+        <p className="text-center text-16 max-w-3xl mx-auto mt-4 mb-10 font-medium">
           As a top web and mobile app development company, our success is
           written in the solutions we build — not in what we say.
         </p>
@@ -40,7 +40,7 @@ const WorkSection = () => {
           {/* WORK CARD */}
           
           <div className="flex flex-col">
-            <h3 className="text-[30px] font-semibold mb-5">Wow Eats</h3>
+            <h3 className="text-30 font-semibold mb-5">Wow Eats</h3>
             {/* CARD */}
             <div
               ref={cardRef}
@@ -100,7 +100,7 @@ const WorkSection = () => {
 
           {/* WORK CARD */}
           <div className="flex flex-col mt-25">
-            <h3 className="text-[30px] font-semibold mb-5">Wow Eats</h3>
+            <h3 className="text-30 font-semibold mb-5">Wow Eats</h3>
             {/* CARD */}
             <div
               ref={cardRef}

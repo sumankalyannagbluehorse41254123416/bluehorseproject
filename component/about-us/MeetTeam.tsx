@@ -8,7 +8,7 @@ const MeetTeam: React.FC = () => {
     <section className="meet_team common_padding pb-0">
       <div className="container items-center">
         <div className="text-center max-w-3xl mx-auto">
-          <h3 className="text-[40px] font-normal text-gray-700">
+          <h3 className="text-40 font-normal text-gray-700">
             MEET OUR TEAM
           </h3>
 

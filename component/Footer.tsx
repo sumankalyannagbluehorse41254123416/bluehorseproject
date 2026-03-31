@@ -153,7 +153,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Bottom */}
-      <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-600 py-5 border-t border-[#079bcb] gap-3 text-center md:text-left">
+      <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-600 py-5 border-t border-[text-blue] gap-3 text-center md:text-left">
 
         <p className="text-[14px]">
           © 2026{" "}

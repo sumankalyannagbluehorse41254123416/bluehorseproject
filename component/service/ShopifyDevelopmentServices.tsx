@@ -104,7 +104,7 @@ const ShopifyDevelopmentServices: React.FC = () => {
                             {/* View More link - matches screenshot */}
                             <a
                                 href={service.link}
-                                className="inline-flex items-center text-blue-600 font-medium text-base hover:text-blue-700 transition-all group-hover:gap-x-1"
+                                className="inline-flex items-center text-deepblue font-medium text-base hover:text-blue-700 transition-all group-hover:gap-x-1"
                             >
                                 View More
                                 <FiArrowRight className="text-lg transition-transform group-hover:translate-x-1" />

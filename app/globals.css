@@ -1,17 +1,38 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --heading: #515253;
+  --blue: #079bcb;
+  --grey: #8c8c8c;
+  --lightgrey: #f5f5f5;
+  --orange: #fe6e28;
+  --deepblue: #0174F5;
+  --purple: #613385;
+  --tagLavender: #f5f3fe;
+  --taglightlavender: #f8f7fc;
+  --black:#0009;
 }
 
 
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-heading: var(--heading);
+  --color-blue: var(--blue);
+  --color-grey: var(--grey);
+  --color-lightgrey: var(--lightgrey);
+  --color-orange: var(--orange);
+  --color-deepblue: var(--deepblue);
+  --color-purple: var(--purple);
+  --color-tagLavender: var(--tagLavender);
+  --color-taglightlavender: var(--taglightlavender);
+  --color-black: var(--black);
+
+  --text-95: 95px;
+  --text-48: 48px;
+  --text-16: 16px;
+  --text-70: 70px;
+  --text-40: 40px;
+  --text-30: 30px;
+
 }
 
 body {
@@ -183,7 +204,7 @@ body {
 }
 
 .blogSwiper .swiper-pagination-bullet {
-  width: 24px !important;   
+  width: 24px !important;
   height: 12px;
   border-radius: 10px;
   background: #cfcfcf;
@@ -193,11 +214,14 @@ body {
 }
 
 .blogSwiper .swiper-pagination-bullet-active {
-  width: 34px !important;   
+  width: 34px !important;
   background: #1e73be;
 }
 
 ::selection {
   background: #079bcb;
   color: #ffffff;
+}
+.visit{
+  display: flex !important;
 }

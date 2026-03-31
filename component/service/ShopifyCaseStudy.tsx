@@ -46,7 +46,7 @@ const ShopifyCaseStudy = () => {
               <Link
                 href="https://www.bluehorse.in/work/kisah"
                 target="_blank"
-                className="inline-block w-full sm:w-auto bg-[#079bcb] transition-all text-white font-medium text-base px-7.5 py-2.5 rounded-[5px] text-center"
+                className="inline-block w-full sm:w-auto bg-[text-blue] transition-all text-white font-medium text-base px-7.5 py-2.5 rounded-[5px] text-center"
               >
                 View Full Case Study
               </Link>
@@ -56,7 +56,7 @@ const ShopifyCaseStudy = () => {
           {/* Right Side – Laptop Mockup (fully responsive circles & image) */}
           <div className="relative flex justify-center lg:justify-end pt-6 lg:pt-0">
             {/* Blue Circle Background - Responsive size */}
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-[#079bcb] rounded-full z-0" />
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-[text-blue] rounded-full z-0" />
             
             {/* Decorative Ring - Responsive size */}
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[456px] h-[456px] border-2 border-blue-300/40 rounded-full z-0" />

@@ -31,10 +31,11 @@ const IntroSection: React.FC = () => {
           <div className="text-white text-right max-w-7xl">
 
             {/* Heading */}
-            <h1 className="uppercase big-noodle text-[70px] lg:text-[95px] leading-tight">
+            <h1 className="uppercase big-noodle text-70 lg:text-95 leading-tight">
               Trusted Web and Mobile App <br />
               Development Company
             </h1>
+
 
             {/* Description */}
             <p className="mt-6 text-sm sm:text-base md:text-lg leading-relaxed text-white/90 max-w-205.5">
