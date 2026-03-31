@@ -53,10 +53,10 @@ export default function BlueHorseFAQ() {
 
         {/* Header */}
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-semibold uppercase text-gray-700">
+          <h2 className="Section-Title">
             Frequently Asked Question
           </h2>
-          <p className="mt-3 text-gray-500">
+          <p className="Section-Details">
             Your key questions – answered to help you make informed decisions.
           </p>
         </div>

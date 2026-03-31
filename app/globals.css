@@ -10,7 +10,7 @@
   --purple: #613385;
   --tagLavender: #f5f3fe;
   --taglightlavender: #f8f7fc;
-  --black:#0009;
+  --black: #0009;
 }
 
 
@@ -108,7 +108,8 @@ body {
 
 .logoTrack {
   display: flex;
-  gap: 40px;
+  align-items: center;
+  gap: 6em;
   width: max-content;
   animation: marqueeMove 25s linear infinite;
 }
@@ -118,8 +119,8 @@ body {
 }
 
 .slide_logo img {
-  height: 50px;
-  width: auto;
+  height: auto;
+  width: 100px;
   object-fit: contain;
 }
 
@@ -222,6 +223,49 @@ body {
   background: #079bcb;
   color: #ffffff;
 }
-.visit{
+
+.visit {
   display: flex !important;
+}
+
+.Section-Title {
+  font-family: "BigNoodleTitling", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 1px
+}
+
+@media (max-width:1200px) {
+  .Section-Title {
+    line-height: 42px
+  }
+}
+
+@media (max-width:768px) {
+  .Section-Title {
+    font-size: 36px;
+    line-height: 36px
+  }
+}
+
+
+.Section-Details {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color:#8c8c8c;
+  text-align: center;
+  margin: 10px auto;
+  margin-bottom: 45px;
+  width: 100%;
+  max-width: 610px
+}
+
+@media (max-width:768px) {
+  .Section-Details {
+    font-size: 15px;
+    margin-bottom: 35px
+  }
 }

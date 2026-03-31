@@ -27,18 +27,18 @@ const WorkSection = () => {
     <section className="bh_work_details custom_home py-16">
       <div className="container mx-auto px-4">
         {/* Heading */}
-        <h2 className="text-40 text-center font-semibold">
+        <h2 className="Section-Title">
           Our Work Defines Our Success
         </h2>
 
-        <p className="text-center text-16 max-w-3xl mx-auto mt-4 mb-10 font-medium">
+        <p className="Section-Details">
           As a top web and mobile app development company, our success is
           written in the solutions we build — not in what we say.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-25">
           {/* WORK CARD */}
-          
+
           <div className="flex flex-col">
             <h3 className="text-30 font-semibold mb-5">Wow Eats</h3>
             {/* CARD */}
@@ -50,14 +50,16 @@ const WorkSection = () => {
               }}>
               {/* BLUE SLIDE LAYER */}
               <div
-                className={`absolute inset-0 bg-cyan-600 z-20 transform ${
-                  inView ? "translate-x-full" : "translate-x-0"
-                } transition-transform duration-1200 ease-in-out`}
+                className={`absolute inset-0 bg-cyan-600 z-20 transform ${inView ? "translate-x-full" : "translate-x-0"
+                  } transition-transform duration-1200 ease-in-out`}
               />
 
               {/* HOVER OVERLAY */}
-              <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-center items-center p-8 text-center z-30">
-                <div className="mb-6 relative -top-26">
+              <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-100 transition duration-200 flex flex-col justify-center items-center p-8 text-center z-30">
+
+                <div className="mb-6 relative -top-26 transform  opacity-0 
+                   group-hover:opacity-100 ease-in
+                  transition duration-1000 delay-700">
                   <Image
                     src="https://www.bluehorse.in/BH WORK PAGE/assets/images/wowmomo_logo.png"
                     className="w-37.5 mx-auto"
@@ -70,10 +72,13 @@ const WorkSection = () => {
                 <a
                   target="_blank"
                   href="https://www.bluehorse.in/work/woweats"
-                  className="text-white text-lg leading-relaxed relative">
+                  className="text-white text-lg leading-relaxed relative 
+               transform opacity-0   group-hover:opacity-100 ease-in
+               transition duration-1000 delay-700">
                   Wow! Momo Foods, known for Wow! Momo, Wow! China, and Wow!
                   Chicken, is one of India’s fastest-growing QSR brands.
                 </a>
+
               </div>
 
               {/* TAGS */}
@@ -93,8 +98,9 @@ const WorkSection = () => {
             {/* LINK BELOW CARD */}
             <Link
               href="#"
-              className="mt-12.5 text-gray-700 text-lg font-medium hover:text-black transition">
+              className="group relative w-fit mt-12.5 text-gray-700 text-lg font-medium transition">
               View case study →
+               <div className="opacity-0 group-hover:opacity-100 group-hover:w-full absolute w-0 h-0.5 bg-cyan-600 -bottom-2 left-0 right-0 flex mx-auto transition-width duration-300"></div>
             </Link>
           </div>
 
@@ -110,14 +116,16 @@ const WorkSection = () => {
               }}>
               {/* BLUE SLIDE LAYER */}
               <div
-                className={`absolute inset-0 bg-cyan-600 z-20 transform ${
-                  inView ? "translate-x-full" : "translate-x-0"
-                } transition-transform duration-1200 ease-in-out`}
+                className={`absolute inset-0 bg-cyan-600 z-20 transform ${inView ? "translate-x-full" : "translate-x-0"
+                  } transition-transform duration-1200 ease-in-out`}
               />
 
               {/* HOVER OVERLAY */}
-              <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-center items-center p-8 text-center z-30">
-                <div className="mb-6 relative -top-26">
+              <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-100 transition duration-200 flex flex-col justify-center items-center p-8 text-center z-30">
+
+                <div className="mb-6 relative -top-26 transform  opacity-0 
+                   group-hover:opacity-100 ease-in
+                  transition duration-1000 delay-700">
                   <Image
                     src="https://www.bluehorse.in/BH WORK PAGE/assets/images/wowmomo_logo.png"
                     className="w-37.5 mx-auto"
@@ -130,12 +138,14 @@ const WorkSection = () => {
                 <a
                   target="_blank"
                   href="https://www.bluehorse.in/work/woweats"
-                  className="text-white text-lg leading-relaxed relative">
+                  className="text-white text-lg leading-relaxed relative 
+               transform opacity-0   group-hover:opacity-100 ease-in
+               transition duration-1000 delay-700">
                   Wow! Momo Foods, known for Wow! Momo, Wow! China, and Wow!
                   Chicken, is one of India’s fastest-growing QSR brands.
                 </a>
-              </div>
 
+              </div>
               {/* TAGS */}
               <div className="absolute bottom-10 left-10 flex gap-2 flex-wrap z-40">
                 <span className="bg-white/20 backdrop-blur-md text-white text-sm px-3 py-1 rounded-md">
@@ -153,8 +163,9 @@ const WorkSection = () => {
             {/* LINK BELOW CARD */}
             <Link
               href="#"
-              className="mt-12.5 text-gray-700 text-lg font-medium hover:text-black transition">
+              className="group relative w-fit mt-12.5 text-gray-700 text-lg font-medium transition">
               View case study →
+              <div className="opacity-0 group-hover:opacity-100 group-hover:w-full absolute w-0 h-0.5 bg-cyan-600 -bottom-2 left-0 right-0 flex mx-auto transition-width duration-300"></div>
             </Link>
           </div>
         </div>
@@ -164,7 +175,7 @@ const WorkSection = () => {
           <Link
             href="https://www.bluehorse.in/work.html"
             target="_blank"
-            className="inline-block bg-cyan-600 text-white px-8 py-3 rounded-md text-lg font-medium hover:bg-cyan-700 transition">
+            className="inline-block bg-cyan-600 text-white px-8 py-3 rounded-md text-lg font-medium hover:bg-cyan-500 transition duration-500 delay-300">
             View All Case Studies
           </Link>
         </div>

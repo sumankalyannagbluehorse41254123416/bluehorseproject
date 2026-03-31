@@ -5,11 +5,11 @@ const HomeService = () => {
   return (
     <section className=" py-10 text-center">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-5xl font-bold uppercase tracking-wider text-gray-700 mb-6">
+        <h2 className="Section-Title">
           Our Services
         </h2>
 
-        <p className="text-lg text-gray-500 leading-relaxed">
+        <p className="Section-Details">
           As a full-cycle web and mobile app development company, we deliver
           scalable, modern solutions using the latest technologies and tools.
           Partner with us for quality, reliability, and on-time delivery —
