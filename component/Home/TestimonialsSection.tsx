@@ -20,8 +20,8 @@ const TestimonialsSection = () => {
       linkedin: "https://www.linkedin.com/in/nileshchhadva/",
       quote: "Great working with your team! We truly value your partnership, and prompt website support.",
       caseStudy: "https://www.bluehorse.in/work/kora-ecommerce-solutions-for-ethnic-brand",
-      gradient: "",
-      size: "normal"
+      gradient: "from-[#CE5245]/20 via-[#CE5245]/30 to-[#CE5245]/40",
+      size: "medium"
     },
     {
       name: "Sandeep Amar",
@@ -30,7 +30,7 @@ const TestimonialsSection = () => {
       image: "https://www.bluehorse.in/testimonial-new/img/left4.png",
       linkedin: "https://www.linkedin.com/in/sandeepamar/",
       quote: "BlueHorse delivers expert tech solutions with solid engineering, complex coding, and 24/7 support.",
-      gradient: "from-purple-400 via-purple-300 to-blue-300",
+      gradient: "from-[#8A47E7]/20 via-[#8A47E7]/30 to-[#8A47E7]/40",
       size: "normal"
     },
     {
@@ -43,38 +43,38 @@ const TestimonialsSection = () => {
       quote: "Loved BlueHorse's can-do attitude—proactive, collaborative, and truly committed to building the right product.",
       video: "https://www.youtube.com/embed/SN43mMBNQPE?si=1sUeMJFdecJU7IhG",
       videoTitle: "Creating Impact: Ayesha R Goyal Sharing his experiences Working with BlueHorse Software",
-      gradient: "from-pink-300 via-orange-200 to-yellow-200",
+      gradient: "from-[#8A47E7]/20 via-[#8A47E7]/30 to-[#8A47E7]/40",
       size: "large"
     },
     {
       name: "Vijesh Sharma",
       title: "Founder & CEO of",
       company: "IPLIX",
-      image: "https://via.placeholder.com/400x500",
+      image: "https://www.bluehorse.in/testimonial-new/img/expert2.jpg",
       linkedin: "#",
       quote: "The team was highly skilled and committed, driven by the founder's personal involvement.",
       video: "#",
-      gradient: "from-green-600 via-green-500 to-green-400",
+      gradient: "from-[#1F7C38]/25 via-[#1F7C38]/60 to-[#1F7C38]/60",
       size: "normal"
     },
     {
       name: "Tomoaki Fujiki",
       title: "Managing Editor of",
       company: "Entrepreneur Middle East",
-      image: "https://via.placeholder.com/400x300",
+      image: "https://www.bluehorse.in/testimonial-new/img/left5.png",
       linkedin: "#",
       quote: "Very happy with our new site. BlueHorse handled everything smoothly and exceeded expectations!",
-      gradient: "from-green-400 via-teal-300 to-cyan-300",
+      gradient: "from-[#1F7C38]/25 via-[#1F7C38]/60 to-[#1F7C38]/60",
       size: "normal"
     },
     {
       name: "Ankitesh Shaah",
       title: "Founder of",
       company: "Social Homes Office",
-      image: "https://via.placeholder.com/400x300",
+      image: "https://www.bluehorse.in/testimonial-new/img/left6.jpg",
       linkedin: "#",
       quote: "Working with BlueHorse Software is a B2C eCommerce site – highly skilled, transparent, flexible, and absolute team.",
-      gradient: "from-purple-600 via-purple-500 to-pink-500",
+      gradient: "from-[#A30F5B]/25 via-[#A30F5B]/60 to-[#A30F5B]/60",
       size: "normal"
     },
   ];
@@ -89,50 +89,50 @@ const TestimonialsSection = () => {
       linkedin: "https://www.linkedin.com/in/kapil-chopra-454849117/",
       quote: "BlueHorse is a top IT company with a passionate, dedicated team of tech professionals.",
       caseStudy: "https://www.bluehorse.in/work/eazydiner-tech-solution-for-food-industry",
-      gradient: "from-indigo-600 via-purple-600 to-purple-700",
+      gradient: "from-[#8A47E7]/20 via-[#8A47E7]/30 to-[#8A47E7]/40",
       size: "large"
     },
     {
       name: "Ajai Jain",
       title: "Founder of",
       company: "SEPAL",
-      image: "https://via.placeholder.com/400x500",
+      image: "https://www.bluehorse.in/testimonial-new/img/right_expert2.png",
       linkedin: "#",
       quote: "Impressed by BlueHorse's proactive approach and strong communication; achieved success from the start",
       video: "#",
-      gradient: "from-purple-400 via-pink-300 to-purple-300",
+      gradient: "from-[#8A47E7]/20 via-[#8A47E7]/30 to-[#8A47E7]/40",
       size: "large"
     },
     {
       name: "Ramachandra Vattikonda",
       title: "Vice President of Benedictim IT services",
       company: "",
-      image: "https://via.placeholder.com/400x300",
+      image: "https://www.bluehorse.in/testimonial-new/img/right_expert3.png",
       linkedin: "#",
       quote: "Associated with BlueHorse since 2016; they efficiently developed the CIS website as promised.",
       video: "#",
-      gradient: "from-green-700 via-green-600 to-green-500",
+      gradient: "from-[#1F7C38]/25 via-[#1F7C38]/60 to-[#1F7C38]/60",
       size: "normal"
     },
     {
       name: "Sampath Chaudhary",
       title: "Founder & CEO of",
       company: "Argon Managing Systems",
-      image: "https://via.placeholder.com/400x400",
+      image: "https://www.bluehorse.in/testimonial-new/img/right4.png",
       linkedin: "#",
       quote: "Trusted BlueHorse's can-do attitude—always proactive, even when challenges come up.",
       video: "#",
-      gradient: "from-blue-600 via-blue-500 to-indigo-600",
+      gradient: "from-[#5396DF]/25 via-[#5396DF]/40 to-[#5396DF]/60",
       size: "normal"
     },
     {
       name: "Ritesh Aggarwal",
       title: "Founder of",
       company: "Yellow Haat",
-      image: "https://via.placeholder.com/400x300",
+      image: "https://www.bluehorse.in/testimonial-new/img/right5.png",
       linkedin: "#",
       quote: "Highly appreciated BlueHorse for their expert, professional website development and exceptional client service.",
-      gradient: "from-pink-300 via-rose-200 to-orange-200",
+      gradient: "from-[#DD6557]/25 via-[#DD6557]/60 to-[#DD6557]/60",
       size: "normal"
     },
   ];
@@ -141,11 +141,11 @@ const TestimonialsSection = () => {
     <section className="py-16 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <h2 className="text-4xl md:text-5xl font-semibold uppercase text-gray-700 mb-6">
+        <h2 className="Section-Title">
           Trusted by the experts globally
         </h2>
         
-        <p className="text-lg text-gray-500 max-w-2xl mb-12">
+        <p className="Section-Details">
           We have a healthy mix of clients who rely on us for their web and mobile
           app development needs. Our Clients have loved our one-point-contact
           systems for addressing their concerns.
@@ -188,16 +188,16 @@ const TestimonialCard = ({
   handleExpandVideo 
 }: any) => {
   return (
-    <div className={`relative overflow-hidden rounded-2xl ${size === 'large' ? 'h-[500px]' : 'h-[280px]'} group`}>
+    <div className={`relative overflow-hidden ${size === 'large' ? 'h-[500px]' : 'h-[280px]'} group`}>
       {/* Background Image */}
-      <div className="absolute inset-0">
+      <div className=" absolute inset-0">
         <img 
           src={image} 
           alt={name}
           className="w-full h-full object-cover"
         />
         {/* Gradient Overlay */}
-        <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-85`}></div>
+        <div className={`photo-testimonial absolute inset-0 bg-linear-to-br ${gradient} opacity-85`}></div>
       </div>
 
       {/* Content */}
