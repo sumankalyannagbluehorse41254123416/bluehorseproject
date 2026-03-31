@@ -1,12 +1,13 @@
 
 import React from "react";
+import { FaArrowRight } from "react-icons/fa";
 
 const products = [
   {
     name: "Second Innings",
     logo: "https://www.bluehorse.in/servicess-page/assets/images/secondinnings.png",
     link: "https://secondinnings.org",
-    color: "text-orange-500",
+    color: "text-orange",
     title: "Empowering military veterans for successful careers",
     points: [
       "Provides a user-friendly platform for resume building and professional networking",
@@ -19,7 +20,7 @@ const products = [
     name: "TezCommerce",
     logo: "https://www.bluehorse.in/servicess-page/assets/images/tezco.png",
     link: "https://www.tezcommerce.com",
-    color: "text-blue-600",
+    color: "text-deepblue",
     title:
       "Empowering Businesses with Speed, Flexibility, and Seamless Integration",
     points: [
@@ -33,7 +34,7 @@ const products = [
     name: "D2C Stories",
     logo: "https://www.bluehorse.in/servicess-page/assets/images/d2c.png",
     link: "https://d2cstories.com",
-    color: "text-purple-700",
+    color: "text-purple",
     title: "Creating a strong D2C community goes beyond just selling",
     points: [
       "Provides a platform for D2C brands to share their brand journey",
@@ -84,21 +85,21 @@ const CuratedProducts: React.FC = () => {
               <ul className="space-y-3 text-sm text-gray-600 flex-1">
                 {product.points.map((point, i) => (
                   <li key={i} className="flex gap-2">
-                    <span className="mt-1 text-gray-400 text-[16px]">•</span>
+                    <span className="mt-1 text-gray-400 text-16">•</span>
                     <span>{point}</span>
                   </li>
                 ))}
               </ul>
 
               {/* Visit Link */}
-              <div className="mt-6">
+              <div className="mt-6 flex">
                 <a
                   href={product.link}
                   target="_blank"
-                  className={`visit ${product.color} `}
+                  className={`visit ${product.color} flex items-center group`}
                 >
                   {product.link.replace("https://", "")}
-                  <span className="text-xs ml-1">→</span>
+                  <FaArrowRight className="text-sm -rotate-45 transition-transform duration-300 group-hover:rotate-0 ml-1" />
                 </a>
               </div>
             </div>

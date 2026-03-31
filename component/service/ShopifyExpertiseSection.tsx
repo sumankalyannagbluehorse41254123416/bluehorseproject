@@ -8,7 +8,7 @@ const ShopifyExpertiseSection: React.FC = () => {
       <div className=" px-6 lg:px-8">
         <div className=" text-center">
           {/* Heading - exactly matches screenshot size & style */}
-          <h2 className="text-[40px] font-normal text-[#515253] leading-[1.15] tracking-[-0.02em] uppercase">
+          <h2 className="text-40 font-normal text-[#515253] leading-[1.15] tracking-[-0.02em] uppercase">
             MAXIMIZE YOUR ONLINE STORE’S POTENTIAL WITH SHOPIFY EXPERTISE
           </h2>
 

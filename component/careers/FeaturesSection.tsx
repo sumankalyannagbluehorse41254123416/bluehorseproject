@@ -3,15 +3,15 @@ import Image from "next/image";
 export default function FeaturesSection() {
   return (
     <section className="w-full bg-gray-100 py-16">
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-start">
+      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-start grid-cols-[50fr_50fr] relative">
         
         {/* LEFT TEXT */}
-        <div className="pt-10">
+        <div className=" pt-10 pb-30 flex flex-col items-start justify-center relative">
           <h2 className="text-2xl font-semibold text-gray-700 uppercase tracking-wide">
             Fun Life At
           </h2>
 
-          <h3 className="text-5xl font-bold text-blue-600 mt-2">
+          <h3 className="text-5xl font-bold text-blue mt-2">
             BlueHorse
           </h3>
 

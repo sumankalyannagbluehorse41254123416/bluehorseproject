@@ -10,7 +10,7 @@ const SoftwareDevelopmentHeader: React.FC = () => {
       <section className="header pt-30">
         <div className="container">
           <div className="main-title ">
-            <h1 className="sectionTitle text-[40px]">
+            <h1 className="sectionTitle text-40">
               Software Development Services
             </h1>
             <p className="p-10">

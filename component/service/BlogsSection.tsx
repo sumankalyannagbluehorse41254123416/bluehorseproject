@@ -82,7 +82,7 @@ const BlogsSection = () => {
 
         {/* Header */}
         <div className="text-center mb-15">
-          <h2 className="text-[40px] md:text-5xl font-normal tracking-tight text-[#515253] big-noodle">
+          <h2 className="text-40 md:text-5xl font-normal tracking-tight text-[#515253] big-noodle">
             BLOGS
           </h2>
           <p className="mt-3 text-xl text-gray-600">

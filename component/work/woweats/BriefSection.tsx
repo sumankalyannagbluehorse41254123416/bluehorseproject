@@ -27,7 +27,7 @@ export default function BriefSection() {
           {/* Right Side */}
           <div className="md:w-5/12">
             <div className="bg-[#e9e9e9] p-10">
-              <h4 className="text-4xl font-semibold text-blue-600 mb-8">
+              <h4 className="text-4xl font-semibold text-deepblue mb-8">
                 Requirements
               </h4>
 

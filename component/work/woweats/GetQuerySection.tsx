@@ -42,7 +42,7 @@ const GetQuerySection = () => {
 
           <Link
             href="/contact#mainForm"
-            className="inline-block mt-8 px-8 py-3 border border-[#079bcb] text-[#079bcb] rounded-md hover:bg-[#079bcb] hover:text-white transition-all duration-300"
+            className="inline-block mt-8 px-8 py-3 border border-[text-blue] text-[text-blue] rounded-md hover:bg-[text-blue] hover:text-white transition-all duration-300"
           >
             Talk to Our Expert
           </Link>

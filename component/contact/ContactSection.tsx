@@ -23,20 +23,20 @@ export default function ContactSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
           {/* Human Resources */}
-          <div className="bg-[#f4f4f4] rounded-xl p-10 text-center shadow-sm">
+          <div className="bg-[#f4f4f4] rounded-xl pt-5 px-4 text-center shadow-sm">
             <div className="w-24 h-24 bg-[#1f77b4] rounded-full flex items-center justify-center mx-auto mb-6">
               <FaUserTie className="text-white text-3xl" />
             </div>
 
-            <h2 className="uppercase tracking-wide text-lg font-semibold text-gray-700 mb-2">
+            <h2 className="uppercase tracking-wide text-[22px] font-normal text-[#515253] mb-2 big-noodle">
               Human Resources
             </h2>
 
-            <p className="text-gray-500 mb-6">
+            <p className="text-gray-500 mb-2.5">
               Unlock Your Career Opportunities
             </p>
 
-            <div className="space-y-2 text-gray-600">
+            <div className=" text-gray-600 flex items-center justify-center gap-2">
               <div className="flex justify-center gap-2 items-center">
                 <FaPhoneAlt className="text-[#1f77b4]" />
                 <a href="tel:+918537941549">+91 8537941549</a>
@@ -55,7 +55,7 @@ export default function ContactSection() {
               <MdOutlineCampaign className="text-white text-3xl" />
             </div>
 
-            <h2 className="uppercase tracking-wide text-lg font-semibold text-gray-700 mb-2">
+            <h2 className="uppercase tracking-wide text-[22px] font-normal text-[#515253] mb-2 big-noodle">
               Sales
             </h2>
 
@@ -63,7 +63,7 @@ export default function ContactSection() {
               Business empowerment promotion
             </p>
 
-            <div className="space-y-2 text-gray-600">
+            <div className=" text-gray-600 flex items-center justify-center gap-2">
               <div className="flex justify-center gap-2 items-center">
                 <FaPhoneAlt className="text-[#1f77b4]" />
                 <a href="tel:+918001869103">+91 8001869103</a>
@@ -82,7 +82,7 @@ export default function ContactSection() {
               <FaHandsHelping className="text-white text-3xl" />
             </div>
 
-            <h2 className="uppercase tracking-wide text-lg font-semibold text-gray-700 mb-2">
+            <h2 className="uppercase tracking-wide text-lg font-normal text-[#515253] mb-2 big-noodle">
               Support
             </h2>
 

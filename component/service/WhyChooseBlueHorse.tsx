@@ -45,7 +45,7 @@ const WhyChooseBlueHorse = () => {
             <div className="container">
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <h2 className="text-[40px] md:text-5xl font-normal tracking-0.5 text-gray-900">
+                    <h2 className="text-40 md:text-5xl font-normal tracking-0.5 text-gray-900">
                         WHY CHOOSE BLUEHORSE FOR SHOPIFY DEVELOPMENT?
                     </h2>
                     <p className="mt-6 text-xl text-gray-600 max-w-4xl mx-auto">

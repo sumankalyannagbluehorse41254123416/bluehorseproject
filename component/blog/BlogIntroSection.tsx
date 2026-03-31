@@ -5,10 +5,11 @@ import Link from "next/link";
 
 export default function BlogIntroSection() {
   const socialLinks = [
-    { name: "LinkedIn", img: "/assest/images/sliderlogo/linkedin.png" },
+    { name: "LinkedIn", img: "/assest/images/sliderlogo/linkedin.png", link: "https://www.linkedin.com/company/bluehorse-software/posts/?feedView=all" },
     { name: "Facebook", img: "/assest/images/sliderlogo/facebook.png" },
     { name: "Instagram", img: "/assest/images/sliderlogo/instagram.png" },
     { name: "Twitter", img: "/assest/images/sliderlogo/twitter.png" },
+
     { name: "Youtube", img: "/assest/images/sliderlogo/youtube.png" },
   ];
 
@@ -22,11 +23,11 @@ export default function BlogIntroSection() {
       <div className="container mx-auto px-4">
 
         {/* Heading */}
-        <h1 className="text-3xl md:text-4xl lg:text-[48px] font-bold uppercase tracking-wide mb-2">
+        <h1 className="text-3xl text-[#515253] md:text-4xl lg:text-[48px] font-bold uppercase tracking-wide mb-2 big-noodle">
           Blog
         </h1>
 
-        <p className="text-gray-600 text-base md:text-lg mb-10 lg:mb-12 max-w-2xl">
+        <p className="text-[#8c8c8c] text-base lg:mb-5">
           Explore insightful blogs, industry trends, and expert tips to stay informed and inspired in the tech world.
         </p>
 
@@ -52,8 +53,8 @@ export default function BlogIntroSection() {
                 </h2>
               </Link>
 
-              <p className="text-gray-600 leading-relaxed mb-6 text-sm md:text-base">
-                Micro, Small, and Medium Enterprises (MSMEs), which are businesses with limited resources but high potential...
+              <p className="text-gray-600 leading-relaxed mb-2.5 text-sm md:text-base">
+                Micro, Small, and Medium Enterprises (MSMEs), which are businesses with limited resources but high potential, often face the challenge of staying competitive, managing costs, and effectively scaling up as they grow. Information Technology (IT) tools can transform these businesses, making them more efficient, productive, and profitable. However, many MSMEs hesitate to invest in IT due to myths about high costs and complexity.
               </p>
 
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
@@ -81,11 +82,11 @@ export default function BlogIntroSection() {
           </div>
 
           {/* RIGHT SIDEBAR */}
-          <div className="w-full lg:w-[320px] flex flex-col gap-10">
+          <div className="w-full lg:w-[320px] flex flex-col gap-13.75">
 
             {/* NEWSLETTER */}
             <div>
-              <p className="font-bold tracking-wide mb-3 text-sm">
+              <p className="font-normal tracking-wide mb-3 text-sm big-noodle text-[24px] text-[#515253]">
                 NEWSLETTER
               </p>
 
@@ -106,7 +107,7 @@ export default function BlogIntroSection() {
 
             {/* SOCIAL */}
             <div>
-              <p className="font-bold tracking-wide mb-4 text-sm">
+              <p className="font-normal tracking-wide mb-4 text-sm big-noodle text-[24px] text-[#515253]">
                 FOLLOW US
               </p>
 

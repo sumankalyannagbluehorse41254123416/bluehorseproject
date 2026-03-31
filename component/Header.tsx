@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { FaChevronDown, FaBars } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
+import { CiMenuFries } from "react-icons/ci";
 import ServicesSection from "@/component/work/woweats/ServicesSection";
 import MobileMenu from "@/component/service/MobileMenu";
 
@@ -61,9 +62,9 @@ export default function Header() {
 
               {navItems.map((item) => {
 
-                const textColor = scrolled ? "text-[#079bcb]" : "text-black";
+                const textColor = scrolled ? "text-blue" : "text-black";
                 const underlineColor = scrolled
-                  ? "after:bg-[#079bcb]"
+                  ? "after:bg-blue"
                   : "after:bg-black";
 
                 if (item.name === "Services") {
@@ -115,9 +116,9 @@ export default function Header() {
             {/* MOBILE BUTTON */}
             <button
               onClick={() => setMobileMenu(true)}
-              className="lg:hidden text-2xl"
+              className="lg:hidden text-30 height-7.5"
             >
-              <FaBars />
+              <CiMenuFries />
             </button>
 
           </nav>

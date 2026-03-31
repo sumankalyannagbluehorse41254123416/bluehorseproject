@@ -41,7 +41,7 @@ export default function HeroSection() {
           {/* Paragraph */}
           <p className="text-white/90 
                         text-[15px] 
-                        sm:text-[16px] 
+                        sm:text-16 
                         md:text-[18px] 
                         lg:text-[24px] 
                         mb-6 md:mb-10">

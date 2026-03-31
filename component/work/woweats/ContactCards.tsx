@@ -30,12 +30,12 @@ const ContactCards = () => {
 
             <div className="mt-6 space-y-3 text-gray-700">
               <div className="flex items-center justify-center gap-2">
-                <Phone className="w-4 h-4 text-blue-600" />
+                <Phone className="w-4 h-4 text-deepblue" />
                 <span>+91 8537941549</span>
               </div>
 
               <div className="flex items-center justify-center gap-2">
-                <Mail className="w-4 h-4 text-blue-600" />
+                <Mail className="w-4 h-4 text-deepblue" />
                 <span>hr@bluehorse.in</span>
               </div>
             </div>
@@ -63,12 +63,12 @@ const ContactCards = () => {
 
             <div className="mt-6 space-y-3 text-gray-700">
               <div className="flex items-center justify-center gap-2">
-                <Phone className="w-4 h-4 text-blue-600" />
+                <Phone className="w-4 h-4 text-deepblue" />
                 <span>+91 8001869103</span>
               </div>
 
               <div className="flex items-center justify-center gap-2">
-                <Mail className="w-4 h-4 text-blue-600" />
+                <Mail className="w-4 h-4 text-deepblue" />
                 <span>info@bluehorse.in</span>
               </div>
             </div>
@@ -96,7 +96,7 @@ const ContactCards = () => {
 
             <div className="mt-6 space-y-3 text-gray-700">
               <div className="flex items-center justify-center gap-2">
-                <Mail className="w-4 h-4 text-blue-600" />
+                <Mail className="w-4 h-4 text-deepblue" />
                 <span>support@bluehorse.in</span>
               </div>
             </div>
