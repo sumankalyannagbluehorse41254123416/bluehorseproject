@@ -21,7 +21,7 @@ const TestimonialsSection = () => {
       quote: "Great working with your team! We truly value your partnership, and prompt website support.",
       caseStudy: "https://www.bluehorse.in/work/kora-ecommerce-solutions-for-ethnic-brand",
       gradient: "from-[#CE5245]/20 via-[#CE5245]/30 to-[#CE5245]/40",
-      size: "medium"
+      size: "normal"
     },
     {
       name: "Sandeep Amar",
@@ -101,7 +101,7 @@ const TestimonialsSection = () => {
       quote: "Impressed by BlueHorse's proactive approach and strong communication; achieved success from the start",
       video: "#",
       gradient: "from-[#8A47E7]/20 via-[#8A47E7]/30 to-[#8A47E7]/40",
-      size: "large"
+      size: "normal"
     },
     {
       name: "Ramachandra Vattikonda",
@@ -123,7 +123,7 @@ const TestimonialsSection = () => {
       quote: "Trusted BlueHorse's can-do attitude—always proactive, even when challenges come up.",
       video: "#",
       gradient: "from-[#5396DF]/25 via-[#5396DF]/40 to-[#5396DF]/60",
-      size: "normal"
+      size: "large"
     },
     {
       name: "Ritesh Aggarwal",
@@ -152,16 +152,16 @@ const TestimonialsSection = () => {
         </p>
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {/* Left Column */}
-          <div className="space-y-6">
+          <div className="space-y-10">
             {testimonials.map((testimonial, index) => (
               <TestimonialCard key={index} {...testimonial} handleExpandVideo={handleExpandVideo} />
             ))}
           </div>
 
           {/* Right Column */}
-          <div className="space-y-6">
+          <div className="space-y-10">
             {testimonialsRight.map((testimonial, index) => (
               <TestimonialCard key={index} {...testimonial} handleExpandVideo={handleExpandVideo} />
             ))}
@@ -188,7 +188,7 @@ const TestimonialCard = ({
   handleExpandVideo 
 }: any) => {
   return (
-    <div className={`relative overflow-hidden ${size === 'large' ? 'h-[500px]' : 'h-[280px]'} group`}>
+    <div className={`relative overflow-hidden ${size === 'large' ? 'h-[729px]' : 'h-[345px]'} group`}>
       {/* Background Image */}
       <div className=" absolute inset-0">
         <img 
