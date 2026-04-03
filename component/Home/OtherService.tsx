@@ -32,7 +32,7 @@ export default function OtherService() {
               into impactful digital products built to scale.
             </p>
 
-            <div className="flex flex-wrap items-center gap-6 mt-8">
+            <div className="flex items-center gap-6 mt-8 overflow-x-auto">
               <Image
                 src="https://www.bluehorse.in/servicess-page/assets/images-2/eazy.png"
                 alt=""
@@ -81,7 +81,7 @@ export default function OtherService() {
                 seamlessly into your existing workflows.
               </p>
 
-              <div className="flex items-center gap-6 mt-6">
+              <div className="flex items-center gap-6 mt-6 overflow-x-auto">
                 <Image
                   src="https://www.bluehorse.in/servicess-page/assets/images-2/creoo.png"
                   alt=""

@@ -7,7 +7,7 @@ export default function ShopifyBanner() {
         
         {/* Breadcrumb */}
         <div className="mb-6 text-sm text-[#515253]">
-          <ul className="flex flex-wrap items-center gap-2">
+          <ul className="flex flex-wrap items-center gap-2 md:pt-9">
             <li>
               <Link href="/" className="hover:text-blue-300">
                 HOME
