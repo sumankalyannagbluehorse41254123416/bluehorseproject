@@ -73,7 +73,7 @@ export default function Header() {
                     <div
                       key={item.name}
                       onMouseEnter={() => setShowServices(true)}
-                      className="relative group"
+                      className="relative group "
                     >
 
                       <Link
@@ -125,13 +125,25 @@ export default function Header() {
           </nav>
 
           {/* SERVICES DROPDOWN */}
-          {showServices && (
+          {/* {showServices && (
             <div className="absolute left-0 right-0 top-full">
               <div className="bg-white p-8 shadow-lg">
                 <ServicesSection />
               </div>
             </div>
-          )}
+          )} */}
+          {/* SERVICES DROPDOWN */}
+          <div
+            className={`absolute left-0 right-0 top-full transition-all duration-500 ease-out
+    ${showServices
+                ? "opacity-100 translate-y-1 pointer-events-auto"
+                : "opacity-0 translate-y-3 pointer-events-none"
+              }`}
+          >
+            <div className="bg-white p-8 shadow-lg">
+              <ServicesSection />
+            </div>
+          </div>
 
         </div>
 
