@@ -56,7 +56,7 @@ export default function OfficeAddressSection() {
   {offices.map((office, i) => (
     <div
       key={i}
-      className="w-full sm:w-[48%] lg:w-[30%] bg-[#f4f4f4] rounded-xl p-6 shadow-sm"
+      className="w-full sm:w-[48%] lg:w-[31%] bg-[#f4f4f4] rounded-xl p-6 shadow-sm"
     >
       {/* Image */}
       <div className="mb-4">
@@ -65,7 +65,7 @@ export default function OfficeAddressSection() {
           alt={office.city}
           width={400}
           height={200}
-          className="rounded-lg w-full h-[180px] object-cover"
+          className="rounded-lg w-full h-45 object-cover"
         />
       </div>
 
@@ -95,7 +95,6 @@ export default function OfficeAddressSection() {
   ))}
 
 </div>
-
       </div>
     </section>
   );

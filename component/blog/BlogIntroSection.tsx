@@ -118,7 +118,7 @@ export default function BlogIntroSection() {
                     key={i}
                     className="flex items-center gap-4 bg-gray-100 px-5 py-4 rounded-md
                     border-2 border-transparent
-                    hover:border-[#0c83d1]
+                    hover:border-[#0c83d1] border-2
                     transition-all duration-300 cursor-pointer"
                   >
                     <Image
