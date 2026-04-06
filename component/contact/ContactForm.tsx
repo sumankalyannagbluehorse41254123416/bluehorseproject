@@ -24,7 +24,7 @@ export default function ContactSection() {
 
         {/* FLOAT CARD */}
         <div
-          className=" relative lg:absolute lg:-right-75 lg:top-1/2 lg:-translate-y-1/2 bg-white rounded-xl shadow-xl w-95 mx-auto p-6 lg:p-10 z-10">
+          className=" relative lg:absolute lg:-right-75 lg:top-1/2 lg:-translate-y-1/2 bg-white rounded-xl shadow-xl w-min lg:w-95 mx-auto p-6 lg:p-10 z-10  ">
           <h2 className="text-[#0c83d1] font-bold text-2xl mb-3 tracking-wide">
             GET IN TOUCH
           </h2>

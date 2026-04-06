@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
       <div className="flex flex-col lg:flex-row justify-between gap-10 pt-10">
 
         {/* Left */}
-        <div className="max-w-100">
+        <div className="max-w-[400px]">
           <div className="flex items-center gap-5 mb-5">
 
             <img

@@ -61,11 +61,11 @@ const ShopifyDevelopmentServices: React.FC = () => {
         <section className="py-20 bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
                 {/* Header - matching the screenshot style */}
-                <div className="text-center mb-8 md:mb-10 lg:mb-16 ">
-                    <h2 className="md:text-20 lg:text-40 font-normal text-[#515253] tracking-[2px] uppercase big-noodle">
+                <div className="text-center mb-16">
+                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-[-0.02em] uppercase">
                         OUR SHOPIFY DEVELOPMENT SERVICES
                     </h2>
-                    <p className="mt-5 text-xl text-gray-600 mx-auto">
+                    <p className="mt-5 text-xl text-gray-600 max-w-3xl mx-auto">
                         We offer a complete suite of Shopify services designed to meet the needs of fast-growing eCommerce brands:
                     </p>
                 </div>
@@ -75,7 +75,7 @@ const ShopifyDevelopmentServices: React.FC = () => {
                     {services.map((service) => (
                         <div
                             key={service.id}
-                            className="group bg-white border border-gray-200 rounded-[10px] p-6.25 hover:border-[#079bcb] border-2  flex flex-col m-4"
+                            className="group bg-white border border-gray-200 rounded-[10px] p-6.25 hover:border-blue-500  flex flex-col m-4"
                         >
                             {/* Icon - matches the light blue rounded box from screenshot */}
                             <div className="w-20 h-20 bg-[#F5F5F5] rounded-2xl flex items-center justify-center mb-8">
@@ -90,7 +90,7 @@ const ShopifyDevelopmentServices: React.FC = () => {
 
                             {/* Title with blue underline */}
                             <div className="mb-6">
-                                <h3 className="text-[18px] font-semibold text-gray-900 leading-tight">
+                                <h3 className="text-[22px] font-semibold text-gray-900 leading-tight">
                                     {service.title}
                                 </h3>
                                 <div className="mt-3 h-1.5 w-37.5 bg-[#0b83d1] rounded-full" />
@@ -104,7 +104,7 @@ const ShopifyDevelopmentServices: React.FC = () => {
                             {/* View More link - matches screenshot */}
                             <a
                                 href={service.link}
-                                className="inline-flex items-center font-medium text-base text-[#079bcb] transition-all group-hover:gap-x-1"
+                                className="inline-flex items-center text-deepblue font-medium text-base hover:text-blue-700 transition-all group-hover:gap-x-1"
                             >
                                 View More
                                 <FiArrowRight className="text-lg transition-transform group-hover:translate-x-1" />

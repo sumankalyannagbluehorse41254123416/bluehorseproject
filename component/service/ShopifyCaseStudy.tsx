@@ -56,7 +56,7 @@ const ShopifyCaseStudy = () => {
           {/* Right Side – Laptop Mockup (fully responsive circles & image) */}
           <div className="relative flex justify-center lg:justify-end pt-6 lg:pt-0">
             {/* Blue Circle Background - Responsive size */}
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-[#079bcb] rounded-full " />
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-[text-blue] rounded-full z-0" />
             
             {/* Decorative Ring - Responsive size */}
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[456px] h-[456px] border-2 border-blue-300/40 rounded-full z-0" />
