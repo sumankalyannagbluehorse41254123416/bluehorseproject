@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function FeaturesSection() {
   return (
-    <section className="w-full bg-gray-100 py-16">
+    <section className="w-full py-16">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-start grid-cols-[50fr_50fr] relative">
         
         {/* LEFT TEXT */}

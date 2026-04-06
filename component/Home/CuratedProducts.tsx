@@ -77,7 +77,7 @@ const CuratedProducts: React.FC = () => {
               </div>
 
               {/* Title */}
-              <h3 className="text-[22px] font-semibold text-gray-800 leading-snug mb-5">
+              <h3 className="text-[24px] font-semibold text-gray-800 leading-snug mb-5">
                 {product.title}
               </h3>
 

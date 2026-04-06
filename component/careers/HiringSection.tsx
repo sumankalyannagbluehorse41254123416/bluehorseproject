@@ -17,10 +17,10 @@ const jobs: Job[] = [
     vacancies: 2,
     experience: "0 - 5",
     skills: [
-      "Manual Testing",
-      "STLC & SDLC Knowledge",
-      "Performance Testing",
-      "Bug Tracking",
+      "Manual Testing, Web Application Testing, Mobile Application Testing, Software Testing,",
+      "Sound knowledge of SDLC, Software Testing Life Cycle (STLC), Performance Testing, Bug Tracking, E-commerce",
+      "Up-to-date knowledge of software test design and testing methodologies",
+      "Working knowledge of test techniques and compatibility with various software programs",
     ],
   },
   {
@@ -30,10 +30,10 @@ const jobs: Job[] = [
     vacancies: 2,
     experience: "0 - 3",
     skills: [
-      "Social Media Content",
-      "Digital Marketing",
-      "Content Planning",
-      "English Writing",
+      "Writing and Editing social media post captions, description, tags & Scheduling and uploading posts on a regular basis.",
+      "Experience in / Understanding of Social Media/Content Marketing/Digital Marketing/Content Research & Design.",
+      "Planning and Strategizing SM content and creative for various platforms like LinkedIn, Facebook, Instagram, YouTube, Pinterest and Twitter.",
+      "Command over English language is must and should be excellent in writing.",
     ],
   },
   {
@@ -43,10 +43,11 @@ const jobs: Job[] = [
     vacancies: 4,
     experience: "2 - 4",
     skills: [
-      "PHP & Laravel",
-      "MVC Architecture",
-      "Database Design",
-      "Problem Solving",
+      "Proficiency in HTML, PHP, SQL, JavaScript, Database Design and unit testing",
+      "Understanding of MVC architecture",
+      "Basic Knowledge of Laravel Development",
+      "Good communication, interpersonal and problem-solving skills",
+      "Creative, quick learner and Team Player",
     ],
   },
   {
@@ -56,10 +57,10 @@ const jobs: Job[] = [
     vacancies: 2,
     experience: "2 - 4",
     skills: [
-      "Ionic Framework",
-      "API Integration",
-      "HTML5 & CSS",
-      "SQLite / PostgreSQL",
+      "Ionic framework, CSS, JavaScript, HTML 5, JSON & API Integrations",
+      "Knowledge of the SQLite database or PostgreSQL",
+      "Good communication, interpersonal and problem-solving skills",
+      "Creative, quick learner and Team Player",
     ],
   },
   {
@@ -69,10 +70,11 @@ const jobs: Job[] = [
     vacancies: 2,
     experience: "2 - 4",
     skills: [
-      "Magento Development",
-      "HTML CSS JS",
-      "Frontend Frameworks",
-      "Backend APIs",
+      "Learn and implement industry standard best practices",
+      "Must have the drive to produce high quality code",
+      "Design, develop, and maintain web applications",
+      "Must have strong knowledge of web technologies JavaScript, HTML, CSS, etc.",
+      "Experience in with frontend technologies like Angular2+, or React & backend technologies like Python (Django), JavaScript (NodeJS), etc. would be preferred",
     ],
   },
   {
@@ -82,10 +84,14 @@ const jobs: Job[] = [
     vacancies: 2,
     experience: "2 - 4",
     skills: [
-      "Theme Customization",
-      "WooCommerce",
-      "Plugin Development",
-      "Bootstrap",
+      
+      "Minimum 2 years experience will require in Word Press / Woo commerce",
+      "Knowledge of Template Integration & Theme Customization",
+      "Knowledge of Word Press Themes, Plug-in, Widgets etc",
+      "Word Press back-end working experience is mandatory",
+      "Good knowledge of HTML / CSS / Bootstrap",
+      "Good communication, interpersonal and problem-solving skills",
+      "Creative, quick learner and Team Player",
     ],
   },
   {
@@ -95,17 +101,17 @@ const jobs: Job[] = [
     vacancies: 1,
     experience: "4 - 5",
     skills: [
-      "Flutter / Ionic",
-      "API Integration",
-      "App Store Deployment",
-      "Angular / Dart",
+      "Responsible for the development of Hybrid mobile applications using the Ionic / flutter framework",
+      "Manage the complete app development life cycle, which includes Screen Layout development, API integration, Testing and Submission to app stores",
+      "Knowledge of Angular JS and/or Dart",
+      "Should have sound knowledge of database and optimized query building",
     ],
   },
 ];
 
 export default function HiringSection() {
   return (
-    <section className="py-16 bg-gray-100">
+    <section className="py-16">
       <div className="max-w-7xl mx-auto px-6">
 
         <h2 className="text-3xl font-bold text-center">
@@ -123,9 +129,9 @@ export default function HiringSection() {
               className="relative bg-[#f5f3fe] p-6 pb-16 rounded-xl overflow-hidden"
             >
               {/* circles */}
-              <span className="circleone absolute bottom-[-80px] right-[-80px] w-[200px] h-[200px]  rounded-full opacity-20"></span>
-              <span className="circletwo absolute bottom-[-120px] right-[-120px] w-[300px] h-[300px]  rounded-full opacity-15"></span>
-              <span className="circletheree absolute bottom-[-180px] right-[-180px] w-[450px] h-[450px]  rounded-full opacity-10"></span>
+              <span className="circleone absolute -bottom-20 -right-20 w-50 h-50  rounded-full opacity-20"></span>
+              <span className="circletwo absolute -bottom-30 -right-30 w-75 h-75 rounded-full opacity-15"></span>
+              <span className="circletheree absolute -bottom-45 -right-45 w-112.5 h-112.5 rounded-full opacity-10"></span>
 
               <h3 className="text-xl font-bold relative z-10">
                 {job.title}
@@ -151,15 +157,15 @@ export default function HiringSection() {
                 Skills Required
               </p>
 
-              <ul className="mt-2 text-sm space-y-1 relative z-10">
+              <ul className="mt-2 text-sm space-y-1 relative z-10 flex gap-1.25 flex-col">
                 {job.skills.map((skill, i) => (
-                  <li key={i}>• {skill}</li>
+                  <li className="" key={i}>• {skill}</li>
                 ))}
               </ul>
 
-              <button className="mt-6 bg-blue-600 text-white px-5 py-2 rounded-md hover:bg-blue-700 relative z-10">
-                Apply Now
-              </button>
+             <button className="absolute bottom-6 left-6 bg-blue-600 text-white px-5 py-2 rounded-md hover:bg-blue-700 z-10">
+  Apply Now
+</button>
             </div>
           ))}
         </div>

@@ -10,8 +10,8 @@ export default function JoinExpertiseSection() {
   return (
     <>
       <section className="px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 px-10 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="container">
+          <div className="relative w-329.5 h-62.5 overflow-hidden rounded-2xl bg-gradient-to-br from-[#08bde8] to-[#0982b6] px-10 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
 
             <Image
               src="https://www.bluehorse.in/assets/image/career_bg.png"
@@ -19,16 +19,15 @@ export default function JoinExpertiseSection() {
               fill
               className="object-cover opacity-20"
             />
+            
+            <div className="absolute left-15 top-1/2 -translate-y-1/2 w-1.5 h-32 bg-white rounded-full"></div>
 
-            <div className="absolute w-[300px] h-[300px] bg-white/20 rounded-full left-20 top-1/2 -translate-y-1/2"></div>
-            <div className="absolute left-6 top-1/2 -translate-y-1/2 w-[6px] h-[80px] bg-white rounded-full"></div>
-
-            <div className="relative z-10 max-w-3xl text-white">
+            <div className="relative z-10  text-white ml-20">
               <h3 className="text-3xl font-bold uppercase">
                 Expertise In Something Else?
               </h3>
 
-              <p className="mt-4 text-lg text-white/90">
+              <p className="mt-4 text-sm text-white/90">
                 We offer the opportunity to work on the latest technologies to
                 showcase your expertise and get a chance to expand your knowledge.
               </p>
