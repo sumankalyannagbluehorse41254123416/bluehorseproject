@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function ShopifyBanner() {
   return (
     <section className="shopify-banner relative py-20">
-      <div className="relative max-w-7xl mx-auto px-6 text-white">
+      <div className="relative container text-white pt-7 md:pt-10 lg:pt-20">
         
         {/* Breadcrumb */}
         <div className="mb-6 text-sm text-[#515253]">

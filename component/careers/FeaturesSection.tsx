@@ -6,7 +6,7 @@ export default function FeaturesSection() {
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-start grid-cols-[50fr_50fr] relative">
         
         {/* LEFT TEXT */}
-        <div className=" pt-10 pb-30 flex flex-col justify-center relative">
+        <div className=" pt-10 pb-30 flex flex-col justify-center relative top-52">
           <h2 className="text-2xl font-semibold text-gray-700 uppercase tracking-wide">
             Fun Life At
           </h2>

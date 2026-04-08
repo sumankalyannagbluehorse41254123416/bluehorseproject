@@ -76,17 +76,17 @@ export default function ShopifyFAQ() {
               {/* Question */}
               <div
                 onClick={() => setOpen(active ? -1 : index)}
-                className="flex items-center justify-between p-6 cursor-pointer"
+                className="flex  items-center justify-between p-6 cursor-pointer"
               >
-                <div className="flex items-center gap-6">
+                <div className="flex gap-3 flex-col md:flex-row items-center">
 
                   {/* Number */}
-                  <span className="text-[#0C83D1] text-[48px] font-bold">
+                  <span className="text-[#0C83D1] text-48 font-bold relative -left-25.75 md:left-0">
                     {faq.id}
                   </span>
 
                   {/* Question */}
-                  <h3 className="text-[24px] text-[#515253] font-medium">
+                  <h3 className=" text-[24px] text-[#515253] font-medium">
                     {faq.question}
                   </h3>
 
@@ -94,7 +94,7 @@ export default function ShopifyFAQ() {
 
                 {/* Icon */}
                 <div
-                  className={`w-12 h-12 flex items-center justify-center rounded-full 
+                  className={`w-12 h-12 flex items-center justify-center rounded-full flex-shrink-0 
   ${active ? "bg-white text-black" : "bg-[#0C83D1] text-white"}`}
                 >
                   {active ? <FaMinus size={25} /> : <FaPlus size={25} />}

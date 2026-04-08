@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
             Our Products
           </h3>
 
-          <div className="flex flex-wrap justify-center items-center gap-6">
+          <div className="flex justify-center items-center gap-6">
 
             <Image
               src="https://www.bluehorse.in/imagesnew/d2c.png"

@@ -174,10 +174,10 @@ const ecommerceServices = [
 ];
 
 const otherServices = [
-  { name: "Software development for Startups", href: "/services/software-startups" },
-  { name: "Mobile App Development", href: "/services/mobile-app" },
-  { name: "AI Development", href: "/services/ai" },
-  { name: "Organic Marketing", href: "/services/organic-marketing" },
+  { name: "Software development for Startups", href: "/service/software-development-for-startups" },
+  { name: "Mobile App Development", href: "/service/mobile-app-development" },
+  { name: "AI Development", href: "/service/ai-development" },
+  { name: "Organic Marketing", href: "/service/organic-marketing" },
 ];
 
 const ServicesSection = () => {
