@@ -1,7 +1,10 @@
 
 import BlogsSection from '@/component/service/BlogsSection'
+import CaseStudySlider from '@/component/service/mobile-app-development/CaseStudySlider'
+import ChallengesSection from '@/component/service/mobile-app-development/ChallengesSection'
 import HeroSection from '@/component/service/mobile-app-development/HeroSection'
-import ShopifyBanner from '@/component/service/ShopifyBanner'
+import Services from '@/component/service/mobile-app-development/Services'
+import WhyChoose from '@/component/service/mobile-app-development/WhyChoose'
 import ShopifyCaseStudy from '@/component/service/ShopifyCaseStudy'
 import ShopifyDevelopmentServices from '@/component/service/ShopifyDevelopmentServices'
 import ShopifyExpertiseSection from '@/component/service/ShopifyExpertiseSection'
@@ -14,10 +17,10 @@ const page = () => {
     return (
         <>
             <HeroSection />
-            {/* <ShopifyBanner /> */}
-            <ShopifyDevelopmentServices />
-            <ShopifyExpertiseSection />
-            <WhyChooseBlueHorse />
+            <ChallengesSection />
+            <Services />
+            <CaseStudySlider />
+            <WhyChoose/>
             <ShopifyCaseStudy />
             <ShopifyFAQ />
             <BlogsSection />
