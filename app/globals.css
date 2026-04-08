@@ -58,6 +58,69 @@ body {
   font-family: "BigNoodleTitling", sans-serif;
 }
 
+.hero-title {
+  font-family: "BigNoodleTitling";
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 46px;
+  text-align: left;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 40px;
+  }
+}
+
+.hero-description {
+  font-size: 20px;
+  color: #8c8c8c;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 1px;
+}
+
+.Section-Title {
+  font-family: "BigNoodleTitling";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: var(--heading);
+}
+
+@media (max-width: 1200px) {
+  .Section-Title {
+    line-height: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Section-Title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.Section-Details {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--grey);
+  text-align: center;
+  margin: 10px auto;
+  margin-bottom: 45px;
+}
+
+@media (max-width: 768px) {
+    .Section-Details {
+        margin-bottom: 35px;
+    }
+}
+
 /* custom container  */
 
 .container {
@@ -251,17 +314,7 @@ body {
 }
 
 
-.Section-Details {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  color: #8c8c8c;
-  text-align: center;
-  margin: 10px auto;
-  margin-bottom: 45px;
-  width: 100%;
-  max-width: 610px
-}
+
 
 @media (max-width:768px) {
   .Section-Details {
@@ -303,6 +356,7 @@ body {
   transition: color 0.3s;
 }
 
-.swiper-button-prev ,.swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   display: none !important;
 }

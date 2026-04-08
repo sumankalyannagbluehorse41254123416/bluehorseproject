@@ -7,6 +7,7 @@ const config: Config = {
       colors: {
         blueDark: "#0C83D1",
         greyText: "#6b7280",
+        gray:"#8c8c8c",
         // greyText: "#6b7280",
       },
       fontFamily: {
