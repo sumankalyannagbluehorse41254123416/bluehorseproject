@@ -77,11 +77,11 @@ const blogPosts = [
 
 const BlogsSection = () => {
   return (
-    <section className="bg-white mt-20">
+    <section className="bg-white mt-8.75 md:mt-8.75 lg:mt-20">
       <div className="container mx-auto px-4">
 
         {/* Header */}
-        <div className="text-center mb-15">
+        <div className="text-center mb-8.75 md:mb-8.75 lg:mb-15">
           <h2 className="text-40 md:text-5xl font-normal tracking-tight text-[#515253] big-noodle">
             BLOGS
           </h2>
@@ -122,7 +122,7 @@ const BlogsSection = () => {
 
                 {/* Text */}
                 <div className="pt-4">
-                  <p className="text-[20px] text-[#121212] font-semibold leading-relaxed line-clamp-2">
+                  <p className="text-base md:base lg:text-[20px] text-[#121212] font-semibold leading-relaxed line-clamp-2">
                     {post.excerpt}
                   </p>
                 </div>

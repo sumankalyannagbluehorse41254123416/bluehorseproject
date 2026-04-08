@@ -55,44 +55,59 @@ const WhyChooseBlueHorse = () => {
                 </div>
 
                 {/* Stats Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mb-20 max-w-230 mx-auto">
-                    {stats.map((stat, index) => (
-                        <div
-                            key={index}
-                            className={` py-7.5 px-6.25 text-center ${stat.isBlue
-                                    ? 'bg-[#0C83D1] text-white'
-                                    : ''
-                                }`}
-                        >
-                            {stat.isSpecial ? (
-                                <>
-                                    <div className="text-5xl font-bold mb-4 tracking-wide">{stat.label}</div>
-                                    <div className="text-[18px] text-blue-100 font-medium">{stat.subLabel}</div>
-                                </>
-                            ) : (
-                                <>
-                                    <div className="text-[48px] leading-none font-bold">
-                                        {stat.number}
-                                        <span className="text-[48px]">+</span>
-                                    </div>
-                                    <p
-                                        className={`mt-8 text-lg leading-tight font-medium ${stat.isBlue ? 'text-blue-100' : 'text-gray-700'
-                                            }`}
-                                    >
-                                        {stat.label}
-                                    </p>
-                                </>
-                            )}
-                        </div>
-                    ))}
+                <div className="grid grid-cols-2 lg:grid-cols-3 mb-20 max-w-230 mx-auto">
+                    {stats.map((stat, index) => {
+                        const isBlue =
+                            Math.floor(index / 2) % 2 === 0
+                                ? index % 2 !== 0
+                                : index % 2 === 0;
+
+                        return (
+                            <div
+                                key={index}
+                                className={`
+          py-7.5 px-6.25 text-center
+          ${isBlue ? 'bg-[#0C83D1] text-white' : 'bg-white'}
+        `}
+                            >
+                                {stat.isSpecial ? (
+                                    <>
+                                        <div className="text-3xl md:text-5xl font-bold mb-2 md:mb-4 tracking-wide">
+                                            {stat.label}
+                                        </div>
+                                        <div
+                                            className={`text-[14px] md:text-[18px] font-medium ${isBlue ? 'text-blue-100' : 'text-gray-600'
+                                                }`}
+                                        >
+                                            {stat.subLabel}
+                                        </div>
+                                    </>
+                                ) : (
+                                    <>
+                                        <div className="text-[32px] md:text-[48px] leading-none font-bold">
+                                            {stat.number}
+                                            <span>+</span>
+                                        </div>
+
+                                        <p
+                                            className={`mt-4 md:mt-8 text-sm md:text-lg leading-tight font-medium ${isBlue ? 'text-blue-100' : 'text-gray-700'
+                                                }`}
+                                        >
+                                            {stat.label}
+                                        </p>
+                                    </>
+                                )}
+                            </div>
+                        );
+                    })}
                 </div>
 
                 {/* Features Grid - Now with YOUR custom images */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                     {features.map((feature, index) => (
                         <div
                             key={index}
-                            className="group bg-white border border-gray-100  p-5 m-2.5 hover:border-blue-200"
+                            className="group bg-white border border-[rgb(212,224,237,0.7)]  p-5 m-2.5 hover:border-blue-200"
                         >
                             <div className="mb-8 flex justify-center">
                                 <Image

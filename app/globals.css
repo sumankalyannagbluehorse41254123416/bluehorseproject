@@ -270,4 +270,39 @@ body {
   }
 }
 
+@media (max-width:575px) {
 
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: none !important;
+  }
+
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  left: -575px !important;
+}
+
+.casstudy_slider-nav-arrows {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.casstudy_slider-nav-arrow-btn {
+  background: none;
+  color: #0009;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.swiper-button-prev ,.swiper-button-next {
+  display: none !important;
+}

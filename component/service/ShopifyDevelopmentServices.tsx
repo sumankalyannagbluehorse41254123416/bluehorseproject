@@ -59,7 +59,7 @@ const ShopifyDevelopmentServices: React.FC = () => {
 
     return (
         <section className="py-20 bg-white">
-            <div className="max-w-7xl mx-auto px-6 lg:px-8">
+            <div className="container px-0 md:px-6 lg:px-8">
                 {/* Header - matching the screenshot style */}
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-[-0.02em] uppercase">

@@ -6,8 +6,9 @@ import React from 'react';
 
 const ShopifyCaseStudy = () => {
   return (
-    <section className="py-41 sm:py-8 lg:py-10 bg-white relative overflow-hidden">
+    <section className=" sm:py-8 lg:py-10 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+
         {/* Section Title */}
         <div className="text-center mb-10 sm:mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900">
@@ -16,19 +17,42 @@ const ShopifyCaseStudy = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          {/* Left Content - Fully responsive text */}
-          <div className="space-y-6 sm:space-y-8">
-            {/* KISAH Logo */}
+
+          {/* RIGHT SIDE IMAGE (SHOW FIRST ON MOBILE) */}
+          <div className="order-1 lg:order-2 relative flex justify-center lg:justify-end pt-6 lg:pt-0">
+
+            {/* Circle - hide on mobile */}
+            <div className="hidden sm:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-87.5 h-87.5 bg-[#0C83D1] rounded-full z-0" />
             
+            {/* Border - hide on mobile */}
+            <div className="hidden sm:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-114 h-114 border-2 border-blue-300/40 rounded-full z-0" />
+
+            {/* Image */}
+            <div className="relative z-10 w-full max-w-[320px] sm:max-w-105 lg:w-112.5 left-0 lg:-left-15.5">
               <Image
-                src="/assest/images/sliderlogo/Group.avif"
-                alt="KISAH Logo"
-                width={240}
-                height={76}
-                className=""
+                src="/assest/images/sliderlogo/kisha_banner.png"
+                alt="Kisah Shopify Store on Laptop"
+                width={650}
+                height={410}
+                className="w-full h-auto"
                 priority
-              /> 
-            {/* Main Heading */}
+              />
+            </div>
+          </div>
+
+          {/* LEFT CONTENT */}
+          <div className="order-2 lg:order-1 space-y-6 sm:space-y-8">
+
+            {/* Logo */}
+            <Image
+              src="/assest/images/sliderlogo/Group.avif"
+              alt="KISAH Logo"
+              width={240}
+              height={76}
+              priority
+            />
+
+            {/* Heading */}
             <h3 className="text-2xl sm:text-3xl lg:text-[29px] leading-tight font-semibold text-gray-900 text-center lg:text-left">
               Empowering a D2C Fashion Brand with a Scalable Shopify Store
             </h3>
@@ -41,7 +65,7 @@ const ShopifyCaseStudy = () => {
               create a distinct online brand presence in the men’s ethnic wear category.
             </p>
 
-            {/* Button - Full width on mobile for better touch target */}
+            {/* Button */}
             <div className="flex justify-center lg:justify-start pt-2">
               <Link
                 href="https://www.bluehorse.in/work/kisah"
@@ -52,30 +76,8 @@ const ShopifyCaseStudy = () => {
               </Link>
             </div>
           </div>
-
-          {/* Right Side – Laptop Mockup (fully responsive circles & image) */}
-          <div className="relative flex justify-center lg:justify-end pt-6 lg:pt-0">
-            {/* Blue Circle Background - Responsive size */}
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-[text-blue] rounded-full z-0" />
-            
-            {/* Decorative Ring - Responsive size */}
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[456px] h-[456px] border-2 border-blue-300/40 rounded-full z-0" />
-
-            {/* Laptop Image - Responsive width + perfect aspect ratio */}
-            <div className="relative z-10 w-[450px] -left-15.5">
-              <Image
-                src="/assest/images/sliderlogo/kisha_banner.png"
-                alt="Kisah Shopify Store on Laptop"
-                width={650}
-                height={410}
-                className="w-full h-auto"
-                priority
-              />
-            </div>
-          </div>
         </div>
       </div>
-
     </section>
   );
 };
