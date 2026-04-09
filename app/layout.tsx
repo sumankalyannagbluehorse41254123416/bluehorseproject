@@ -32,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={openSans.variable}>
-      <body className="antialiased">
+      <body className="antialiased" style={{fontFamily:'Open Sans", sans-serif'}}>
         <Header />
         {children}
         <Footer />
