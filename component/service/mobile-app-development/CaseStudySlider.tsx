@@ -2,15 +2,16 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { MoveLeft, MoveRightIcon } from "lucide-react";
 
 const slides = [
   {
-    logo: "/images/wow-logo.png",
+    logo: "https://www.bluehorse.in/bluehorse-html/ecommercedevelopmentassets/image/Wow_logo_website-removebg-preview.png",
     title:
       "Unifying Multiple Brands into a Seamless Omnichannel Experience",
     description:
       "Wow Eats is an all-in-one food ordering app developed for Wow! Momo, Wow! China, and Wow! Chicken. The platform brings together all Wow brands under one roof—allowing customers to order from any outlet via a single interface.",
-    image: "/images/wow-momo.png",
+    image: "https://www.bluehorse.in/bluehorse-html/ecommercedevelopmentassets/image/Wow_momo_logoimg.png",
     link: "https://www.bluehorse.in/work/creoo",
   },
   {
@@ -73,7 +74,7 @@ export default function CaseStudySlider() {
                   className="mb-6 mx-auto md:mx-0"
                 />
 
-                <h3 className="text-2xl md:text-3xl font-semibold mb-3 leading-snug">
+                <h3 className="text-2xl md:text-[34px] mb-3 leading-tight text-heading open-sans font-bold">
                   {slide.title}
                 </h3>
 
@@ -84,9 +85,9 @@ export default function CaseStudySlider() {
                 <a
                   href={slide.link}
                   target="_blank"
-                  className="inline-block bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-500 transition"
+                  className="flex w-fit gap-2 items-center bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-500 transition"
                 >
-                  View Full Case Study →
+                  View Full Case Study <MoveRightIcon className="w-5"/>
                 </a>
               </div>
 
@@ -111,20 +112,20 @@ export default function CaseStudySlider() {
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-6">
           <button
             onClick={prevSlide}
-            className="text-3xl hover:text-blue-600"
+            className="hover:text-blue-600"
           >
-            ←
+            <MoveLeft className="w-8"/>
           </button>
           <button
             onClick={nextSlide}
-            className="text-3xl hover:text-blue-600"
+            className="hover:text-blue-600"
           >
-            →
+            <MoveRightIcon className="w-8"/>
           </button>
         </div>
 
         {/* Dots */}
-        <div className="absolute bottom-4 left-4 hidden md:flex gap-2">
+        {/* <div className="absolute bottom-4 left-4 hidden md:flex gap-2">
           {slides.map((_, i) => (
             <div
               key={i}
@@ -134,7 +135,7 @@ export default function CaseStudySlider() {
               }`}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
