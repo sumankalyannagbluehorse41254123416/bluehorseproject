@@ -14,22 +14,22 @@ const reasons = [
   {
     title: "Brand-First App Strategy",
     desc: "We craft mobile apps that align with your brand’s identity and delight users at every step.",
-    icon: <Lightbulb className="w-7" />,
+    icon: <Lightbulb className="w-5 md:w-8 h-5 md:h-8" />,
   },
   {
     title: "One App for All Platforms",
     desc: "With Flutter, we deliver Android and iOS apps using a single codebase—faster and more cost-effective.",
-    icon: <Clock className="w-7" />,
+    icon: <Clock className="w-5 md:w-8 h-5 md:h-8" />,
   },
   {
     title: "Designed to Drive Engagement",
     desc: "We focus on smooth navigation, fast loading, and intuitive UI to increase user retention and activity.",
-    icon: <Scale className="w-7" />,
+    icon: <Scale className="w-5 md:w-8 h-5 md:h-8" />,
   },
   {
     title: "Fast Delivery and Ongoing Support",
     desc: "From build to launch and beyond, we ensure quick turnaround and reliable post-launch maintenance.",
-    icon: <Users className="w-7" />,
+    icon: <Users className="w-5 md:w-8 h-5 md:h-8" />,
   },
 ];
 
@@ -67,22 +67,22 @@ export default function WhyChoose() {
             {reasons.map((item, i) => (
               <div
                 key={i}
-                className="relative group rounded-xl p-2 transition"
+                className="relative group rounded-xl  transition"
               >
                 {/* Gradient hover */}
-                <div className="absolute inset-[-16px] rounded-xl bg-gradient-to-r from-blue-50 to-indigo-50 opacity-0 group-hover:opacity-100 transition"></div>
+                <div className="absolute inset-[-16px] rounded-xl bg-linear-to-r from-blue-50 to-indigo-50 opacity-0 group-hover:opacity-100 transition"></div>
 
                 <div className="relative">
                   {/* Icon */}
-                  <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-blue/10 text-blue mb-4 text-2xl">
+                  <div className="flex items-center justify-center w-fit p-3 rounded-xl bg-blue/10 text-blue mb-4 ">
                     {item.icon}
                   </div>
 
-                  <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-2">
+                  <h3 className="text-lg md:text-xl font-semibold text-heading mb-2" style={{fontFamily:'Open Sans, sans-serif'}}>
                     {item.title}
                   </h3>
 
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-grey text-sm md:text-base">
                     {item.desc}
                   </p>
                 </div>
