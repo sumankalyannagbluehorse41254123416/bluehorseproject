@@ -278,8 +278,11 @@ body {
   }
 
 }
-
-.swiper-horizontal>.swiper-pagination-bullets,
+.banner_slider .swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+  left: 0 !important;
+}
+.caseStudySwiper .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   left: -575px !important;
 }
