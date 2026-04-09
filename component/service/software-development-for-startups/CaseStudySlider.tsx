@@ -1,5 +1,6 @@
 "use client";
 
+import { useRef } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
@@ -33,6 +34,9 @@ const slides = [
 ];
 
 export default function CaseStudySlider() {
+  const prevRef = useRef<HTMLButtonElement | null>(null);
+  const nextRef = useRef<HTMLButtonElement | null>(null);
+
   return (
     <section className="bg-[#f3f4f6] py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
@@ -44,14 +48,35 @@ export default function CaseStudySlider() {
 
         <Swiper
           modules={[Navigation, Pagination]}
-          navigation
-          pagination={{ clickable: true }}
           loop={true}
-          className="!pb-16"
+          pagination={{ clickable: true }}
+          navigation={{
+            prevEl: prevRef.current,
+            nextEl: nextRef.current,
+          }}
+
+          /* 🔥 MAIN FIX */
+          onSwiper={(swiper) => {
+            setTimeout(() => {
+              if (
+                swiper.params.navigation &&
+                typeof swiper.params.navigation !== "boolean"
+              ) {
+                swiper.params.navigation.prevEl = prevRef.current;
+                swiper.params.navigation.nextEl = nextRef.current;
+
+                swiper.navigation.destroy();
+                swiper.navigation.init();
+                swiper.navigation.update();
+              }
+            });
+          }}
+
+          className="relative caseStudySwiper pb-10!"
         >
           {slides.map((slide, i) => (
             <SwiperSlide key={i}>
-              <div className="flex flex-col lg:flex-row items-center gap-10 min-h-[450px]">
+              <div className="flex flex-col lg:flex-row items-center gap-10 min-h-112.5">
 
                 {/* LEFT */}
                 <div className="w-full lg:w-1/2 flex flex-col justify-center">
@@ -81,13 +106,13 @@ export default function CaseStudySlider() {
                 </div>
 
                 {/* RIGHT */}
-                <div className="relative w-full lg:w-1/2 flex justify-center items-center h-[400px]">
+                <div className="relative w-full lg:w-1/2 flex justify-center items-center h-100">
 
                   {/* Border Circle */}
-                  <div className="absolute w-[420px] h-[420px] rounded-full border border-[#0C83D1]/40"></div>
+                  <div className="absolute w-105 h-105 rounded-full border border-[#0C83D1]/40"></div>
 
                   {/* Blue Circle */}
-                  <div className="absolute w-[320px] h-[320px] rounded-full bg-[#0C83D1]"></div>
+                  <div className="absolute w-[320px] h-80 rounded-full bg-[#0C83D1]"></div>
 
                   {/* Image */}
                   <Image
@@ -102,12 +127,24 @@ export default function CaseStudySlider() {
               </div>
             </SwiperSlide>
           ))}
-          <div className="casstudy_slider-nav-arrows">
-                <button id="prevBtn" className="casstudy_slider-nav-arrow-btn">←</button>
-                <button id="nextBtn" className="casstudy_slider-nav-arrow-btn">→</button>
-            </div>
-        </Swiper>
 
+          {/* ✅ CUSTOM BUTTONS */}
+          <div className="casstudy_slider-nav-arrows absolute bottom-0 right-0 flex gap-3 z-20">
+            <button
+              ref={prevRef}
+              className="casstudy_slider-nav-arrow-btn "
+            >
+              ←
+            </button>
+            <button
+              ref={nextRef}
+              className="casstudy_slider-nav-arrow-btn "
+            >
+              →
+            </button>
+          </div>
+
+        </Swiper>
       </div>
     </section>
   );
