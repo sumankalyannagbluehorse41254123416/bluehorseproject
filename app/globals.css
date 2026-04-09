@@ -57,6 +57,7 @@ body {
 .open-sans {
   font-family: "Open Sans", sans-serif;
 }
+
 .big-noodle {
   font-family: "BigNoodleTitling", sans-serif;
 }
@@ -119,9 +120,32 @@ body {
 }
 
 @media (max-width: 768px) {
-    .Section-Details {
-        margin-bottom: 35px;
-    }
+  .Section-Details {
+    margin-bottom: 35px;
+  }
+}
+
+.cta-blue {
+  background-color: #0C83D1;
+  color: var(--clr-white);
+  font-size: 24px;
+  line-height: 32px;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  display: inline-block
+}
+
+.cta-blue:hover {
+  background-color: var(--blue);
+  color: var(--white)
+}
+
+@media(max-width: 768px) {
+  .cta-blue {
+    font-size: 18px;
+    padding: 10px 22px
+  }
 }
 
 /* custom container  */
