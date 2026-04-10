@@ -29,7 +29,7 @@ const testimonials = [
 export default function TestimonialSlider() {
     return (
         <section className="py-16 bg-white">
-            <div className="max-w-7xl mx-auto px-6">
+            <div className="container">
 
                 {/* TITLE */}
                 <h2 className="text-center text-4xl font-bold text-gray-700 mb-12 tracking-wide uppercase">
@@ -49,7 +49,7 @@ export default function TestimonialSlider() {
                         <SwiperSlide key={t.id}>
 
                             <div
-                                className="relative mt-10 rounded-2xl px-12 py-10 h-[380px] flex items-center overflow-hidden"
+                                className="relative mt-10 rounded-2xl p-10 h-95 flex items-center overflow-hidden"
                                 style={{
                                     backgroundImage:
                                         "url('/assest/images/sliderlogo/testimonials_banner.png')",
@@ -70,7 +70,7 @@ export default function TestimonialSlider() {
 
                                         {/* QUOTE SECTION */}
                                         <div className="flex gap-4 mt-6">
-                                            <div className="w-[3px] bg-[#0C83D1]"></div>
+                                            <div className="w-0.75 bg-[#0C83D1]"></div>
 
                                             <blockquote className="text-gray-600 text-[17px] leading-relaxed italic">
                                                 {t.quote}
@@ -100,11 +100,11 @@ export default function TestimonialSlider() {
                                 <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-6 z-10">
 
                                     <button className="custom-prev w-12 h-12 rounded-full border border-[#0C83D1] text-[#0C83D1] flex items-center justify-center hover:bg-[#0C83D1] hover:text-white transition">
-                                        <FiChevronLeft className="text-[40px]" />
+                                        <FiChevronLeft className="text-40" />
                                     </button>
 
                                     <button className="custom-next w-12 h-12 rounded-full border border-[#0C83D1] text-[#0C83D1] flex items-center justify-center hover:bg-[#0C83D1] hover:text-white transition">
-                                        <FiChevronRight className="text-[40px]" />
+                                        <FiChevronRight className="text-40" />
                                     </button>
 
                                 </div>
