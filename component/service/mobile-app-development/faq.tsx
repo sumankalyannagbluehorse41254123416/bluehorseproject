@@ -53,7 +53,7 @@ export default function FAQ() {
 
     return (
         <section className="py-16">
-            <div className="container">
+            <div className="max-w-4xl mx-auto px-4">
                 {/* Heading */}
                 <div className="text-center mb-12">
                     <h2 className="text-40 md:text-5xl font-normal tracking-tight text-[#515253] big-noodle">
@@ -70,23 +70,23 @@ export default function FAQ() {
                         return (
                             <div
                                 key={index}
-                                className={`border-b border-[#dfeef2] rounded-md transition-all ${active ? "bg-[rgb(57,172,241,0.1)]" : "bg-white"
+                                className={`border border-[#dfeef2] rounded-md transition-all ${active ? "bg-[rgba(249,253,255,0.1)]" : "bg-white"
                                     }`}
                             >
                                 {/* Question */}
                                 <div
                                     onClick={() => setOpen(active ? -1 : index)}
-                                    className="flex  items-center justify-between p-6 cursor-pointer"
+                                    className="flex  items-center justify-between px-6 py-3 cursor-pointer"
                                 >
                                     <div className="flex gap-3 flex-col md:flex-row items-center">
 
                                         {/* Number */}
-                                        <span className="text-[#0C83D1] text-48 font-bold relative -left-25.75 md:left-0">
+                                        {/* <span className="text-[#0C83D1] text-48 font-bold relative -left-25.75 md:left-0">
                                             {faq.id}
-                                        </span>
+                                        </span> */}
 
                                         {/* Question */}
-                                        <h3 className=" text-[24px] text-[#515253] font-medium">
+                                        <h3 className=" text-base md:text-lg text-[#515253] font-bold">
                                             {faq.question}
                                         </h3>
 
@@ -95,15 +95,15 @@ export default function FAQ() {
                                     {/* Icon */}
                                     <div
                                         className={`w-12 h-12 flex items-center justify-center rounded-full flex-shrink-0 
-  ${active ? "bg-white text-black" : "bg-[#0C83D1] text-white"}`}
+  ${active ? "bg-white text-black" : "bg-[#fff] text-black"}`}
                                     >
-                                        {active ? <FaMinus size={25} /> : <FaPlus size={25} />}
+                                        {active ? <FaMinus size={15} /> : <FaPlus size={15} />}
                                     </div>
                                 </div>
 
                                 {/* Answer */}
                                 {active && (
-                                    <div className="px-16 pb-6 text-[#515253] leading-relaxed">
+                                    <div className="pl-6 pr-12 pb-6 text-[#515253] leading-relaxed text-base md:text-lg">
                                         {faq.answer}
                                     </div>
                                 )}

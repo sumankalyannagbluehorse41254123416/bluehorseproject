@@ -85,9 +85,9 @@ export default function CaseStudySlider() {
                 <a
                   href={slide.link}
                   target="_blank"
-                  className="flex w-fit gap-2 items-center bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-500 transition"
+                  className="group flex w-fit gap-2 items-center bg-blue text-white px-6 py-2 rounded-md hover:bg-blue/80 transition duration-300 ease-in-out"
                 >
-                  View Full Case Study <MoveRightIcon className="w-5"/>
+                  View Full Case Study <MoveRightIcon className="w-5 group-hover:translate-x-1.5 transition duration-300 ease-in-out"/>
                 </a>
               </div>
 

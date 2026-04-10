@@ -1,5 +1,6 @@
 import CaseStudySlider from '@/component/service/mobile-app-development/CaseStudySlider'
 import ChallengesSection from '@/component/service/mobile-app-development/ChallengesSection'
+import ContactUs from '@/component/service/mobile-app-development/ContactUs'
 import FAQ from '@/component/service/mobile-app-development/faq'
 import HeroSection from '@/component/service/mobile-app-development/HeroSection'
 import Services from '@/component/service/mobile-app-development/Services'
@@ -16,6 +17,7 @@ const page = () => {
             <CaseStudySlider />
             <WhyChoose/>
             <FAQ/>
+            <ContactUs/>
             <BrandLogos />
         </>
     )
