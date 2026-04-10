@@ -1,6 +1,8 @@
 
 import BlogsSection from '@/component/service/BlogsSection'
 import Expertise from '@/component/service/magento-development-services/Expertise'
+import MagentoFAQ from '@/component/service/magento-development-services/Faq'
+import MagentoBlog from '@/component/service/magento-development-services/MagentoBlog'
 import MagentoServices from '@/component/service/magento-development-services/MagentoServices'
 import SolutionBanner from '@/component/service/magento-development-services/SolutionBanner'
 import WhyChooseBlueHorse from '@/component/service/magento-development-services/WhyChooseBlueHorse'
@@ -23,9 +25,9 @@ const page = () => {
       <MagentoServices />
       <Expertise />
       <WhyChooseBlueHorse />
-      <ShopifyCaseStudy />
-      <ShopifyFAQ />
-      <BlogsSection />
+      <MagentoFAQ/>
+      <MagentoBlog/>
+      
       <BrandLogos />
 
     </>
