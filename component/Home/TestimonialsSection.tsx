@@ -35,8 +35,8 @@ const TestimonialsSection = () => {
     },
     {
       name: "Ayesha R Goyal",
-      title: "Founder of Creoo",
-      company: "",
+      title: "",
+      company: "Founder of Creoo",
       logo: "https://www.bluehorse.in/testimonial-new/img/creeo.png",
       image: "https://www.bluehorse.in/testimonial-new/img/expert3.jpg",
       linkedin: "https://www.linkedin.com/in/ayeshagoyal/",
@@ -49,7 +49,7 @@ const TestimonialsSection = () => {
     {
       name: "Vijesh Sharma",
       title: "Founder & CEO of",
-      company: "IPLIX",
+      company: "Merca Applied Sciences Inc",
       image: "https://www.bluehorse.in/testimonial-new/img/expert2.jpg",
       linkedin: "#",
       quote: "The team was highly skilled and committed, driven by the founder's personal involvement.",
@@ -71,6 +71,7 @@ const TestimonialsSection = () => {
       name: "Ankitesh Shaah",
       title: "Founder of",
       company: "Social Homes Office",
+      logo:"https://www.bluehorse.in/testimonial-new/img/plannet.png",
       image: "https://www.bluehorse.in/testimonial-new/img/left6.jpg",
       linkedin: "#",
       quote: "Working with BlueHorse Software is a B2C eCommerce site – highly skilled, transparent, flexible, and absolute team.",
@@ -101,7 +102,8 @@ const TestimonialsSection = () => {
       quote: "Impressed by BlueHorse's proactive approach and strong communication; achieved success from the start",
       video: "#",
       gradient: "from-[#8A47E7]/20 via-[#8A47E7]/30 to-[#8A47E7]/40",
-      size: "normal"
+      size: "normal",
+      objectPosition: "object-top",
     },
     {
       name: "Ramachandra Vattikonda",
@@ -128,12 +130,14 @@ const TestimonialsSection = () => {
     {
       name: "Ritesh Aggarwal",
       title: "Founder of",
-      company: "Yellow Haat",
+      company: "Cocreate",
+      logo:"https://www.bluehorse.in/testimonial-new/img/cocreate.png",
       image: "https://www.bluehorse.in/testimonial-new/img/right5.png",
       linkedin: "#",
       quote: "Highly appreciated BlueHorse for their expert, professional website development and exceptional client service.",
       gradient: "from-[#DD6557]/25 via-[#DD6557]/60 to-[#DD6557]/60",
-      size: "normal"
+      size: "normal",
+      objectPosition: "object-top",
     },
   ];
 
@@ -185,7 +189,8 @@ const TestimonialCard = ({
   videoTitle,
   gradient, 
   size,
-  handleExpandVideo 
+  handleExpandVideo,
+  objectPosition 
 }: any) => {
   return (
     <div className={`relative overflow-hidden ${size === 'large' ? 'h-[729px]' : 'h-[345px]'} group`}>
@@ -194,7 +199,7 @@ const TestimonialCard = ({
         <img 
           src={image} 
           alt={name}
-          className="w-full h-full object-cover"
+          className={`w-full h-full object-cover ${objectPosition || ''}`}
         />
         {/* Gradient Overlay */}
         <div className={`photo-testimonial absolute inset-0 bg-linear-to-br ${gradient} opacity-85`}></div>
@@ -206,14 +211,13 @@ const TestimonialCard = ({
         <div className="flex items-start justify-between">
           <div className="flex-1">
             {logo && (
-              <img src={logo} alt={company} className="h-8 mb-3 object-contain" />
+              <img src={logo} alt={company} className="h-8 md:h-8.5 mb-3 object-contain" />
             )}
             <div className="space-y-1">
-              <p className="font-semibold text-base">
-                {name}
-              </p>
-              <p className="text-sm opacity-90">
-                {title} {company && <span className="block">{company}</span>}
+              
+              <p className="text-lg md:text-xl ">
+                <span className="font-bold ">{name}, </span> 
+                 {title} {company && <span className="block">{company}</span>}
               </p>
             </div>
           </div>
@@ -223,9 +227,9 @@ const TestimonialCard = ({
               href={linkedin} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="shrink-0 w-8 h-8 bg-white/20 hover:bg-white/30 rounded flex items-center justify-center transition-colors"
+              className="shrink-0 w-8 h-8 rounded flex items-center justify-center transition-colors text-white"
             >
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-8 h-8 rounded bg-white" fill="blue" viewBox="0 0 24 24">
                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
               </svg>
             </a>
@@ -234,7 +238,7 @@ const TestimonialCard = ({
 
         {/* Quote and CTA */}
         <div className="space-y-4">
-          <p className="text-sm md:text-base leading-relaxed">
+          <p className="text-base md:text-xl leading-relaxed font-semibold">
             "{quote}"
           </p>
           
@@ -243,10 +247,10 @@ const TestimonialCard = ({
               href={caseStudy} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-medium hover:gap-3 transition-all"
+              className="inline-flex items-center gap-2 text-base md:text-lg font-semibold hover:gap-3 transition-all duration-300"
             >
               View Casestudy 
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
@@ -255,7 +259,7 @@ const TestimonialCard = ({
           {video && (
             <button
               onClick={() => handleExpandVideo(video, videoTitle || `${name} Testimonial`)}
-              className="inline-flex items-center gap-2 text-sm font-medium hover:gap-3 transition-all cursor-pointer"
+              className="inline-flex items-center gap-2 text-base md:text-lg font-medium hover:gap-3 transition-all cursor-pointer"
             >
               View on YouTube 
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
