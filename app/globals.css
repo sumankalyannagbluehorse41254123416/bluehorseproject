@@ -390,3 +390,10 @@ body {
 .swiper-button-next {
   display: none !important;
 }
+
+
+.icon {
+    width: 48px;
+    height: 48px;
+    color: #079bcb !important;
+}
