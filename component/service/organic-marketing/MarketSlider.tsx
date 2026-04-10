@@ -24,23 +24,16 @@ const slides = [
     image: "https://www.bluehorse.in/bluehorse-html/ecommercedevelopmentassets/image/creeo_banner.png",
     link: "#",
   },
-  {
-    logo: "https://www.bluehorse.in/bluehorse-html/ecommercedevelopmentassets/image/lypten-logo.png",
-    title: "Transforming a Healthcare Vision into a Scalable Digital Platform",
-    desc: "Leptyn is an innovative healthcare startup providing science-based weight loss solutions.",
-    image: "https://www.bluehorse.in/bluehorse-html/ecommercedevelopmentassets/image/lypten_banner.png",
-    link: "#",
-  },
 ];
 
-export default function CaseStudySlider() {
+export default function MarketSlider() {
   const prevRef = useRef<HTMLButtonElement | null>(null);
   const nextRef = useRef<HTMLButtonElement | null>(null);
 
   return (
     <section className="bg-[#f3f4f6] py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-center text-3xl font-semibold text-gray-700 mb-16 uppercase tracking-wide">
+        <h2 className="text-center big-noodle text-40 font-semibold text-[#515253] mb-16 uppercase tracking-wide">
           Case Studies
         </h2>
 

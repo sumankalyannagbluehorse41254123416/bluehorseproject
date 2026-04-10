@@ -103,11 +103,8 @@ export default function WhyChoose() {
                 We use agile frameworks for quicker MVP development and iterative enhancements.
               </p>
             </div>
-
           </div>
-
         </div>
-
       </div>
     </section>
   );

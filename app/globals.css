@@ -364,7 +364,7 @@ body {
 }
 .caseStudySwiper .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  left: -575px !important;
+  left: -575px ;
 }
 
 .casstudy_slider-nav-arrows {

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function MarketBanner() {
     return (
-        <section className="bg-gradient-to-b from-[#E6F0FA] to-white py-20">
+        <section className="bg-linear-to-b from-[#E6F0FA] to-white py-20">
             <div className="max-w-7xl mx-auto px-4">
 
                 {/* Breadcrumb */}
@@ -78,7 +78,7 @@ export default function MarketBanner() {
                         <img
                             src="/assest/images/sliderlogo/orgnaic_banner.jpg"
                             alt="Hero"
-                            className="w-full h-[420px] object-cover rounded-xl shadow-lg"
+                            className="w-full h-105 object-cover rounded-xl shadow-lg"
                         />
                     </div>
 
