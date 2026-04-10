@@ -106,7 +106,7 @@ const WhyChooseBlueHorse = () => {
                     {features.map((feature, index) => (
                         <div
                             key={index}
-                            className="group bg-white border border-[rgb(212,224,237,0.7)]  p-5 m-2.5 hover:border-blue-200"
+                            className="group bg-white border border-[rgb(212,224,237,0.7)]  p-5 md:m-2.5 hover:border-blue-200"
                         >
                             <div className="mb-8 flex justify-center">
                                 <Image
@@ -119,11 +119,11 @@ const WhyChooseBlueHorse = () => {
                                 />
                             </div>
 
-                            <h3 className="text-2xl font-medium text-gray-900 mb-4 text-center">
+                            <h3 className="text-base md:text-lg font-normal text-gray-900 mb-4 text-center">
                                 {feature.title}
                             </h3>
 
-                            <p className="text-gray-600 text-center leading-relaxed">
+                            <p className="text-heading text-center leading-relaxed text-sm md:text-base">
                                 {feature.description}
                             </p>
                         </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import { MoveRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -43,8 +44,8 @@ export default function HeroSection() {
 
                         {/* Buttons */}
                         <div className="flex flex-wrap gap-4 ">
-                            <a href="#contact-us" className="bg-[#0C83D1] text-white px-6 py-3 rounded-lg font-medium shadow-md hover:bg-[#0a6fb3] transition">Let's Build Your Product →</a>
-                            <a href="#services" className="border border-gray-300 px-6 py-3 rounded-lg font-medium text-gray-700 hover:bg-gray-100 transition">Our Services →</a>
+                            <a href="#contact-us" className="flex gap-2 group bg-[#0C83D1] text-white px-6 py-3 rounded-lg font-medium shadow-md hover:bg-[#3d9ddd] transition">Let's Build Your Product <MoveRightIcon className="w-5 group-hover:translate-x-1.5 transition duration-300 ease-in-out"/></a>
+                            <a href="#services" className="flex gap-2 group border border-gray-300 px-6 py-3 rounded-lg font-medium text-blue bg-white hover:bg-[#e0e8ee] transition">Our Services <MoveRightIcon className="w-5 group-hover:translate-x-1.5 transition duration-300 ease-in-out"/></a>
                             </div>
 
 
