@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function MarketBanner() {
     return (
-        <section className="bg-gradient-to-b from-[#E6F0FA] to-white py-20">
+        <section className="bg-linear-to-b from-[#E6F0FA] to-white py-20">
             <div className="max-w-7xl mx-auto px-4">
 
                 {/* Breadcrumb */}
@@ -17,26 +17,26 @@ export default function MarketBanner() {
                         </li>
                         <li>›</li>
                         <li className="text-gray-800 font-medium">
-                            SOFTWARE DEVELOPMENT FOR STARTUPS
+                            ORGANIC MARKETING
                         </li>
                     </ul>
                 </div>
 
                 {/* Grid */}
-                <div className="grid lg:grid-cols-2 gap-12">
+                <div className="grid lg:grid-cols-2 gap-20">
 
                     {/* LEFT CONTENT */}
                     <div>
                         <h1 className="text-[50px] uppercase big-noodle text-[#515253] leading-none">
-                            A Reliable Partner in Software Development for Startups
+                            Are You Struggling with Organic Marketing Despite Heavy Ad Spend?
                         </h1>
 
                         <p className="text-gray-600 text-[20px] mb-8 leading-relaxed pt-5">
-                            Turn your startup ideas into real, working digital products with reliable software development for startups. At BlueHorse Software, we help startup founders like you build user-friendly mobile apps, websites, and MVPs—quickly and affordably. Whether you’re validating a concept or preparing to scale, we turn your vision into reality with a startup-first mindset.
+                            In today’s digital-first world, ads can give quick clicks—but true growth comes from organic marketing. A future-proof marketing strategy built on SEO, AEO, and GEO can help your brand achieve consistent organic growth, higher trust, and long-term visibility. With the right approach, your business can turn search presence into real, scalable organic sales without relying on paid campaigns.
                         </p>
 
                         {/* Buttons */}
-                        <div className="flex flex-wrap gap-4 mb-10">
+                        <div className="flex flex-wrap gap-4 mb-8">
                             <a
                                 href="#contact-us"
                                 className="bg-[#0C83D1] text-white px-6 py-3 rounded-lg font-medium shadow-md hover:bg-[#0a6fb3] transition"
@@ -78,7 +78,7 @@ export default function MarketBanner() {
                         <img
                             src="/assest/images/sliderlogo/orgnaic_banner.jpg"
                             alt="Hero"
-                            className="w-full h-[420px] object-cover rounded-xl shadow-lg"
+                            className="w-full h-105 object-cover rounded-xl shadow-lg"
                         />
                     </div>
 

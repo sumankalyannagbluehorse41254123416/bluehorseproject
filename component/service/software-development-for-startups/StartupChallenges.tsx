@@ -22,7 +22,7 @@ export default function StartupChallenges() {
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-7.5">
 
                     {/* Card 1 */}
-                    <div className="bg-gradient-to-r from-[#eff6ff] to-[#eef2ff] border border-gray-200 rounded-2xl p-4 text-left  transition">
+                    <div className="bg-linear-to-r from-[#eff6ff] to-[#eef2ff] border border-gray-200 rounded-2xl p-4 text-left  transition">
                         <div className="flex items-center justify-center w-14 h-14 bg-[#dbeafe] rounded-xl mb-5">
                             <svg
                                 className="w-8 h-8 text-[#0C83D1]"
@@ -50,7 +50,7 @@ export default function StartupChallenges() {
                     </div>
 
                     {/* Card 2 */}
-                    <div className="bg-gradient-to-r from-[#eff6ff] to-[#eef2ff] border border-gray-200 rounded-2xl p-4 text-left  transition">
+                    <div className="bg-linear-to-r from-[#eff6ff] to-[#eef2ff] border border-gray-200 rounded-2xl p-4 text-left  transition">
                         <div className="flex items-center justify-center w-14 h-14 bg-[#dbeafe] rounded-xl mb-5">
                             <svg
                                 className="w-8 h-8 text-[#0C83D1]"
@@ -77,7 +77,7 @@ export default function StartupChallenges() {
                     </div>
 
                     {/* Card 3 */}
-                    <div className="bg-gradient-to-r from-[#eff6ff] to-[#eef2ff] border border-gray-200 rounded-2xl p-4 text-left  transition">
+                    <div className="bg-linear-to-r from-[#eff6ff] to-[#eef2ff] border border-gray-200 rounded-2xl p-4 text-left  transition">
                         <div className="flex items-center justify-center w-14 h-14 bg-[#dbeafe] rounded-xl mb-5">
                             <svg
                                 className="w-8 h-8 text-[#0C83D1]"
@@ -104,7 +104,7 @@ export default function StartupChallenges() {
                     </div>
 
                     {/* Card 4 */}
-                    <div className="bg-gradient-to-r from-[#eff6ff] to-[#eef2ff] border border-gray-200 rounded-2xl p-4 text-left  transition">
+                    <div className="bg-linear-to-r from-[#eff6ff] to-[#eef2ff] border border-gray-200 rounded-2xl p-4 text-left  transition">
                         <div className="flex items-center justify-center w-14 h-14 bg-[#dbeafe] rounded-xl mb-5">
                             <svg
                                 className="w-8 h-8 text-[#0C83D1]"

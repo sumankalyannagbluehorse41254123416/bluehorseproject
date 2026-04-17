@@ -364,7 +364,7 @@ body {
 }
 .caseStudySwiper .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  left: -575px !important;
+  left: -575px ;
 }
 
 .casstudy_slider-nav-arrows {
@@ -389,4 +389,11 @@ body {
 .swiper-button-prev,
 .swiper-button-next {
   display: none !important;
+}
+
+
+.icon {
+    width: 48px;
+    height: 48px;
+    color: #079bcb !important;
 }
