@@ -77,7 +77,7 @@ const blogPosts = [
 
 const MagentoBlog = () => {
   return (
-    <section className="bg-white mt-8.75 md:mt-8.75 lg:mt-20">
+    <section className="bg-white mt-8.75 md:mt-8.75 lg:mt-20 mb-5">
       <div className="container mx-auto px-4">
 
         {/* Header */}

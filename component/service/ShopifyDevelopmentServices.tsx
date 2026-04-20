@@ -58,14 +58,14 @@ const ShopifyDevelopmentServices: React.FC = () => {
     ];
 
     return (
-        <section className="py-20 bg-white">
+        <section className="py-16 md:py-20">
             <div className="container px-0 md:px-6 lg:px-8">
                 {/* Header - matching the screenshot style */}
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-[-0.02em] uppercase">
+                <div className="text-center mb-12">
+                    <h2 className="Section-Title">
                         OUR SHOPIFY DEVELOPMENT SERVICES
                     </h2>
-                    <p className="mt-5 text-xl text-gray-600 max-w-3xl mx-auto">
+                    <p className="mt-4 Section-Details text-[#606060]! md:text-[18px]!">
                         We offer a complete suite of Shopify services designed to meet the needs of fast-growing eCommerce brands:
                     </p>
                 </div>
@@ -97,14 +97,14 @@ const ShopifyDevelopmentServices: React.FC = () => {
                             </div>
 
                             {/* Description */}
-                            <p className="text-gray-600 text-[15px] leading-relaxed flex-1 mb-8">
+                            <p className="text-heading text-base md:text-[19px] md:leading-8 mb-2">
                                 {service.description}
                             </p>
 
                             {/* View More link - matches screenshot */}
                             <a
                                 href={service.link}
-                                className="inline-flex items-center text-deepblue font-medium text-base hover:text-blue-700 transition-all group-hover:gap-x-1"
+                                className="mt-auto inline-flex items-center text-deepblue font-medium text-base hover:text-blue-700 transition-all group-hover:gap-x-1"
                             >
                                 View More
                                 <FiArrowRight className="text-lg transition-transform group-hover:translate-x-1" />
