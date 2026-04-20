@@ -9,7 +9,7 @@ import "swiper/css/effect-fade";
 
 const BannerSlider = () => {
   return (
-    <section id="banner_slider">
+    <section id="banner_slider home_banner_slider">
       <div className="container pt-10 mx-auto">
 
         <Swiper

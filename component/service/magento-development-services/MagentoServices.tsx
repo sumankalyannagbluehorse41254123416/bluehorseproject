@@ -82,7 +82,8 @@ export default function MagentoServices() {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-gray-900 mb-4 relative pb-4 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[6px] after:w-[120px] after:bg-deepblue after:rounded-full hover:after:w-[160px] after:transition-all">
+                <h3 className="text-[22px] font-semibold text-gray-900 leading-tight
+                       mb-4 relative pb-4 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[6px] after:w-[120px] after:bg-deepblue after:rounded-full hover:after:w-[160px] after:transition-all">
                   {service.title}
                 </h3>
 

@@ -45,10 +45,10 @@ const WhyChooseBlueHorse = () => {
             <div className="container">
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <h2 className="text-40 md:text-5xl font-normal tracking-0.5 text-gray-900">
+                    <h2 className="Section-Title">
                         WHY CHOOSE BLUEHORSE FOR SHOPIFY DEVELOPMENT?
                     </h2>
-                    <p className="mt-6 text-xl text-gray-600 max-w-4xl mx-auto">
+                    <p className="mt-2 text-xl text-gray-600 max-w-4xl mx-auto">
                         BlueHorse Software is a trusted Shopify development partner, committed to transforming your eCommerce
                         vision into a scalable, profitable, and sustainable business.
                     </p>
@@ -59,7 +59,7 @@ const WhyChooseBlueHorse = () => {
                     {stats.map((stat, index) => {
                         const isBlue =
                             Math.floor(index / 2) % 2 === 0
-                                ? index % 2 !== 0
+                                ? index % 2 !== 1
                                 : index % 2 === 0;
 
                         return (
@@ -120,7 +120,7 @@ const WhyChooseBlueHorse = () => {
                                 />
                             </div>
 
-                            <h3 className="text-2xl font-medium text-gray-900 mb-4 text-center">
+                            <h3 className="text-lg md:text-xl font-medium text-gray-900 mb-4 text-center">
                                 {feature.title}
                             </h3>
 

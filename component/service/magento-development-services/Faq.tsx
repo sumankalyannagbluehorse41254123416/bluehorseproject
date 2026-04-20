@@ -158,7 +158,7 @@ export default function MagentoFAQ() {
                 <h2 className="Section-Title text-[#292930]">
                     Frequently Asked Questions
                 </h2>
-                <p className="text-gray-500 mt-2">Exploring Common Inquiries</p>
+                <p className="mt-4 Section-Details text-[#606060]! md:text-[18px]!">Exploring Common Inquiries</p>
             </div>
 
             <div className="space-y-3">

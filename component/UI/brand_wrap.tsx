@@ -80,7 +80,8 @@ const BrandLogos: React.FC = () => {
                 borderRight: (index + 1) % 5 !== 0 ? "1px solid #9ca3af" : "",
                 borderBottom:
                   index < brands.length - 5 ? "1px solid #9ca3af" : "",
-              }}>
+              }}
+              >
               <Image
                 src={brand.logo}
                 alt={brand.name}

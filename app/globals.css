@@ -228,6 +228,8 @@ body {
   margin: auto;
 }
 
+
+
 .swiper-pagination-bullet {
   width: 15px !important;
   height: 15px !important;
@@ -358,13 +360,15 @@ body {
   }
 
 }
+
 .banner_slider .swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal{
+.swiper-pagination-bullets.swiper-pagination-horizontal {
   left: 0 !important;
 }
+
 .caseStudySwiper .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  left: -575px ;
+  left: -575px;
 }
 
 .casstudy_slider-nav-arrows {
@@ -393,7 +397,7 @@ body {
 
 
 .icon {
-    width: 48px;
-    height: 48px;
-    color: #079bcb !important;
+  width: 48px;
+  height: 48px;
+  color: #079bcb !important;
 }

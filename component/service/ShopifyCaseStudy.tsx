@@ -11,7 +11,7 @@ const ShopifyCaseStudy = () => {
 
         {/* Section Title */}
         <div className="text-center mb-10 sm:mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900">
+          <h2 className="Section-Title">
             SHOPIFY DEVELOPMENT CASE STUDY
           </h2>
         </div>

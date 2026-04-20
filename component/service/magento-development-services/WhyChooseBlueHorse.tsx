@@ -119,7 +119,7 @@ const WhyChooseBlueHorse = () => {
                                 />
                             </div>
 
-                            <h3 className="text-base md:text-lg font-normal text-gray-900 mb-4 text-center">
+                            <h3 className="text-lg md:text-xl font-medium text-gray-900 mb-4 text-center">
                                 {feature.title}
                             </h3>
 
